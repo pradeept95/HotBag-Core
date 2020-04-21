@@ -1,0 +1,12 @@
+{
+  "version": 2,
+  "dgSpecHash": "tZVksxjG9kgW36qEOB6HELh5t2W/Eo2GzE5JTDqD8+0hUBk+dv1B77Xb/sgIfDJmdJ3NRWqFM8XXnReAeAcYgQ==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\prade\\source\\repos\\HotBagCore\\HotBag.AspNetCore.Data\\HotBag.AspNetCore.Data.csproj",
+  "expectedPackageFiles": [
+    "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder\\microsoft.netcore.platforms\\1.1.0\\microsoft.netcore.platforms.1.1.0.nupkg.sha512",
+    "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder\\netstandard.library\\2.0.3\\netstandard.library.2.0.3.nupkg.sha512",
+    "C:\\Users\\prade\\.nuget\\packages\\system.componentmodel.annotations\\4.7.0\\system.componentmodel.annotations.4.7.0.nupkg.sha512"
+  ],
+  "logs": []
+}

@@ -1,0 +1,5 @@
+C:\Users\prade\source\repos\HotBagCore\HotBag.AspNetCore.Data\bin\Debug\netstandard2.0\HotBag.AspNetCore.Data.deps.json
+C:\Users\prade\source\repos\HotBagCore\HotBag.AspNetCore.Data\bin\Debug\netstandard2.0\HotBag.AspNetCore.Data.dll
+C:\Users\prade\source\repos\HotBagCore\HotBag.AspNetCore.Data\obj\Debug\netstandard2.0\HotBag.AspNetCore.Data.csprojAssemblyReference.cache
+C:\Users\prade\source\repos\HotBagCore\HotBag.AspNetCore.Data\obj\Debug\netstandard2.0\HotBag.AspNetCore.Data.AssemblyInfoInputs.cache
+C:\Users\prade\source\repos\HotBagCore\HotBag.AspNetCore.Data\obj\Debug\netstandard2.0\HotBag.AspNetCore.Data.AssemblyInfo.cs
