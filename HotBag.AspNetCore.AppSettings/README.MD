@@ -1,1 +1,2 @@
 
+# HotBag.AspNetCore.AppSettings Assembly
