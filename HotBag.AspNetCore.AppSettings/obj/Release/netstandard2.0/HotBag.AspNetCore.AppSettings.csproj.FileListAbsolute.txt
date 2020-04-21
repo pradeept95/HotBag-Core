@@ -1,0 +1,12 @@
+C:\Users\prade\source\repos\HotBagCore\HotBag.AspNetCore.AppSettings\bin\Release\netstandard2.0\HotBag.AspNetCore.AppSettings.deps.json
+C:\Users\prade\source\repos\HotBagCore\HotBag.AspNetCore.AppSettings\bin\Release\netstandard2.0\HotBag.AspNetCore.AppSettings.dll
+C:\Users\prade\source\repos\HotBagCore\HotBag.AspNetCore.AppSettings\bin\Release\netstandard2.0\HotBag.AspNetCore.AppSettings.pdb
+C:\Users\prade\source\repos\HotBagCore\HotBag.AspNetCore.AppSettings\bin\Release\netstandard2.0\HotBag.AspNetCore.Extensions.dll
+C:\Users\prade\source\repos\HotBagCore\HotBag.AspNetCore.AppSettings\bin\Release\netstandard2.0\HotBag.AspNetCore.Extensions.pdb
+C:\Users\prade\source\repos\HotBagCore\HotBag.AspNetCore.AppSettings\obj\Release\netstandard2.0\HotBag.AspNetCore.AppSettings.csprojAssemblyReference.cache
+C:\Users\prade\source\repos\HotBagCore\HotBag.AspNetCore.AppSettings\obj\Release\netstandard2.0\HotBag.AspNetCore.AppSettings.csproj.CoreCompileInputs.cache
+C:\Users\prade\source\repos\HotBagCore\HotBag.AspNetCore.AppSettings\obj\Release\netstandard2.0\HotBag.AspNetCore.AppSettings.AssemblyInfoInputs.cache
+C:\Users\prade\source\repos\HotBagCore\HotBag.AspNetCore.AppSettings\obj\Release\netstandard2.0\HotBag.AspNetCore.AppSettings.AssemblyInfo.cs
+C:\Users\prade\source\repos\HotBagCore\HotBag.AspNetCore.AppSettings\obj\Release\netstandard2.0\HotBag.AspNetCore.AppSettings.csproj.CopyComplete
+C:\Users\prade\source\repos\HotBagCore\HotBag.AspNetCore.AppSettings\obj\Release\netstandard2.0\HotBag.AspNetCore.AppSettings.dll
+C:\Users\prade\source\repos\HotBagCore\HotBag.AspNetCore.AppSettings\obj\Release\netstandard2.0\HotBag.AspNetCore.AppSettings.pdb

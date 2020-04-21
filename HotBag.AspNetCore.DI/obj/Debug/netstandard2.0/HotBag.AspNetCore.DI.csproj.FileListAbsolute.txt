@@ -6,3 +6,4 @@ C:\Users\prade\source\repos\HotBagCore\HotBag.AspNetCore.DI\obj\Debug\netstandar
 C:\Users\prade\source\repos\HotBagCore\HotBag.AspNetCore.DI\obj\Debug\netstandard2.0\HotBag.AspNetCore.DI.AssemblyInfo.cs
 C:\Users\prade\source\repos\HotBagCore\HotBag.AspNetCore.DI\obj\Debug\netstandard2.0\HotBag.AspNetCore.DI.dll
 C:\Users\prade\source\repos\HotBagCore\HotBag.AspNetCore.DI\obj\Debug\netstandard2.0\HotBag.AspNetCore.DI.pdb
+C:\Users\prade\source\repos\HotBagCore\HotBag.AspNetCore.DI\obj\Debug\netstandard2.0\HotBag.AspNetCore.DI.csprojAssemblyReference.cache

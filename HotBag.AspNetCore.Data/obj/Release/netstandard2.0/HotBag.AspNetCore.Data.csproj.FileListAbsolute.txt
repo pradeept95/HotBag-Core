@@ -1,0 +1,8 @@
+C:\Users\prade\source\repos\HotBagCore\HotBag.AspNetCore.Data\bin\Release\netstandard2.0\HotBag.AspNetCore.Data.deps.json
+C:\Users\prade\source\repos\HotBagCore\HotBag.AspNetCore.Data\bin\Release\netstandard2.0\HotBag.AspNetCore.Data.dll
+C:\Users\prade\source\repos\HotBagCore\HotBag.AspNetCore.Data\bin\Release\netstandard2.0\HotBag.AspNetCore.Data.pdb
+C:\Users\prade\source\repos\HotBagCore\HotBag.AspNetCore.Data\obj\Release\netstandard2.0\HotBag.AspNetCore.Data.csproj.CoreCompileInputs.cache
+C:\Users\prade\source\repos\HotBagCore\HotBag.AspNetCore.Data\obj\Release\netstandard2.0\HotBag.AspNetCore.Data.AssemblyInfoInputs.cache
+C:\Users\prade\source\repos\HotBagCore\HotBag.AspNetCore.Data\obj\Release\netstandard2.0\HotBag.AspNetCore.Data.AssemblyInfo.cs
+C:\Users\prade\source\repos\HotBagCore\HotBag.AspNetCore.Data\obj\Release\netstandard2.0\HotBag.AspNetCore.Data.dll
+C:\Users\prade\source\repos\HotBagCore\HotBag.AspNetCore.Data\obj\Release\netstandard2.0\HotBag.AspNetCore.Data.pdb
