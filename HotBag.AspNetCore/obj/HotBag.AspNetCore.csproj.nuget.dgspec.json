@@ -165,7 +165,11 @@
         },
         "frameworks": {
           "netstandard2.0": {
-            "projectReferences": {}
+            "projectReferences": {
+              "C:\\Users\\prade\\source\\repos\\HotBagCore\\HotBag.AspNetCore.Authorization\\HotBag.AspNetCore.Authorization.csproj": {
+                "projectPath": "C:\\Users\\prade\\source\\repos\\HotBagCore\\HotBag.AspNetCore.Authorization\\HotBag.AspNetCore.Authorization.csproj"
+              }
+            }
           }
         },
         "warningProperties": {

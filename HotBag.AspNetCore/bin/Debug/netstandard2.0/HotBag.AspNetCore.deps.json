@@ -1847,6 +1847,7 @@
       },
       "HotBag.AspNetCore.Data/1.0.0": {
         "dependencies": {
+          "HotBag.AspNetCore.Authorization": "1.0.0",
           "System.ComponentModel.Annotations": "4.7.0"
         },
         "runtime": {

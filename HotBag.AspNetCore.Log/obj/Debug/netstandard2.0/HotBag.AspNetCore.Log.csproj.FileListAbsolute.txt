@@ -1,9 +1,9 @@
 C:\Users\prade\source\repos\HotBagCore\HotBag.AspNetCore.Log\bin\Debug\netstandard2.0\HotBag.AspNetCore.Log.deps.json
 C:\Users\prade\source\repos\HotBagCore\HotBag.AspNetCore.Log\bin\Debug\netstandard2.0\HotBag.AspNetCore.Log.dll
 C:\Users\prade\source\repos\HotBagCore\HotBag.AspNetCore.Log\bin\Debug\netstandard2.0\HotBag.AspNetCore.Log.pdb
+C:\Users\prade\source\repos\HotBagCore\HotBag.AspNetCore.Log\obj\Debug\netstandard2.0\HotBag.AspNetCore.Log.csprojAssemblyReference.cache
 C:\Users\prade\source\repos\HotBagCore\HotBag.AspNetCore.Log\obj\Debug\netstandard2.0\HotBag.AspNetCore.Log.csproj.CoreCompileInputs.cache
 C:\Users\prade\source\repos\HotBagCore\HotBag.AspNetCore.Log\obj\Debug\netstandard2.0\HotBag.AspNetCore.Log.AssemblyInfoInputs.cache
 C:\Users\prade\source\repos\HotBagCore\HotBag.AspNetCore.Log\obj\Debug\netstandard2.0\HotBag.AspNetCore.Log.AssemblyInfo.cs
 C:\Users\prade\source\repos\HotBagCore\HotBag.AspNetCore.Log\obj\Debug\netstandard2.0\HotBag.AspNetCore.Log.dll
 C:\Users\prade\source\repos\HotBagCore\HotBag.AspNetCore.Log\obj\Debug\netstandard2.0\HotBag.AspNetCore.Log.pdb
-C:\Users\prade\source\repos\HotBagCore\HotBag.AspNetCore.Log\obj\Debug\netstandard2.0\HotBag.AspNetCore.Log.csprojAssemblyReference.cache
