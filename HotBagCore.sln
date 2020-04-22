@@ -3,31 +3,35 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.29920.165
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HotBag.AspNetCore", "HotBag.AspNetCore\HotBag.AspNetCore.csproj", "{C4CC748E-02C9-41D6-84E0-DBA55FB8A5C1}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "HotBag.AspNetCore", "HotBag.AspNetCore\HotBag.AspNetCore.csproj", "{C4CC748E-02C9-41D6-84E0-DBA55FB8A5C1}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Core", "Core", "{8B00618C-73C9-4E85-A6DE-68022B51BB60}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HotBag.AspNetCore.Extensions", "HotBag.AspNetCore.Extensions\HotBag.AspNetCore.Extensions.csproj", "{BB078514-2B6B-451B-A318-365F3BAA4DAC}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "HotBag.AspNetCore.Extensions", "HotBag.AspNetCore.Extensions\HotBag.AspNetCore.Extensions.csproj", "{BB078514-2B6B-451B-A318-365F3BAA4DAC}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HotBag.AspNetCore.Authorization", "HotBag.AspNetCore.Authorization\HotBag.AspNetCore.Authorization.csproj", "{9FB8799F-9672-48DB-B8FB-F6634C56E309}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "HotBag.AspNetCore.Authorization", "HotBag.AspNetCore.Authorization\HotBag.AspNetCore.Authorization.csproj", "{9FB8799F-9672-48DB-B8FB-F6634C56E309}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HotBag.AspNetCore.Security", "HotBag.AspNetCore.Security\HotBag.AspNetCore.Security.csproj", "{36E4F893-4D90-4F3A-BC21-50CE6F1F2BF7}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "HotBag.AspNetCore.Security", "HotBag.AspNetCore.Security\HotBag.AspNetCore.Security.csproj", "{36E4F893-4D90-4F3A-BC21-50CE6F1F2BF7}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HotBag.AspNetCore.IO", "HotBag.AspNetCore.IO\HotBag.AspNetCore.IO.csproj", "{F4B55406-38D6-4FFA-8208-D9A8D81C80CA}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "HotBag.AspNetCore.IO", "HotBag.AspNetCore.IO\HotBag.AspNetCore.IO.csproj", "{F4B55406-38D6-4FFA-8208-D9A8D81C80CA}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HotBag.AspNetCore.DI", "HotBag.AspNetCore.DI\HotBag.AspNetCore.DI.csproj", "{491D7371-BE30-4047-A247-CF0DE37F5047}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "HotBag.AspNetCore.DI", "HotBag.AspNetCore.DI\HotBag.AspNetCore.DI.csproj", "{491D7371-BE30-4047-A247-CF0DE37F5047}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HotBag.AspNetCore.AppSettings", "HotBag.AspNetCore.AppSettings\HotBag.AspNetCore.AppSettings.csproj", "{D5312A1D-BEBB-4AB5-8579-B814824E7A32}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "HotBag.AspNetCore.AppSettings", "HotBag.AspNetCore.AppSettings\HotBag.AspNetCore.AppSettings.csproj", "{D5312A1D-BEBB-4AB5-8579-B814824E7A32}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HotBag.AspNetCore.Web", "HotBag.AspNetCore.Web\HotBag.AspNetCore.Web.csproj", "{E01ACB0A-E539-42F9-911E-46007EC09CE9}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "HotBag.AspNetCore.Web", "HotBag.AspNetCore.Web\HotBag.AspNetCore.Web.csproj", "{E01ACB0A-E539-42F9-911E-46007EC09CE9}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HotBag.AspNetCore.ResultWrapper", "HotBag.AspNetCore.ResultWrapper\HotBag.AspNetCore.ResultWrapper.csproj", "{2B829690-BB4A-4323-8AC8-6282A50C78EB}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "HotBag.AspNetCore.ResultWrapper", "HotBag.AspNetCore.ResultWrapper\HotBag.AspNetCore.ResultWrapper.csproj", "{2B829690-BB4A-4323-8AC8-6282A50C78EB}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HotBag.AspNetCore.Data", "HotBag.AspNetCore.Data\HotBag.AspNetCore.Data.csproj", "{15E69BE9-E262-47E9-ADE9-B40CF45225E1}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "HotBag.AspNetCore.Data", "HotBag.AspNetCore.Data\HotBag.AspNetCore.Data.csproj", "{15E69BE9-E262-47E9-ADE9-B40CF45225E1}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Test", "Test", "{D25101EB-5D79-4159-9F16-8962D37AAF11}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HotBag.AspNetCore.Log", "HotBag.AspNetCore.Log\HotBag.AspNetCore.Log.csproj", "{D0EAB607-A901-4E27-9566-805CEC771AEC}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "HotBag.AspNetCore.Log", "HotBag.AspNetCore.Log\HotBag.AspNetCore.Log.csproj", "{D0EAB607-A901-4E27-9566-805CEC771AEC}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HotBag.AspNetCore.Swagger", "HotBag.AspNetCore.Swagger\HotBag.AspNetCore.Swagger.csproj", "{7DC6062D-820D-45FB-B401-6A04B905A1C4}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebApp", "WebApp\WebApp.csproj", "{CD6F74CC-6B75-4D85-B8E7-241104BBF826}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -79,6 +83,14 @@ Global
 		{D0EAB607-A901-4E27-9566-805CEC771AEC}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{D0EAB607-A901-4E27-9566-805CEC771AEC}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{D0EAB607-A901-4E27-9566-805CEC771AEC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7DC6062D-820D-45FB-B401-6A04B905A1C4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7DC6062D-820D-45FB-B401-6A04B905A1C4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7DC6062D-820D-45FB-B401-6A04B905A1C4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7DC6062D-820D-45FB-B401-6A04B905A1C4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CD6F74CC-6B75-4D85-B8E7-241104BBF826}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CD6F74CC-6B75-4D85-B8E7-241104BBF826}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CD6F74CC-6B75-4D85-B8E7-241104BBF826}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CD6F74CC-6B75-4D85-B8E7-241104BBF826}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -94,6 +106,8 @@ Global
 		{2B829690-BB4A-4323-8AC8-6282A50C78EB} = {8B00618C-73C9-4E85-A6DE-68022B51BB60}
 		{15E69BE9-E262-47E9-ADE9-B40CF45225E1} = {8B00618C-73C9-4E85-A6DE-68022B51BB60}
 		{D0EAB607-A901-4E27-9566-805CEC771AEC} = {8B00618C-73C9-4E85-A6DE-68022B51BB60}
+		{7DC6062D-820D-45FB-B401-6A04B905A1C4} = {8B00618C-73C9-4E85-A6DE-68022B51BB60}
+		{CD6F74CC-6B75-4D85-B8E7-241104BBF826} = {D25101EB-5D79-4159-9F16-8962D37AAF11}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {75183472-5F20-4C1D-97E0-A08760E8F88C}

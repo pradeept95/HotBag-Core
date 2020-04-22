@@ -1,4 +1,5 @@
-﻿using HotBag.AspNetCore.Modules;
+﻿using HotBag.AspNetCore.Authorization;
+using HotBag.AspNetCore.Modules;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 
@@ -50,9 +51,8 @@ namespace HotBag.AspNetCore
             //      .Select(Assembly.Load);
 
             //serviceCollection.AddAutoMapper(all);
-
-            //serviceCollection.ConfigureApplicationSettings(configuration);
-            //AuthConfigurer.Configure(serviceCollection, configuration);
+             
+            AuthConfiguration.Configure(serviceCollection, configuration);
 
             //var customConfig = IocManager.Configurations.Manager.GetService<IDictionaryBasedConfig>();
 

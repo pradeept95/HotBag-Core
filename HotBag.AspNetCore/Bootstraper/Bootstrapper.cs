@@ -34,21 +34,7 @@ namespace HotBag.AspNetCore.Bootstraper
         private void FindThenBuild()
         {
             var serviceInstances = new List<IServiceRegistrar>();
-            //// var assembly2 = Assembly.GetEntryAssembly();
-            //// var assembly2 = Assembly.Load("Core.Web");
-            //var assesmblies = AppDomain.CurrentDomain.GetAssemblies();
-            //foreach (var assembly in assesmblies)
-            //{
-            //    foreach (var ti in assembly.DefinedTypes)
-            //    {
-            //        if (ti.ImplementedInterfaces.Contains(typeof(IServiceRegistrar)))
-            //        {
-            //            // yield return (T)assembly.CreateInstance(ti.FullName);
-            //            var instance = assembly.CreateInstance(ti.FullName);
-            //            serviceInstances.Add((IServiceRegistrar)instance);
-            //        }
-            //    }
-            //}
+             
 
             var platform = Environment.OSVersion.Platform.ToString();
             var runtimeAssemblyNames = DependencyContext.Default.GetRuntimeAssemblyNames(platform);

@@ -32,8 +32,10 @@ namespace HotBag.AspNetCore.Authorization
 
             if (_requiredAllPermission)
                 hasClaim = modulePermissions.All(x => assignedClaims.Contains(x));
-            else
+            else if (assignedClaims != null && assignedClaims?.Length > 0)
                 hasClaim = modulePermissions.Any(x => assignedClaims.Contains(x));
+            else
+                hasClaim = false;
 
 
             if (!hasClaim)
