@@ -30,9 +30,14 @@ namespace HotBag.AspNetCore.Authorization
 
             var assignedClaims = context.HttpContext.User.Claims.Where(c => c.Type == _claim.Type).Select(c => c.Value).FirstOrDefault()?.Split(',');
 
+            if(assignedClaims == null)
+            {
+                assignedClaims = new string[0] { };
+            } 
+
             if (_requiredAllPermission)
                 hasClaim = modulePermissions.All(x => assignedClaims.Contains(x));
-            else if (assignedClaims != null && assignedClaims?.Length > 0)
+            else if (assignedClaims?.Length > 0)
                 hasClaim = modulePermissions.Any(x => assignedClaims.Contains(x));
             else
                 hasClaim = false;

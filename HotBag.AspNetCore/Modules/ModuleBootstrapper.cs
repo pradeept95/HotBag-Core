@@ -1,5 +1,6 @@
 ﻿using HotBag.AspNetCore.AppSettings;
 using HotBag.AspNetCore.DI;
+using HotBag.AspNetCore.Installer;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.DependencyModel;
@@ -57,10 +58,10 @@ namespace HotBag.AspNetCore.Modules
                 .Select(y => (IApplicationModule)Activator.CreateInstance(y));
             moduleInstances.AddRange(instances);
 
-            //DefaultInstaller.RegisterAllModule(moduleInstances);
-            //DefaultInstaller.InstallDefaultModule();
-            //DefaultInstaller.InstallApplicationORMModule();
-            //DefaultInstaller.InstallApplicationModule();
+            DefaultInstaller.RegisterAllModule(moduleInstances);
+            DefaultInstaller.InstallDefaultModule();
+            DefaultInstaller.InstallApplicationORMModule();
+            DefaultInstaller.InstallApplicationModule();
 
             foreach (var instance in moduleInstances)
             {   //TODO::check module is installed or not 

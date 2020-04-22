@@ -8,5 +8,11 @@
     <ProjectReference Include="..\HotBag.AspNetCore\HotBag.AspNetCore.csproj" />
   </ItemGroup>
 
+  <ItemGroup>
+    <Content Update="modulesettings.json">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+
 
 </Project>
