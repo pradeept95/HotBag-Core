@@ -7,6 +7,7 @@ using HotBag.AspNetCore.ResultWrapper.ResponseModel;
 using HotBag.AspNetCore.Web.BaseController;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
+using Web.Host.Publisher;
 
 namespace WebApp.Controllers
 {
@@ -19,14 +20,16 @@ namespace WebApp.Controllers
         };
 
         private readonly ILogger<WeatherForecastController> _logger;
+        private readonly IPublishEvent publisher;
 
-        public WeatherForecastController(ILogger<WeatherForecastController> logger)
+        public WeatherForecastController(ILogger<WeatherForecastController> logger, IPublishEvent publisher)
         {
             _logger = logger;
+            this.publisher = publisher;
         }
 
         [HttpGet]
-        [HotBagAuthorize(HotBagClaimTypes.Permission, "WeatherForecast.Read")]
+        //[HotBagAuthorize(HotBagClaimTypes.Permission, "WeatherForecast.Read")]
         public ListResultDto<WeatherForecast> Get()
         {
             var rng = new Random();
@@ -38,7 +41,11 @@ namespace WebApp.Controllers
             })
             .ToList();
 
+            publisher.Publish();
+
             return new ListResultDto<WeatherForecast>(result, "all forecast data");
         }
+
+
     }
 }

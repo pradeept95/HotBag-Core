@@ -6,6 +6,7 @@
 
   <ItemGroup>
     <ProjectReference Include="..\HotBag.AspNetCore\HotBag.AspNetCore.csproj" />
+    <ProjectReference Include="..\Web.Host\HotBag.Web.Host.csproj" />
   </ItemGroup>
 
   <ItemGroup>

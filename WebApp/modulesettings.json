@@ -1,7 +1,7 @@
 {
   "Modules": {
     "Installed": "",
-    "Default": "CoreModule",
+    "Default": "CoreModule,WebHostModule",
     "ORM": "",
     "ORMInstalled": ""
   }

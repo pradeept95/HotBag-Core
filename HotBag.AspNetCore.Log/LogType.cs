@@ -10,6 +10,10 @@
         Info,
         Warn,
         Error,
-        Fatal
+        Fatal,
+
+        Exception = 1, 
+        Warnign = 3, 
+        Success = 5
     }
 }
