@@ -8,7 +8,7 @@ namespace HotBag.AspNetCore.EventBus
     /*
     *  Sealed restricts the inheritance
     */
-    public sealed class EventBus : IEventBus
+    public sealed class HotBagEventBus : IEventBus
     {
 
         //Lazy initialization
@@ -17,15 +17,15 @@ namespace HotBag.AspNetCore.EventBus
         * ensures that only one instance of the object is created
         * based on the null condition
         */
-        private static readonly Lazy<EventBus> instance
-            = new Lazy<EventBus>(() => new EventBus());
+        private static readonly Lazy<HotBagEventBus> instance
+            = new Lazy<HotBagEventBus>(() => new HotBagEventBus());
 
 
         /*
        * public property is used to return only one instance of the class
        * leveraging on the private property
        */
-        public static EventBus Instance
+        public static HotBagEventBus Instance
         {
             get
             {
@@ -45,7 +45,7 @@ namespace HotBag.AspNetCore.EventBus
          * Private constructor ensures that object is not
          * instantiated other than with in the class itself
          */
-        private EventBus()
+        private HotBagEventBus()
         {
             subscriber = new Dictionary<Type, IList>();
         }

@@ -7,12 +7,12 @@ namespace HotBag.AspNetCore.EventBus
     public class Subscription<Tmessage> : IDisposable
     {
         public readonly MethodInfo MethodInfo;
-        private readonly EventBus EventAggregator;
+        private readonly HotBagEventBus EventAggregator;
         public readonly WeakReference TargetObjet;
         public readonly bool IsStatic;
 
         private bool isDisposed;
-        public Subscription(Action<Tmessage> action, EventBus eventAggregator)
+        public Subscription(Action<Tmessage> action, HotBagEventBus eventAggregator)
         {
             MethodInfo = action.Method;
             if (action.Target == null)

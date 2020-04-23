@@ -7,7 +7,7 @@ namespace Web.Host.Publisher
     {
         public void Publish()
         {
-            bus.Publish<BaseData>(new BaseData { Id = 1, Message = "Message" });
+            eventBus.Publish<BaseData>(new BaseData { Id = 1, Message = "Message" });
         }
     }
 

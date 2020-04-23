@@ -1,15 +1,18 @@
-﻿namespace HotBag.AspNetCore.EventBus
+﻿using System.Threading.Tasks;
+
+namespace HotBag.AspNetCore.EventBus
 {
     public interface IPublisherBase
     {
+      
     }
 
-    public class PublisherBase
+    public abstract class PublisherBase : IPublisherBase
     {
-        public EventBus bus;
+        public HotBagEventBus eventBus;
         public PublisherBase()
         {
-            bus = EventBus.Instance;
+            eventBus = HotBagEventBus.Instance;
         } 
     }
 }

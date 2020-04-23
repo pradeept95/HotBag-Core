@@ -1,6 +1,10 @@
-﻿using HotBag.AspNetCore.Modules;
+﻿using HotBag.AspNetCore.AppSettings;
+using HotBag.AspNetCore.DI;
+using HotBag.AspNetCore.EventBus;
+using HotBag.AspNetCore.Modules;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
+using System.Threading.Tasks;
 using Web.Host.Subscriber;
 
 namespace Web.Host
@@ -11,8 +15,15 @@ namespace Web.Host
 
         public override void PostInitialize(IServiceCollection serviceCollection, IConfiguration configuration)
         {
-            var subscriber = new SubscriberEvent();
-            subscriber.InitializeSubscription(); 
+            var sub = IocManager.Configurations.Manager.GetService<ISubscriberBase>(); 
+            sub.InitializeSubscription();
+
+            //var subscriber = new SubscriberEvent();
+            //Task.FromResult(subscriber.InitializeSubscriptionAsync());
+
+
+            //SentDetailExceptionMessage to false to prevent send back with stacktrace
+            HotBagConfiguration.Configurations.ApplicationSettings.SentDetailExceptionMessage = false;
         }
     }
 

@@ -1,6 +1,7 @@
 ﻿using HotBag.AspNetCore.DI;
 using HotBag.AspNetCore.EventBus;
 using System;
+using System.Threading.Tasks;
 
 namespace Web.Host.Subscriber
 {
@@ -8,9 +9,14 @@ namespace Web.Host.Subscriber
     {
         Subscription<BaseData> fileLoggerToken;
 
-        public void InitializeSubscription()
+        public override void InitializeSubscription()
         {
             fileLoggerToken = eventBus.Subscribe<BaseData>(this.LogInFile);
+        }
+
+        public override async Task InitializeSubscriptionAsync()
+        {
+            fileLoggerToken = await Task.FromResult(eventBus.Subscribe<BaseData>(this.LogInFile));
         }
 
         private void LogInFile(BaseData fileLoggerMessage)
