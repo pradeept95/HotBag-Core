@@ -35,8 +35,9 @@ namespace HotBag.AspNetCore
 
         public override void PreInitialize(IServiceCollection serviceCollection, IConfiguration configuration)
         {
-            Task.FromResult(EventBusConfiguration.InitializeAllSubscriber()); 
-            AuthConfiguration.Configure(serviceCollection, configuration); 
+            Task.FromResult(EventBusConfiguration.InitializeAllSubscriber());
+            AuthConfiguration.Configure(serviceCollection, configuration);
+
         }
     }
 }
