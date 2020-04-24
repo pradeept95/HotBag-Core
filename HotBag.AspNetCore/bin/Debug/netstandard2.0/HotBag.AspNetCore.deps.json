@@ -13,6 +13,7 @@
           "HotBag.AspNetCore.Authorization": "1.0.0",
           "HotBag.AspNetCore.DI": "1.0.0",
           "HotBag.AspNetCore.Data": "1.0.0",
+          "HotBag.AspNetCore.EventBus": "1.0.0",
           "HotBag.AspNetCore.Extensions": "1.0.0",
           "HotBag.AspNetCore.IO": "1.0.0",
           "HotBag.AspNetCore.Log": "1.0.0",
@@ -1868,6 +1869,14 @@
           "HotBag.AspNetCore.DI.dll": {}
         }
       },
+      "HotBag.AspNetCore.EventBus/1.0.0": {
+        "dependencies": {
+          "Microsoft.Extensions.DependencyModel": "2.1.0"
+        },
+        "runtime": {
+          "HotBag.AspNetCore.EventBus.dll": {}
+        }
+      },
       "HotBag.AspNetCore.Extensions/1.0.0": {
         "runtime": {
           "HotBag.AspNetCore.Extensions.dll": {}
@@ -2991,6 +3000,11 @@
       "sha512": ""
     },
     "HotBag.AspNetCore.DI/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "HotBag.AspNetCore.EventBus/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""

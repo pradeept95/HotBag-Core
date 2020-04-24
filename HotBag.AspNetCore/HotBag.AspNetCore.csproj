@@ -16,6 +16,7 @@
     <ProjectReference Include="..\HotBag.AspNetCore.Authorization\HotBag.AspNetCore.Authorization.csproj" />
     <ProjectReference Include="..\HotBag.AspNetCore.Data\HotBag.AspNetCore.Data.csproj" />
     <ProjectReference Include="..\HotBag.AspNetCore.DI\HotBag.AspNetCore.DI.csproj" />
+    <ProjectReference Include="..\HotBag.AspNetCore.EventBus\HotBag.AspNetCore.EventBus.csproj" />
     <ProjectReference Include="..\HotBag.AspNetCore.Extensions\HotBag.AspNetCore.Extensions.csproj" />
     <ProjectReference Include="..\HotBag.AspNetCore.IO\HotBag.AspNetCore.IO.csproj" />
     <ProjectReference Include="..\HotBag.AspNetCore.Log\HotBag.AspNetCore.Log.csproj" />

@@ -14,8 +14,7 @@ namespace HotBag.AspNetCore.EventBus
 
         public SubscriberBase()
         {
-            eventBus = HotBagEventBus.Instance;
-
+            eventBus = HotBagEventBus.Instance; 
         }
 
         public virtual void InitializeSubscription()

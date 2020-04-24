@@ -8,10 +8,10 @@ using HotBag.AspNetCore.Web.BaseController;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
 using Web.Host.Publisher;
+using Web.Host.Subscriber;
 
 namespace WebApp.Controllers
-{
- 
+{ 
     public class WeatherForecastController : BaseApiController
     {
         private static readonly string[] Summaries = new[]
@@ -21,11 +21,15 @@ namespace WebApp.Controllers
 
         private readonly ILogger<WeatherForecastController> _logger;
         private readonly IPublishEvent publisher;
+        private readonly ISubscriberEvent subscriberBase;
 
-        public WeatherForecastController(ILogger<WeatherForecastController> logger, IPublishEvent publisher)
+        public WeatherForecastController(ILogger<WeatherForecastController> logger
+            , IPublishEvent publisher,
+            ISubscriberEvent subscriberBase)
         {
             _logger = logger;
             this.publisher = publisher;
+            this.subscriberBase = subscriberBase;
         }
 
         [HttpGet]
@@ -42,6 +46,7 @@ namespace WebApp.Controllers
             .ToList();
 
             publisher.Publish();
+             
 
             return new ListResultDto<WeatherForecast>(result, "all forecast data");
         }

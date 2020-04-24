@@ -33,9 +33,11 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "HotBag.AspNetCore.Swagger",
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WebApp", "WebApp\WebApp.csproj", "{CD6F74CC-6B75-4D85-B8E7-241104BBF826}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HotBag.AspNetCore.EventBus", "HotBag.AspNetCore.EventBus\HotBag.AspNetCore.EventBus.csproj", "{025E0689-FFD0-4239-830E-04EFCA1EF8A5}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "HotBag.AspNetCore.EventBus", "HotBag.AspNetCore.EventBus\HotBag.AspNetCore.EventBus.csproj", "{025E0689-FFD0-4239-830E-04EFCA1EF8A5}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HotBag.Web.Host", "Web.Host\HotBag.Web.Host.csproj", "{905FE057-CBDF-4641-83D4-775E39E7977B}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "HotBag.Web.Host", "Web.Host\HotBag.Web.Host.csproj", "{905FE057-CBDF-4641-83D4-775E39E7977B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HotBag.AspNetCore.Automapper", "HotBag.AspNetCore.Automapper\HotBag.AspNetCore.Automapper.csproj", "{3298B290-B6FA-4F80-B76C-D24DF84F217D}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -103,6 +105,10 @@ Global
 		{905FE057-CBDF-4641-83D4-775E39E7977B}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{905FE057-CBDF-4641-83D4-775E39E7977B}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{905FE057-CBDF-4641-83D4-775E39E7977B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3298B290-B6FA-4F80-B76C-D24DF84F217D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3298B290-B6FA-4F80-B76C-D24DF84F217D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3298B290-B6FA-4F80-B76C-D24DF84F217D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3298B290-B6FA-4F80-B76C-D24DF84F217D}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -122,6 +128,7 @@ Global
 		{CD6F74CC-6B75-4D85-B8E7-241104BBF826} = {D25101EB-5D79-4159-9F16-8962D37AAF11}
 		{025E0689-FFD0-4239-830E-04EFCA1EF8A5} = {8B00618C-73C9-4E85-A6DE-68022B51BB60}
 		{905FE057-CBDF-4641-83D4-775E39E7977B} = {D25101EB-5D79-4159-9F16-8962D37AAF11}
+		{3298B290-B6FA-4F80-B76C-D24DF84F217D} = {8B00618C-73C9-4E85-A6DE-68022B51BB60}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {75183472-5F20-4C1D-97E0-A08760E8F88C}

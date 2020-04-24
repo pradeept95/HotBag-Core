@@ -14,8 +14,8 @@ namespace HotBag.AspNetCore.DI
             var platform = Environment.OSVersion.Platform.ToString();
             var runtimeAssemblyNames = DependencyContext.Default.GetRuntimeAssemblyNames(platform);
             var allAssembly = runtimeAssemblyNames
-                .Select(Assembly.Load)
-                .Where(x => x.FullName.Contains("HotBag"));
+                .Select(Assembly.Load);
+                //.Where(x => x.FullName.Contains("HotBag"));
 
             serviceCollection.Scan(scan => scan
              .FromAssemblies(allAssembly)

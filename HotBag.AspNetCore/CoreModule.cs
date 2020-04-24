@@ -1,7 +1,12 @@
-﻿using HotBag.AspNetCore.Authorization;
+﻿using HotBag.AspNetCore.AppSettings;
+using HotBag.AspNetCore.AppSettings.Custom;
+using HotBag.AspNetCore.Authorization;
+using HotBag.AspNetCore.DI;
+using HotBag.AspNetCore.EventBus.Configuration;
 using HotBag.AspNetCore.Modules;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
+using System.Threading.Tasks;
 
 namespace HotBag.AspNetCore
 {
@@ -9,54 +14,29 @@ namespace HotBag.AspNetCore
     {
         public override string ModuleName
         {
-            get { return "CoreModule"; }
-
+            get { return "CoreModule"; } 
         }
 
         public override void Initialize(IServiceCollection serviceCollection, IConfiguration configuration)
-        {
-            //Auto Mapper Configurations
-            //var mappingConfig = new MapperConfiguration(mc =>
-            //{
-            //    mc.ValidateInlineMaps = false;
-            //    mc.AddProfile(new MappingProfile());
-            //});
-
-            //IMapper mapper = mappingConfig.CreateMapper();
-            //serviceCollection.AddSingleton(mapper);
-
-            //Mappings.RegisterMappings();
-            //serviceCollection.AddSingleton(typeof(HotBag.AutoMaper.IObjectMapper), typeof(HotBagAutoMapper));
+        {  
         }
 
         public override void PostInitialize(IServiceCollection serviceCollection, IConfiguration configuration)
         {
-            //var applicatonName = HotBagConfiguration.Configurations.ApplicationSettings.ApplicationName;
+            var applicatonName = HotBagConfiguration.Configurations.ApplicationSettings.ApplicationName;
 
             //var nn = HotBagConfiguration.Configurations.ApplicationSettings.ApplicationName;
 
             //test of getting custom setting
-            // var customConfig = IocManager.Configurations.Manager.GetService<IDictionaryBasedConfig>();
-            //var settingValue = customConfig.Get<string>("myCustomSetting");
+             var customConfig = IocManager.Configurations.Manager.GetService<IDictionaryBasedConfig>();
+             customConfig.Set("TestKey", "MyValue"); 
+             var settingValue = customConfig.Get<string>("TestKey");
         }
 
         public override void PreInitialize(IServiceCollection serviceCollection, IConfiguration configuration)
         {
-            //serviceCollection.AddScoped<HotBagDbContext>();
-
-            //var all =
-            //   Assembly
-            //      .GetEntryAssembly()
-            //      .GetReferencedAssemblies()
-            //      .Select(Assembly.Load);
-
-            //serviceCollection.AddAutoMapper(all);
-             
-            AuthConfiguration.Configure(serviceCollection, configuration);
-
-            //var customConfig = IocManager.Configurations.Manager.GetService<IDictionaryBasedConfig>();
-
-            //customConfig.Set<string>("myCustomSetting", "my custom setting value");
+            Task.FromResult(EventBusConfiguration.InitializeAllSubscriber()); 
+            AuthConfiguration.Configure(serviceCollection, configuration); 
         }
     }
 }

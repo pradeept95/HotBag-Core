@@ -2325,6 +2325,19 @@
           "bin/placeholder/HotBag.AspNetCore.DI.dll": {}
         }
       },
+      "HotBag.AspNetCore.EventBus/1.0.0": {
+        "type": "project",
+        "framework": ".NETStandard,Version=v2.0",
+        "dependencies": {
+          "Microsoft.Extensions.DependencyModel": "2.1.0"
+        },
+        "compile": {
+          "bin/placeholder/HotBag.AspNetCore.EventBus.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/HotBag.AspNetCore.EventBus.dll": {}
+        }
+      },
       "HotBag.AspNetCore.Extensions/1.0.0": {
         "type": "project",
         "framework": ".NETStandard,Version=v2.0",
@@ -7601,6 +7614,11 @@
       "path": "../HotBag.AspNetCore.DI/HotBag.AspNetCore.DI.csproj",
       "msbuildProject": "../HotBag.AspNetCore.DI/HotBag.AspNetCore.DI.csproj"
     },
+    "HotBag.AspNetCore.EventBus/1.0.0": {
+      "type": "project",
+      "path": "../HotBag.AspNetCore.EventBus/HotBag.AspNetCore.EventBus.csproj",
+      "msbuildProject": "../HotBag.AspNetCore.EventBus/HotBag.AspNetCore.EventBus.csproj"
+    },
     "HotBag.AspNetCore.Extensions/1.0.0": {
       "type": "project",
       "path": "../HotBag.AspNetCore.Extensions/HotBag.AspNetCore.Extensions.csproj",
@@ -7643,6 +7661,7 @@
       "HotBag.AspNetCore.Authorization >= 1.0.0",
       "HotBag.AspNetCore.DI >= 1.0.0",
       "HotBag.AspNetCore.Data >= 1.0.0",
+      "HotBag.AspNetCore.EventBus >= 1.0.0",
       "HotBag.AspNetCore.Extensions >= 1.0.0",
       "HotBag.AspNetCore.IO >= 1.0.0",
       "HotBag.AspNetCore.Log >= 1.0.0",
@@ -7698,6 +7717,9 @@
             },
             "C:\\Users\\prade\\source\\repos\\HotBagCore\\HotBag.AspNetCore.DI\\HotBag.AspNetCore.DI.csproj": {
               "projectPath": "C:\\Users\\prade\\source\\repos\\HotBagCore\\HotBag.AspNetCore.DI\\HotBag.AspNetCore.DI.csproj"
+            },
+            "C:\\Users\\prade\\source\\repos\\HotBagCore\\HotBag.AspNetCore.EventBus\\HotBag.AspNetCore.EventBus.csproj": {
+              "projectPath": "C:\\Users\\prade\\source\\repos\\HotBagCore\\HotBag.AspNetCore.EventBus\\HotBag.AspNetCore.EventBus.csproj"
             },
             "C:\\Users\\prade\\source\\repos\\HotBagCore\\HotBag.AspNetCore.Extensions\\HotBag.AspNetCore.Extensions.csproj": {
               "projectPath": "C:\\Users\\prade\\source\\repos\\HotBagCore\\HotBag.AspNetCore.Extensions\\HotBag.AspNetCore.Extensions.csproj"

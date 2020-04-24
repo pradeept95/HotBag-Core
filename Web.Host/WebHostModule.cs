@@ -15,8 +15,8 @@ namespace Web.Host
 
         public override void PostInitialize(IServiceCollection serviceCollection, IConfiguration configuration)
         {
-            var sub = IocManager.Configurations.Manager.GetService<ISubscriberBase>(); 
-            sub.InitializeSubscription();
+            //var sub = IocManager.Configurations.Manager.GetService<ISubscriberBase>(); 
+            //sub.InitializeSubscriptionAsync();
 
             //var subscriber = new SubscriberEvent();
             //Task.FromResult(subscriber.InitializeSubscriptionAsync());
