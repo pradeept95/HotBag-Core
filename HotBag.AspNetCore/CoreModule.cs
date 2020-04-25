@@ -28,7 +28,7 @@ namespace HotBag.AspNetCore
             //var nn = HotBagConfiguration.Configurations.ApplicationSettings.ApplicationName;
 
             //test of getting custom setting
-             var customConfig = IocManager.Configurations.Manager.GetService<IDictionaryBasedConfig>();
+             var customConfig = IocManager.Configurations.ServiceProvider.GetService<IDictionaryBasedConfig>();
              customConfig.Set("TestKey", "MyValue"); 
              var settingValue = customConfig.Get<string>("TestKey");
         }

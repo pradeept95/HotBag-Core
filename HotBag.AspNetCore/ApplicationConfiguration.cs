@@ -29,11 +29,13 @@ namespace HotBag.AspNetCore
             services.RegisterHotBagCORS(configuration, "Default");
 
             //register swagger
-            //services.AddHotBagSwagger(
-            //    new Swashbuckle.AspNetCore.Swagger.Info { 
-            //        Title = "HB",
-            //        Description = "Desc"
-            //});
+            services.AddHotBagSwagger(
+                new Microsoft.OpenApi.Models.OpenApiInfo
+                {
+                    Title = "HotBag Enterprise Application",
+                    Description = ""
+                });
+
             return services;
         }
 
@@ -46,7 +48,7 @@ namespace HotBag.AspNetCore
             });
 
             //use hotbag swagger for swagger api documentation
-            //app.UseHotBagSwagger();
+            app.UseHotBagSwagger();
 
             //use authentication
             app.UseAuthentication();

@@ -140,6 +140,78 @@
         }
       }
     },
+    "C:\\Users\\prade\\source\\repos\\HotBagCore\\HotBag.AspNetCore.Automapper\\HotBag.AspNetCore.Automapper.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\prade\\source\\repos\\HotBagCore\\HotBag.AspNetCore.Automapper\\HotBag.AspNetCore.Automapper.csproj",
+        "projectName": "HotBag.AspNetCore.Automapper",
+        "projectPath": "C:\\Users\\prade\\source\\repos\\HotBagCore\\HotBag.AspNetCore.Automapper\\HotBag.AspNetCore.Automapper.csproj",
+        "packagesPath": "C:\\Users\\prade\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\prade\\source\\repos\\HotBagCore\\HotBag.AspNetCore.Automapper\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\prade\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netstandard2.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netstandard2.0": {
+            "projectReferences": {
+              "C:\\Users\\prade\\source\\repos\\HotBagCore\\HotBag.AspNetCore.Data\\HotBag.AspNetCore.Data.csproj": {
+                "projectPath": "C:\\Users\\prade\\source\\repos\\HotBagCore\\HotBag.AspNetCore.Data\\HotBag.AspNetCore.Data.csproj"
+              },
+              "C:\\Users\\prade\\source\\repos\\HotBagCore\\HotBag.AspNetCore.DI\\HotBag.AspNetCore.DI.csproj": {
+                "projectPath": "C:\\Users\\prade\\source\\repos\\HotBagCore\\HotBag.AspNetCore.DI\\HotBag.AspNetCore.DI.csproj"
+              },
+              "C:\\Users\\prade\\source\\repos\\HotBagCore\\HotBag.AspNetCore.Extensions\\HotBag.AspNetCore.Extensions.csproj": {
+                "projectPath": "C:\\Users\\prade\\source\\repos\\HotBagCore\\HotBag.AspNetCore.Extensions\\HotBag.AspNetCore.Extensions.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netstandard2.0": {
+          "dependencies": {
+            "AutoMapper": {
+              "target": "Package",
+              "version": "[9.0.0, )"
+            },
+            "NETStandard.Library": {
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[2.0.3, )",
+              "autoReferenced": true
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.201\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
     "C:\\Users\\prade\\source\\repos\\HotBagCore\\HotBag.AspNetCore.Data\\HotBag.AspNetCore.Data.csproj": {
       "version": "1.0.0",
       "restore": {
@@ -717,7 +789,7 @@
             },
             "Swashbuckle.AspNetCore": {
               "target": "Package",
-              "version": "[4.0.1, )"
+              "version": "[5.3.3, )"
             }
           },
           "imports": [
@@ -759,7 +831,20 @@
         },
         "frameworks": {
           "netstandard2.0": {
-            "projectReferences": {}
+            "projectReferences": {
+              "C:\\Users\\prade\\source\\repos\\HotBagCore\\HotBag.AspNetCore.Automapper\\HotBag.AspNetCore.Automapper.csproj": {
+                "projectPath": "C:\\Users\\prade\\source\\repos\\HotBagCore\\HotBag.AspNetCore.Automapper\\HotBag.AspNetCore.Automapper.csproj"
+              },
+              "C:\\Users\\prade\\source\\repos\\HotBagCore\\HotBag.AspNetCore.Data\\HotBag.AspNetCore.Data.csproj": {
+                "projectPath": "C:\\Users\\prade\\source\\repos\\HotBagCore\\HotBag.AspNetCore.Data\\HotBag.AspNetCore.Data.csproj"
+              },
+              "C:\\Users\\prade\\source\\repos\\HotBagCore\\HotBag.AspNetCore.DI\\HotBag.AspNetCore.DI.csproj": {
+                "projectPath": "C:\\Users\\prade\\source\\repos\\HotBagCore\\HotBag.AspNetCore.DI\\HotBag.AspNetCore.DI.csproj"
+              },
+              "C:\\Users\\prade\\source\\repos\\HotBagCore\\HotBag.AspNetCore.ResultWrapper\\HotBag.AspNetCore.ResultWrapper.csproj": {
+                "projectPath": "C:\\Users\\prade\\source\\repos\\HotBagCore\\HotBag.AspNetCore.ResultWrapper\\HotBag.AspNetCore.ResultWrapper.csproj"
+              }
+            }
           }
         },
         "warningProperties": {

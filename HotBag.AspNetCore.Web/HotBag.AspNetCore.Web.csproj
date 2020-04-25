@@ -8,4 +8,11 @@
     <PackageReference Include="Microsoft.AspNetCore.Mvc.Core" Version="2.2.5" />
   </ItemGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\HotBag.AspNetCore.Automapper\HotBag.AspNetCore.Automapper.csproj" />
+    <ProjectReference Include="..\HotBag.AspNetCore.Data\HotBag.AspNetCore.Data.csproj" />
+    <ProjectReference Include="..\HotBag.AspNetCore.DI\HotBag.AspNetCore.DI.csproj" />
+    <ProjectReference Include="..\HotBag.AspNetCore.ResultWrapper\HotBag.AspNetCore.ResultWrapper.csproj" />
+  </ItemGroup>
+
 </Project>

@@ -11,7 +11,7 @@ using System.Reflection;
 
 namespace HotBag.AspNetCore.Modules
 {
-    public class ModuleBootstrapper : IModuleBootstrapper
+    internal class ModuleBootstrapper : IModuleBootstrapper
     {
         private readonly IServiceCollection _serviceCollection;
         private readonly IConfiguration _configuration;

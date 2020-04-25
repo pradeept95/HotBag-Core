@@ -1,7 +1,6 @@
-﻿using HotBag.AspNetCore.Swagger.SwaggerDocumentFilter;
-using Microsoft.AspNetCore.Builder;
+﻿using Microsoft.AspNetCore.Builder;
 using Microsoft.Extensions.DependencyInjection;
-using Swashbuckle.AspNetCore.Swagger;
+using Microsoft.OpenApi.Models;
 using System.Collections.Generic;
 
 namespace HotBag.AspNetCore.Swagger
@@ -22,21 +21,21 @@ namespace HotBag.AspNetCore.Swagger
             return app;
         }
 
-        public static IServiceCollection AddHotBagSwagger(this IServiceCollection service, Info option)
+        public static IServiceCollection AddHotBagSwagger(this IServiceCollection service, OpenApiInfo option)
         {
 
             // Register the Swagger generator, defining 1 or more Swagger documents
-            option.Contact = new Contact
+            option.Contact = new OpenApiContact
             {
                 Name = "Pradeep Raj Thapaliya",
                 Email = "pradeep.thapaliya95@gmail.com",
-                Url = "https://www.pradeeprajthapaliya.com.np"
+                //Url = System.Uri("https://www.pradeeprajthapaliya.com.np")
             };
 
-            option.License = new License
+            option.License = new OpenApiLicense
             {
                 Name = "Git Source Url",
-                Url = "https://github.com/pradeept95/HotBag-Core"
+                //Url = @"https://github.com/pradeept95/HotBag-Core"
             };
 
 
@@ -51,16 +50,18 @@ namespace HotBag.AspNetCore.Swagger
                     {"Bearer", new string[] { }},
                 };
 
-                c.AddSecurityDefinition("Bearer", new ApiKeyScheme
+                c.AddSecurityDefinition("Bearer", new OpenApiSecurityScheme
                 {
                     Description = "JWT Authorization header using the Bearer scheme. Example: \"Authorization: Bearer {token}\"",
                     Name = "Authorization",
-                    In = "header",
-                    Type = "apiKey"
+                    In = ParameterLocation.Header,
+                    Type = SecuritySchemeType.ApiKey
                 });
-                c.AddSecurityRequirement(security);
-                c.DocumentFilter<CustomDocumentFilter>();
-                c.OperationFilter<GenericOperationFilter>();
+                c.AddSecurityRequirement(new OpenApiSecurityRequirement
+                { 
+                }); 
+
+                //c.OperationFilter<GenericOperationFilter>();
             });
 
             return service;

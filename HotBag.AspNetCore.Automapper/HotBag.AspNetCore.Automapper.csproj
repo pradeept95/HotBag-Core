@@ -8,4 +8,10 @@
     <PackageReference Include="AutoMapper" Version="9.0.0" />
   </ItemGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\HotBag.AspNetCore.Data\HotBag.AspNetCore.Data.csproj" />
+    <ProjectReference Include="..\HotBag.AspNetCore.DI\HotBag.AspNetCore.DI.csproj" />
+    <ProjectReference Include="..\HotBag.AspNetCore.Extensions\HotBag.AspNetCore.Extensions.csproj" />
+  </ItemGroup>
+
 </Project>

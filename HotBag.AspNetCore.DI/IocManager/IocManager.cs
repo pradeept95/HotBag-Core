@@ -36,7 +36,7 @@ namespace HotBag.AspNetCore.DI
             }
         }
 
-        public IServiceProvider Manager
+        public IServiceProvider ServiceProvider
         {
             get
             {
