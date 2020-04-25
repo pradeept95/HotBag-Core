@@ -1,7 +1,7 @@
 ﻿using AutoMapper;
 using System.Reflection;
 
-namespace HotBag.AspNetCore.Automapper.Attributes
+namespace HotBag.AspNetCore.AutoMapper.Attributes
 {
     public static class AutomappperIgnoreAllNonExisting
     {

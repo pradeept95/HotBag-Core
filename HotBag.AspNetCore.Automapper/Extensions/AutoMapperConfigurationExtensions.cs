@@ -1,13 +1,13 @@
 ﻿using AutoMapper;
-using HotBag.AspNetCore.Automapper.Attributes;
+using HotBag.AspNetCore.AutoMapper.Attributes;
 using HotBag.AspNetCore.Extensions;
 using System;
 using System.Linq;
 using System.Linq.Expressions;
 using System.Reflection;
-using static HotBag.AspNetCore.Automapper.Attributes.AutoMapAttribute;
+using static HotBag.AspNetCore.AutoMapper.Attributes.AutoMapAttribute;
 
-namespace HotBag.AspNetCore.Automapper.Extensions
+namespace HotBag.AspNetCore.AutoMapper.Extensions
 {
     internal static class AutoMapperConfigurationExtensions
     {

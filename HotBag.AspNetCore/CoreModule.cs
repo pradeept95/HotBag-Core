@@ -1,11 +1,17 @@
-﻿using HotBag.AspNetCore.AppSettings;
+﻿using AutoMapper; 
+using HotBag.AspNetCore.AppSettings;
 using HotBag.AspNetCore.AppSettings.Custom;
 using HotBag.AspNetCore.Authorization;
+using HotBag.AspNetCore.AutoMapper;
+using HotBag.AspNetCore.AutoMapper.Attributes;
+using HotBag.AspNetCore.AutoMapper.Configuration;
 using HotBag.AspNetCore.DI;
 using HotBag.AspNetCore.EventBus.Configuration;
 using HotBag.AspNetCore.Modules;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
+using System.Linq;
+using System.Reflection;
 using System.Threading.Tasks;
 
 namespace HotBag.AspNetCore
@@ -18,7 +24,8 @@ namespace HotBag.AspNetCore
         }
 
         public override void Initialize(IServiceCollection serviceCollection, IConfiguration configuration)
-        {  
+        {
+            //serviceCollection.AddAutoMapper(); 
         }
 
         public override void PostInitialize(IServiceCollection serviceCollection, IConfiguration configuration)
@@ -34,7 +41,7 @@ namespace HotBag.AspNetCore
         }
 
         public override void PreInitialize(IServiceCollection serviceCollection, IConfiguration configuration)
-        {
+        { 
             Task.FromResult(EventBusConfiguration.InitializeAllSubscriber());
             AuthConfiguration.Configure(serviceCollection, configuration);
 

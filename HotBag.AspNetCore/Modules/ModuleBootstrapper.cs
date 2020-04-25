@@ -1,4 +1,5 @@
 ﻿using HotBag.AspNetCore.AppSettings;
+using HotBag.AspNetCore.AutoMapper.Configuration;
 using HotBag.AspNetCore.DI;
 using HotBag.AspNetCore.Installer;
 using Microsoft.Extensions.Configuration;
@@ -50,6 +51,8 @@ namespace HotBag.AspNetCore.Modules
             HotBagConfiguration.Configurations.Initialize(_serviceCollection);
 
             IocManager.Configurations.Initialize(_serviceCollection, _configuration); // allow applicaton usases the state through out  the applicaton
+            _serviceCollection.AddHotBagAutoMapper();
+
 
             var instances = runtimeAssemblyNames
                 .Select(Assembly.Load)

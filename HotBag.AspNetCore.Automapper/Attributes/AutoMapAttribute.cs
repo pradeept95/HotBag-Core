@@ -1,9 +1,9 @@
 ﻿using AutoMapper;
-using HotBag.AspNetCore.Automapper.Extensions;
+using HotBag.AspNetCore.AutoMapper.Extensions;
 using HotBag.AspNetCore.Extensions;
 using System;
 
-namespace HotBag.AspNetCore.Automapper.Attributes
+namespace HotBag.AspNetCore.AutoMapper.Attributes
 {
     public partial class AutoMapAttribute : AutoMapAttributeBase
     {

@@ -1,4 +1,4 @@
-﻿namespace HotBag.AspNetCore.Automapper
+﻿namespace HotBag.AspNetCore.AutoMapper
 {
     public interface IHotBagProfile
     {

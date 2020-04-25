@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace HotBag.AspNetCore.Automapper.Attributes
+namespace HotBag.AspNetCore.AutoMapper.Attributes
 {
     public partial class AutoMapAttribute
     {

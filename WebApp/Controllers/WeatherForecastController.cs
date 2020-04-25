@@ -3,15 +3,17 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using HotBag.AspNetCore.Authorization;
+using HotBag.AspNetCore.AutoMapper;
 using HotBag.AspNetCore.ResultWrapper.ResponseModel;
 using HotBag.AspNetCore.Web.BaseController;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
 using Web.Host.Publisher;
 using Web.Host.Subscriber;
+using WebApp.Models;
 
 namespace WebApp.Controllers
-{ 
+{
     public class WeatherForecastController : BaseApiController
     {
         private static readonly string[] Summaries = new[]
@@ -22,14 +24,18 @@ namespace WebApp.Controllers
         private readonly ILogger<WeatherForecastController> _logger;
         private readonly IPublishEvent publisher;
         private readonly ISubscriberEvent subscriberBase;
+        private readonly IHotBagObjectMapper _objectMapper;
 
-        public WeatherForecastController(ILogger<WeatherForecastController> logger
-            , IPublishEvent publisher,
-            ISubscriberEvent subscriberBase)
+        public WeatherForecastController(
+            ILogger<WeatherForecastController> logger
+            , IPublishEvent publisher
+            , ISubscriberEvent subscriberBase
+            , IHotBagObjectMapper objectMapper)
         {
             _logger = logger;
             this.publisher = publisher;
             this.subscriberBase = subscriberBase;
+            this._objectMapper = objectMapper;
         }
 
         [HttpGet]
@@ -37,7 +43,7 @@ namespace WebApp.Controllers
         public ListResultDto<WeatherForecast> Get()
         {
             var rng = new Random();
-            var result =  Enumerable.Range(1, 5).Select(index => new WeatherForecast
+            var result = Enumerable.Range(1, 5).Select(index => new WeatherForecast
             {
                 Date = DateTime.Now.AddDays(index),
                 TemperatureC = rng.Next(-20, 55),
@@ -46,7 +52,22 @@ namespace WebApp.Controllers
             .ToList();
 
             publisher.Publish();
-             
+
+
+            var testEntity = new Person
+            {
+                Id = Guid.NewGuid(),
+                FirstName = "Pradeep",
+                MiddleName = "Raj",
+                LastName = "Thapaliya",
+                Address = "8904 Jody Ln",
+                DOB = DateTime.Now
+            };
+
+
+            var testEntityDto = _objectMapper.Map<PersonDto>(testEntity);
+            var te = _objectMapper.Map<Person>(testEntityDto);
+
 
             return new ListResultDto<WeatherForecast>(result, "all forecast data");
         }

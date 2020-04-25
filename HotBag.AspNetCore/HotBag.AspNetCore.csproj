@@ -14,6 +14,7 @@
   <ItemGroup>
     <ProjectReference Include="..\HotBag.AspNetCore.AppSettings\HotBag.AspNetCore.AppSettings.csproj" />
     <ProjectReference Include="..\HotBag.AspNetCore.Authorization\HotBag.AspNetCore.Authorization.csproj" />
+    <ProjectReference Include="..\HotBag.AspNetCore.Automapper\HotBag.AspNetCore.AutoMapper.csproj" />
     <ProjectReference Include="..\HotBag.AspNetCore.Data\HotBag.AspNetCore.Data.csproj" />
     <ProjectReference Include="..\HotBag.AspNetCore.DI\HotBag.AspNetCore.DI.csproj" />
     <ProjectReference Include="..\HotBag.AspNetCore.EventBus\HotBag.AspNetCore.EventBus.csproj" />

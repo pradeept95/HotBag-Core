@@ -1,8 +1,9 @@
 ﻿using System;
+using System.Linq;
 
-namespace HotBag.AspNetCore.Automapper
+namespace HotBag.AspNetCore.AutoMapper
 {
-    public sealed class NullObjectMapper// : IObjectMapper 
+    public sealed class NullObjectMapper : IHotBagObjectMapper
     {
         /// <summary>
         /// Singleton instance.
@@ -11,13 +12,18 @@ namespace HotBag.AspNetCore.Automapper
 
         public TDestination Map<TDestination>(object source)
         {
-            throw new NotImplementedException("HotBag.ObjectMapping.IObjectMapper should be implemented in order to map objects.");
+            throw new NotImplementedException("HotBag.AspNetCore.Automapper.IObjectMapper should be implemented in order to map objects.");
         }
 
         public TDestination Map<TSource, TDestination>(TSource source, TDestination destination)
         {
-            throw new NotImplementedException("HotBag.ObjectMapping.IObjectMapper should be implemented in order to map objects.");
+            throw new NotImplementedException("HotBag.AspNetCore.Automapper.IObjectMapper should be implemented in order to map objects.");
 
+        }
+
+        public IQueryable<TDestination> ProjectTo<TSource, TDestination>(IQueryable<TSource> source)
+        {
+            throw new NotImplementedException("HotBag.AspNetCore.Automapper.IObjectMapper should be implemented in order to map objects.");
         }
     }
 }

@@ -37,7 +37,7 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "HotBag.AspNetCore.EventBus"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "HotBag.Web.Host", "Web.Host\HotBag.Web.Host.csproj", "{905FE057-CBDF-4641-83D4-775E39E7977B}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HotBag.AspNetCore.Automapper", "HotBag.AspNetCore.Automapper\HotBag.AspNetCore.Automapper.csproj", "{3298B290-B6FA-4F80-B76C-D24DF84F217D}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "HotBag.AspNetCore.AutoMapper", "HotBag.AspNetCore.Automapper\HotBag.AspNetCore.AutoMapper.csproj", "{3298B290-B6FA-4F80-B76C-D24DF84F217D}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

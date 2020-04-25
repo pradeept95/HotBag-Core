@@ -1,35 +1,32 @@
 ﻿using AutoMapper;
+using Microsoft.Extensions.DependencyModel;
+using System;
 using System.Linq;
 using System.Reflection;
+using System.Runtime.CompilerServices;
 
-namespace HotBag.AspNetCore.Automapper
+namespace HotBag.AspNetCore.AutoMapper
 {
-    public class Mappings
+    public static class Mappings
     {
-        public static void RegisterMappings()
-        {
-            var all =
-            Assembly
-               .GetEntryAssembly()
-               .GetReferencedAssemblies()
+        public static IMapperConfigurationExpression RegisterHotBagProfiler(this IMapperConfigurationExpression cfg)
+        {  
+
+            var platform = Environment.OSVersion.Platform.ToString();
+            var runtimeAssemblyNames = DependencyContext.Default.GetRuntimeAssemblyNames(platform);
+            var profiles = runtimeAssemblyNames
                .Select(Assembly.Load)
-               .SelectMany(x => x.DefinedTypes)
-               .Where(type => typeof(IHotBagProfile).GetTypeInfo().IsAssignableFrom(type.AsType()));
+               .SelectMany(a => a.ExportedTypes)
+               .Where(t => TypeExtensions.GetInterfaces(t).Contains(typeof(IHotBagProfile)) && t.GetConstructor(Type.EmptyTypes) != null)
+               .Select(y => (Profile)Activator.CreateInstance(y));
 
-            foreach (var ti in all.Where(ti => ti.AsType().Equals(typeof(IHotBagProfile))))
+            foreach (var profile in profiles)
             {
-                
-                    //Mapper.Initialize(cfg =>
-                    //{
-                    //    cfg.AddProfiles(t); // Initialise each Profile classe
-                    //});
-
-                    var config = new MapperConfiguration(cfg => {
-                        cfg.AddProfile(ti.AsType());
-                    });
-
-                    var mapper = config.CreateMapper(); 
+                cfg.AddProfile(profile);
             }
+
+         
+            return cfg;
         }
 
     }

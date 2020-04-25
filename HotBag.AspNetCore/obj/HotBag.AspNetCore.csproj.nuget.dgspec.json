@@ -140,12 +140,12 @@
         }
       }
     },
-    "C:\\Users\\prade\\source\\repos\\HotBagCore\\HotBag.AspNetCore.Automapper\\HotBag.AspNetCore.Automapper.csproj": {
+    "C:\\Users\\prade\\source\\repos\\HotBagCore\\HotBag.AspNetCore.Automapper\\HotBag.AspNetCore.AutoMapper.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\prade\\source\\repos\\HotBagCore\\HotBag.AspNetCore.Automapper\\HotBag.AspNetCore.Automapper.csproj",
-        "projectName": "HotBag.AspNetCore.Automapper",
-        "projectPath": "C:\\Users\\prade\\source\\repos\\HotBagCore\\HotBag.AspNetCore.Automapper\\HotBag.AspNetCore.Automapper.csproj",
+        "projectUniqueName": "C:\\Users\\prade\\source\\repos\\HotBagCore\\HotBag.AspNetCore.Automapper\\HotBag.AspNetCore.AutoMapper.csproj",
+        "projectName": "HotBag.AspNetCore.AutoMapper",
+        "projectPath": "C:\\Users\\prade\\source\\repos\\HotBagCore\\HotBag.AspNetCore.Automapper\\HotBag.AspNetCore.AutoMapper.csproj",
         "packagesPath": "C:\\Users\\prade\\.nuget\\packages\\",
         "outputPath": "C:\\Users\\prade\\source\\repos\\HotBagCore\\HotBag.AspNetCore.Automapper\\obj\\",
         "projectStyle": "PackageReference",
@@ -187,9 +187,9 @@
       "frameworks": {
         "netstandard2.0": {
           "dependencies": {
-            "AutoMapper": {
+            "AutoMapper.Extensions.Microsoft.DependencyInjection": {
               "target": "Package",
-              "version": "[9.0.0, )"
+              "version": "[6.0.0, )"
             },
             "NETStandard.Library": {
               "suppressParent": "All",
@@ -832,8 +832,8 @@
         "frameworks": {
           "netstandard2.0": {
             "projectReferences": {
-              "C:\\Users\\prade\\source\\repos\\HotBagCore\\HotBag.AspNetCore.Automapper\\HotBag.AspNetCore.Automapper.csproj": {
-                "projectPath": "C:\\Users\\prade\\source\\repos\\HotBagCore\\HotBag.AspNetCore.Automapper\\HotBag.AspNetCore.Automapper.csproj"
+              "C:\\Users\\prade\\source\\repos\\HotBagCore\\HotBag.AspNetCore.Automapper\\HotBag.AspNetCore.AutoMapper.csproj": {
+                "projectPath": "C:\\Users\\prade\\source\\repos\\HotBagCore\\HotBag.AspNetCore.Automapper\\HotBag.AspNetCore.AutoMapper.csproj"
               },
               "C:\\Users\\prade\\source\\repos\\HotBagCore\\HotBag.AspNetCore.Data\\HotBag.AspNetCore.Data.csproj": {
                 "projectPath": "C:\\Users\\prade\\source\\repos\\HotBagCore\\HotBag.AspNetCore.Data\\HotBag.AspNetCore.Data.csproj"
@@ -912,6 +912,9 @@
               },
               "C:\\Users\\prade\\source\\repos\\HotBagCore\\HotBag.AspNetCore.Authorization\\HotBag.AspNetCore.Authorization.csproj": {
                 "projectPath": "C:\\Users\\prade\\source\\repos\\HotBagCore\\HotBag.AspNetCore.Authorization\\HotBag.AspNetCore.Authorization.csproj"
+              },
+              "C:\\Users\\prade\\source\\repos\\HotBagCore\\HotBag.AspNetCore.Automapper\\HotBag.AspNetCore.AutoMapper.csproj": {
+                "projectPath": "C:\\Users\\prade\\source\\repos\\HotBagCore\\HotBag.AspNetCore.Automapper\\HotBag.AspNetCore.AutoMapper.csproj"
               },
               "C:\\Users\\prade\\source\\repos\\HotBagCore\\HotBag.AspNetCore.Data\\HotBag.AspNetCore.Data.csproj": {
                 "projectPath": "C:\\Users\\prade\\source\\repos\\HotBagCore\\HotBag.AspNetCore.Data\\HotBag.AspNetCore.Data.csproj"

@@ -1,11 +1,11 @@
 ﻿using System.Linq;
 
-namespace HotBag.AspNetCore.Automapper
+namespace HotBag.AspNetCore.AutoMapper
 {
     /// <summary>
     /// Defines a simple interface to map objects.
     /// </summary>
-    public interface IObjectMapper
+    public interface IHotBagObjectMapper
     {
         /// <summary>
         /// Converts an object to another. Creates a new object of <see cref="TDestination"/>.

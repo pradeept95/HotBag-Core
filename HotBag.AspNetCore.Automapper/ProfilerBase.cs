@@ -3,9 +3,10 @@ using System;
 using System.Collections.Generic;
 using System.Text;
 
-namespace HotBag.AspNetCore.Automapper
+namespace HotBag.AspNetCore.AutoMapper
 {
-    public class HotBagProfilerBase : Profile, IHotBagProfile
+    public abstract class HotBagProfilerBase : Profile, IHotBagProfile
     {
+
     }
 }

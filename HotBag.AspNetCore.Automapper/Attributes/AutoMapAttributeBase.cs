@@ -1,7 +1,7 @@
 ﻿using AutoMapper;
 using System;
 
-namespace HotBag.AspNetCore.Automapper.Attributes
+namespace HotBag.AspNetCore.AutoMapper.Attributes
 {
     [AttributeUsage(AttributeTargets.Class)]
     public abstract class AutoMapAttributeBase : Attribute
