@@ -6,8 +6,10 @@ using HotBag.AspNetCore.Authorization;
 using HotBag.AspNetCore.AutoMapper;
 using HotBag.AspNetCore.ResultWrapper.ResponseModel;
 using HotBag.AspNetCore.Web.BaseController;
+using HotBag.Web.Host.MicroservicePublisher;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
+using Newtonsoft.Json;
 using Web.Host.Publisher;
 using Web.Host.Subscriber;
 using WebApp.Models;
@@ -51,9 +53,17 @@ namespace WebApp.Controllers
             })
             .ToList();
 
+
+            //event bus publish test
             publisher.Publish();
 
+            
+            //email microservice test
+            EmailPublisher.PublishMessage(JsonConvert.SerializeObject(result));
 
+
+
+            //automapper test
             var testEntity = new Person
             {
                 Id = Guid.NewGuid(),

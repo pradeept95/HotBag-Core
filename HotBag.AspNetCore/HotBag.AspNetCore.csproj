@@ -21,6 +21,7 @@
     <ProjectReference Include="..\HotBag.AspNetCore.Extensions\HotBag.AspNetCore.Extensions.csproj" />
     <ProjectReference Include="..\HotBag.AspNetCore.IO\HotBag.AspNetCore.IO.csproj" />
     <ProjectReference Include="..\HotBag.AspNetCore.Log\HotBag.AspNetCore.Log.csproj" />
+    <ProjectReference Include="..\HotBag.AspNetCore.RabbitMQ\HotBag.AspNetCore.RabbitMQ.csproj" />
     <ProjectReference Include="..\HotBag.AspNetCore.ResultWrapper\HotBag.AspNetCore.ResultWrapper.csproj" />
     <ProjectReference Include="..\HotBag.AspNetCore.Security\HotBag.AspNetCore.Security.csproj" />
     <ProjectReference Include="..\HotBag.AspNetCore.Swagger\HotBag.AspNetCore.Swagger.csproj" />
