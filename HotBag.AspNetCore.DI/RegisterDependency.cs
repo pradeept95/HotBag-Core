@@ -14,8 +14,9 @@ namespace HotBag.AspNetCore.DI
             var platform = Environment.OSVersion.Platform.ToString();
             var runtimeAssemblyNames = DependencyContext.Default.GetRuntimeAssemblyNames(platform);
             var allAssembly = runtimeAssemblyNames
-                .Select(Assembly.Load);
-                //.Where(x => x.FullName.Contains("HotBag"));
+                .Select(Assembly.Load)
+                //.Where(x => x.FullName.Contains("HotBag"))
+                ;
 
             serviceCollection.Scan(scan => scan
              .FromAssemblies(allAssembly)
@@ -30,6 +31,11 @@ namespace HotBag.AspNetCore.DI
               .AddClasses(classes => classes.AssignableTo<ISingletonDependencies>())
                          .AsImplementedInterfaces()
                          .WithSingletonLifetime());
+        }
+
+        private static void Where(Func<object, bool> p)
+        {
+            throw new NotImplementedException();
         }
     }
 

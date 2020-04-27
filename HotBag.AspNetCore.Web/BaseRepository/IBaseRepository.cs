@@ -1,4 +1,6 @@
-﻿using HotBag.AspNetCore.Data.EntityBase;
+﻿using HotBag.AspNetCore.Data.BaseRepository;
+using HotBag.AspNetCore.Data.EntityBase;
+using HotBag.AspNetCore.DI;
 using System;
 using System.Collections.Generic;
 using System.Linq;

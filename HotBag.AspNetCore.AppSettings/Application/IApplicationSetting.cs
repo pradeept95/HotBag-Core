@@ -4,7 +4,9 @@
     {
         string ApplicationName { get; }
         bool SentDetailExceptionMessage { get; set; }
-        string ApplicationVersion { get; }
+        string ApplicationVersion { get; } 
+
+        ApplicationFeatures Features { get; set; } 
         void SetApplicationSetting(string name);
     }
 }

@@ -14,16 +14,11 @@ namespace Web.Host
         public override string ModuleName => "WebHostModule";
 
         public override void PostInitialize(IServiceCollection serviceCollection, IConfiguration configuration)
-        {
-            //var sub = IocManager.Configurations.Manager.GetService<ISubscriberBase>(); 
-            //sub.InitializeSubscriptionAsync();
-
-            //var subscriber = new SubscriberEvent();
-            //Task.FromResult(subscriber.InitializeSubscriptionAsync());
-
-
+        { 
             //SentDetailExceptionMessage to false to prevent send back with stacktrace
             HotBagConfiguration.Configurations.ApplicationSettings.SentDetailExceptionMessage = false;
+            HotBagConfiguration.Configurations.ApplicationSettings.Features.IsEnableSwaggerApiDoc = true;
+            HotBagConfiguration.Configurations.ApplicationSettings.Features.IsEnableResultWrapper = true;
         }
     }
 

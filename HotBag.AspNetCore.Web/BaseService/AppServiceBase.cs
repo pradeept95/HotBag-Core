@@ -5,7 +5,7 @@ using System.Threading.Tasks;
 
 namespace HotBag.AspNetCore.Web.Service.Generic
 {
-    public abstract class AppServiceBase<TEntityDto, TEntity, TPrimaryKey> : IAppServiceBase<TEntityDto, TPrimaryKey>, ITransientDependencies
+    public abstract class AppServiceBase<TEntityDto, TEntity, TPrimaryKey> : IAppServiceBase<TEntityDto, TPrimaryKey>
        where TEntity : IEntityBase<TPrimaryKey>
        where TEntityDto : IEntityBaseDto<TPrimaryKey>
     {
