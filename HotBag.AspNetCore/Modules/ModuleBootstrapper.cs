@@ -2,6 +2,7 @@
 using HotBag.AspNetCore.AutoMapper.Configuration;
 using HotBag.AspNetCore.DI;
 using HotBag.AspNetCore.Installer;
+using HotBag.AspNetCore.Reflection;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.DependencyModel;
@@ -37,10 +38,7 @@ namespace HotBag.AspNetCore.Modules
         private void FindThenBuild()
         {
             var moduleInstances = new List<IApplicationModule>();
-
-            var platform = Environment.OSVersion.Platform.ToString();
-            var runtimeAssemblyNames = DependencyContext.Default.GetRuntimeAssemblyNames(platform);
-              
+             
             //register all dependency having singleton, scoped and transit
             RegisterDependency.RegisterAll(_serviceCollection);
 
@@ -53,8 +51,9 @@ namespace HotBag.AspNetCore.Modules
             IocManager.Configurations.Initialize(_serviceCollection, _configuration); // allow applicaton usases the state through out  the applicaton
             
 
-            var instances = runtimeAssemblyNames
-                .Select(Assembly.Load)
+            var instances =
+                 AssemblyHelper.Instance
+                .GetAllAssemblyInApplication()
                 .SelectMany(a => a.ExportedTypes)
                 .Where(t => TypeExtensions.GetInterfaces(t).Contains(typeof(IApplicationModule)) && t.GetConstructor(Type.EmptyTypes) != null)
                 .Select(y => (IApplicationModule)Activator.CreateInstance(y));

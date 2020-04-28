@@ -837,6 +837,19 @@
         "runtime": {
           "lib/netstandard1.3/System.Xml.XDocument.dll": {}
         }
+      },
+      "HotBag.AspNetCore.Reflection/1.0.0": {
+        "type": "project",
+        "framework": ".NETStandard,Version=v2.0",
+        "dependencies": {
+          "Microsoft.Extensions.DependencyModel": "2.1.0"
+        },
+        "compile": {
+          "bin/placeholder/HotBag.AspNetCore.Reflection.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/HotBag.AspNetCore.Reflection.dll": {}
+        }
       }
     }
   },
@@ -3510,10 +3523,16 @@
         "system.xml.xdocument.4.0.11.nupkg.sha512",
         "system.xml.xdocument.nuspec"
       ]
+    },
+    "HotBag.AspNetCore.Reflection/1.0.0": {
+      "type": "project",
+      "path": "../HotBag.AspNetCore.Reflection/HotBag.AspNetCore.Reflection.csproj",
+      "msbuildProject": "../HotBag.AspNetCore.Reflection/HotBag.AspNetCore.Reflection.csproj"
     }
   },
   "projectFileDependencyGroups": {
     ".NETStandard,Version=v2.0": [
+      "HotBag.AspNetCore.Reflection >= 1.0.0",
       "Microsoft.AspNetCore.Hosting.Abstractions >= 2.2.0",
       "Microsoft.AspNetCore.Http.Abstractions >= 2.2.0",
       "Microsoft.Extensions.DependencyInjection >= 2.2.0",
@@ -3553,7 +3572,11 @@
       },
       "frameworks": {
         "netstandard2.0": {
-          "projectReferences": {}
+          "projectReferences": {
+            "C:\\Users\\prade\\source\\repos\\HotBagCore\\HotBag.AspNetCore.Reflection\\HotBag.AspNetCore.Reflection.csproj": {
+              "projectPath": "C:\\Users\\prade\\source\\repos\\HotBagCore\\HotBag.AspNetCore.Reflection\\HotBag.AspNetCore.Reflection.csproj"
+            }
+          }
         }
       },
       "warningProperties": {

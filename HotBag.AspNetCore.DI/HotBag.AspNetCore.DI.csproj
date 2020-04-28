@@ -14,4 +14,8 @@
     <PackageReference Include="System.Reflection.TypeExtensions" Version="4.7.0" />
   </ItemGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\HotBag.AspNetCore.Reflection\HotBag.AspNetCore.Reflection.csproj" />
+  </ItemGroup>
+
 </Project>

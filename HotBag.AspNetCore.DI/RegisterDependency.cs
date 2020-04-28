@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Linq;
 using System.Reflection;
+using HotBag.AspNetCore.Reflection;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.DependencyInjection.Extensions;
 using Microsoft.Extensions.DependencyModel;
@@ -11,10 +12,8 @@ namespace HotBag.AspNetCore.DI
     {
         public static void RegisterAll(IServiceCollection serviceCollection)
         {
-            var platform = Environment.OSVersion.Platform.ToString();
-            var runtimeAssemblyNames = DependencyContext.Default.GetRuntimeAssemblyNames(platform);
-            var allAssembly = runtimeAssemblyNames
-                .Select(Assembly.Load)
+             var allAssembly = AssemblyHelper.Instance
+                   .GetAllAssemblyInApplication()
                 //.Where(x => x.FullName.Contains("HotBag"))
                 ;
 

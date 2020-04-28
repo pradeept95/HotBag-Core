@@ -1,4 +1,5 @@
-﻿using HotBag.AspNetCore.SignalR.Attributes;
+﻿using HotBag.AspNetCore.Reflection;
+using HotBag.AspNetCore.SignalR.Attributes;
 using HotBag.AspNetCore.SignalR.HubBase;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Routing;
@@ -15,13 +16,9 @@ namespace HotBag.AspNetCore.SignalR.Configuration
     public static class HotBagSignalRConfiguration
     {
         public static void RegisterAllHub(this HubRouteBuilder routes)
-        {
-            var platform = Environment.OSVersion.Platform.ToString();
-            var runtimeAssemblyNames = DependencyContext.Default.GetRuntimeAssemblyNames(platform);
-            var allAssembly = runtimeAssemblyNames
-                .Select(Assembly.Load)
-                //.Where(x => x.FullName.Contains("HotBag"))
-                ;
+        { 
+            var allAssembly = AssemblyHelper.Instance
+                   .GetAllAssemblyInApplication();
 
             foreach (var assembly in allAssembly)
             {

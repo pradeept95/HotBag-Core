@@ -2148,7 +2148,8 @@
           "AutoMapper.Extensions.Microsoft.DependencyInjection": "6.0.0",
           "HotBag.AspNetCore.DI": "1.0.0",
           "HotBag.AspNetCore.Data": "1.0.0",
-          "HotBag.AspNetCore.Extensions": "1.0.0"
+          "HotBag.AspNetCore.Extensions": "1.0.0",
+          "HotBag.AspNetCore.Reflection": "1.0.0"
         },
         "compile": {
           "bin/placeholder/HotBag.AspNetCore.AutoMapper.dll": {}
@@ -2175,6 +2176,7 @@
         "type": "project",
         "framework": ".NETStandard,Version=v2.0",
         "dependencies": {
+          "HotBag.AspNetCore.Reflection": "1.0.0",
           "Microsoft.AspNetCore.Hosting.Abstractions": "2.2.0",
           "Microsoft.AspNetCore.Http.Abstractions": "2.2.0",
           "Microsoft.Extensions.DependencyInjection": "2.2.0",
@@ -2198,6 +2200,19 @@
         },
         "runtime": {
           "bin/placeholder/HotBag.AspNetCore.Extensions.dll": {}
+        }
+      },
+      "HotBag.AspNetCore.Reflection/1.0.0": {
+        "type": "project",
+        "framework": ".NETStandard,Version=v2.0",
+        "dependencies": {
+          "Microsoft.Extensions.DependencyModel": "2.1.0"
+        },
+        "compile": {
+          "bin/placeholder/HotBag.AspNetCore.Reflection.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/HotBag.AspNetCore.Reflection.dll": {}
         }
       },
       "HotBag.AspNetCore.ResultWrapper/1.0.0": {
@@ -7284,6 +7299,11 @@
       "type": "project",
       "path": "../HotBag.AspNetCore.Extensions/HotBag.AspNetCore.Extensions.csproj",
       "msbuildProject": "../HotBag.AspNetCore.Extensions/HotBag.AspNetCore.Extensions.csproj"
+    },
+    "HotBag.AspNetCore.Reflection/1.0.0": {
+      "type": "project",
+      "path": "../HotBag.AspNetCore.Reflection/HotBag.AspNetCore.Reflection.csproj",
+      "msbuildProject": "../HotBag.AspNetCore.Reflection/HotBag.AspNetCore.Reflection.csproj"
     },
     "HotBag.AspNetCore.ResultWrapper/1.0.0": {
       "type": "project",

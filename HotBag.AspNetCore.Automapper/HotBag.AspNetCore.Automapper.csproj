@@ -12,6 +12,7 @@
     <ProjectReference Include="..\HotBag.AspNetCore.Data\HotBag.AspNetCore.Data.csproj" />
     <ProjectReference Include="..\HotBag.AspNetCore.DI\HotBag.AspNetCore.DI.csproj" />
     <ProjectReference Include="..\HotBag.AspNetCore.Extensions\HotBag.AspNetCore.Extensions.csproj" />
+    <ProjectReference Include="..\HotBag.AspNetCore.Reflection\HotBag.AspNetCore.Reflection.csproj" />
   </ItemGroup>
 
 </Project>
