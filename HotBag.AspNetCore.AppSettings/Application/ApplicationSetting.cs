@@ -29,6 +29,7 @@
         public bool IsEnableAutoMapper { get; set; } = true;
         public bool IsEnableLog { get; set; } = true;
         public bool IsEnableCORS { get; set; } = true;
+        public bool IsEnableSignalR { get; set; } = true;
     }
 
 

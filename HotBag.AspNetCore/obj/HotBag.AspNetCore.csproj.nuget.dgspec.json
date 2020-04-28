@@ -484,6 +484,68 @@
         }
       }
     },
+    "C:\\Users\\prade\\source\\repos\\HotBagCore\\HotBag.AspNetCore.FluentValidation\\HotBag.AspNetCore.FluentValidation.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\prade\\source\\repos\\HotBagCore\\HotBag.AspNetCore.FluentValidation\\HotBag.AspNetCore.FluentValidation.csproj",
+        "projectName": "HotBag.AspNetCore.FluentValidation",
+        "projectPath": "C:\\Users\\prade\\source\\repos\\HotBagCore\\HotBag.AspNetCore.FluentValidation\\HotBag.AspNetCore.FluentValidation.csproj",
+        "packagesPath": "C:\\Users\\prade\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\prade\\source\\repos\\HotBagCore\\HotBag.AspNetCore.FluentValidation\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\prade\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netstandard2.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netstandard2.0": {
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netstandard2.0": {
+          "dependencies": {
+            "FluentValidation.AspNetCore": {
+              "target": "Package",
+              "version": "[8.6.2, )"
+            },
+            "NETStandard.Library": {
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[2.0.3, )",
+              "autoReferenced": true
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.201\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
     "C:\\Users\\prade\\source\\repos\\HotBagCore\\HotBag.AspNetCore.IO\\HotBag.AspNetCore.IO.csproj": {
       "version": "1.0.0",
       "restore": {
@@ -818,6 +880,72 @@
         }
       }
     },
+    "C:\\Users\\prade\\source\\repos\\HotBagCore\\HotBag.AspNetCore.SignalR\\HotBag.AspNetCore.SignalR.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\prade\\source\\repos\\HotBagCore\\HotBag.AspNetCore.SignalR\\HotBag.AspNetCore.SignalR.csproj",
+        "projectName": "HotBag.AspNetCore.SignalR",
+        "projectPath": "C:\\Users\\prade\\source\\repos\\HotBagCore\\HotBag.AspNetCore.SignalR\\HotBag.AspNetCore.SignalR.csproj",
+        "packagesPath": "C:\\Users\\prade\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\prade\\source\\repos\\HotBagCore\\HotBag.AspNetCore.SignalR\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\prade\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netstandard2.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netstandard2.0": {
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netstandard2.0": {
+          "dependencies": {
+            "Microsoft.AspNetCore.SignalR": {
+              "target": "Package",
+              "version": "[1.1.0, )"
+            },
+            "Microsoft.Extensions.DependencyModel": {
+              "target": "Package",
+              "version": "[2.1.0, )"
+            },
+            "NETStandard.Library": {
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[2.0.3, )",
+              "autoReferenced": true
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.201\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
     "C:\\Users\\prade\\source\\repos\\HotBagCore\\HotBag.AspNetCore.Swagger\\HotBag.AspNetCore.Swagger.csproj": {
       "version": "1.0.0",
       "restore": {
@@ -1002,6 +1130,9 @@
               "C:\\Users\\prade\\source\\repos\\HotBagCore\\HotBag.AspNetCore.Extensions\\HotBag.AspNetCore.Extensions.csproj": {
                 "projectPath": "C:\\Users\\prade\\source\\repos\\HotBagCore\\HotBag.AspNetCore.Extensions\\HotBag.AspNetCore.Extensions.csproj"
               },
+              "C:\\Users\\prade\\source\\repos\\HotBagCore\\HotBag.AspNetCore.FluentValidation\\HotBag.AspNetCore.FluentValidation.csproj": {
+                "projectPath": "C:\\Users\\prade\\source\\repos\\HotBagCore\\HotBag.AspNetCore.FluentValidation\\HotBag.AspNetCore.FluentValidation.csproj"
+              },
               "C:\\Users\\prade\\source\\repos\\HotBagCore\\HotBag.AspNetCore.IO\\HotBag.AspNetCore.IO.csproj": {
                 "projectPath": "C:\\Users\\prade\\source\\repos\\HotBagCore\\HotBag.AspNetCore.IO\\HotBag.AspNetCore.IO.csproj"
               },
@@ -1016,6 +1147,9 @@
               },
               "C:\\Users\\prade\\source\\repos\\HotBagCore\\HotBag.AspNetCore.Security\\HotBag.AspNetCore.Security.csproj": {
                 "projectPath": "C:\\Users\\prade\\source\\repos\\HotBagCore\\HotBag.AspNetCore.Security\\HotBag.AspNetCore.Security.csproj"
+              },
+              "C:\\Users\\prade\\source\\repos\\HotBagCore\\HotBag.AspNetCore.SignalR\\HotBag.AspNetCore.SignalR.csproj": {
+                "projectPath": "C:\\Users\\prade\\source\\repos\\HotBagCore\\HotBag.AspNetCore.SignalR\\HotBag.AspNetCore.SignalR.csproj"
               },
               "C:\\Users\\prade\\source\\repos\\HotBagCore\\HotBag.AspNetCore.Swagger\\HotBag.AspNetCore.Swagger.csproj": {
                 "projectPath": "C:\\Users\\prade\\source\\repos\\HotBagCore\\HotBag.AspNetCore.Swagger\\HotBag.AspNetCore.Swagger.csproj"

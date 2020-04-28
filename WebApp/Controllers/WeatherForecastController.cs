@@ -26,17 +26,20 @@ namespace WebApp.Controllers
         private readonly ILogger<WeatherForecastController> _logger;
         private readonly IPublishEvent publisher;
         private readonly ISubscriberEvent subscriberBase;
+        private readonly IEmailPublisher _emailPublisher;
         private readonly IHotBagObjectMapper _objectMapper;
 
         public WeatherForecastController(
             ILogger<WeatherForecastController> logger
             , IPublishEvent publisher
             , ISubscriberEvent subscriberBase
+            , IEmailPublisher emailPublisher
             , IHotBagObjectMapper objectMapper)
         {
             _logger = logger;
             this.publisher = publisher;
             this.subscriberBase = subscriberBase;
+            this._emailPublisher = emailPublisher;
             this._objectMapper = objectMapper;
         }
 
@@ -56,10 +59,9 @@ namespace WebApp.Controllers
 
             //event bus publish test
             publisher.Publish();
-
-            
+             
             //email microservice test
-            EmailPublisher.PublishMessage(JsonConvert.SerializeObject(result));
+            _emailPublisher.PublishMessage(JsonConvert.SerializeObject(result));
 
 
 
@@ -76,7 +78,20 @@ namespace WebApp.Controllers
 
 
             var testEntityDto = _objectMapper.Map<PersonDto>(testEntity);
-            var te = _objectMapper.Map<Person>(testEntityDto);
+            var ooPerson = _objectMapper.Map<Person>(testEntityDto);
+
+
+            var addressTest = new Address
+            {
+                AddressLine1 = "8904 Jody Ln",
+                AddressLine2 = "Apt 2B",
+                City = "Des Plaines",
+                State = "IL",
+                Country = "United State"
+            };
+
+            var addressTestDto = _objectMapper.Map<AddressDto>(addressTest);
+            var ooAddressTestDto = _objectMapper.Map<Address>(addressTestDto);
 
 
             return new ListResultDto<WeatherForecast>(result, "all forecast data");

@@ -39,11 +39,15 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "HotBag.Web.Host", "Web.Host
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "HotBag.AspNetCore.AutoMapper", "HotBag.AspNetCore.Automapper\HotBag.AspNetCore.AutoMapper.csproj", "{3298B290-B6FA-4F80-B76C-D24DF84F217D}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HotBag.AspNetCore.RabbitMQ", "HotBag.AspNetCore.RabbitMQ\HotBag.AspNetCore.RabbitMQ.csproj", "{9F8375B7-4E61-4C4F-A207-DF6DB6AF0456}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "HotBag.AspNetCore.RabbitMQ", "HotBag.AspNetCore.RabbitMQ\HotBag.AspNetCore.RabbitMQ.csproj", "{9F8375B7-4E61-4C4F-A207-DF6DB6AF0456}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Services", "Services", "{B8906C7C-AC3C-4E9F-A242-067B8C8FD397}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HotBag.AspNetCore.EmailService", "Services\HotBag.AspNetCore.EmailService\HotBag.AspNetCore.EmailService.csproj", "{230F35BF-CF5D-4459-9409-11F1ECC5E0E3}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "HotBag.AspNetCore.EmailService", "Services\HotBag.AspNetCore.EmailService\HotBag.AspNetCore.EmailService.csproj", "{230F35BF-CF5D-4459-9409-11F1ECC5E0E3}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "HotBag.AspNetCore.FluentValidation", "HotBag.AspNetCore.FluentValidation\HotBag.AspNetCore.FluentValidation.csproj", "{4DBA09F3-687C-43BB-8D00-593C5DEBC768}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "HotBag.AspNetCore.SignalR", "HotBag.AspNetCore.SignalR\HotBag.AspNetCore.SignalR.csproj", "{CBBD9E8D-49D8-43C0-8BFB-D57F9A1F005E}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -123,6 +127,14 @@ Global
 		{230F35BF-CF5D-4459-9409-11F1ECC5E0E3}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{230F35BF-CF5D-4459-9409-11F1ECC5E0E3}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{230F35BF-CF5D-4459-9409-11F1ECC5E0E3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4DBA09F3-687C-43BB-8D00-593C5DEBC768}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4DBA09F3-687C-43BB-8D00-593C5DEBC768}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4DBA09F3-687C-43BB-8D00-593C5DEBC768}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4DBA09F3-687C-43BB-8D00-593C5DEBC768}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CBBD9E8D-49D8-43C0-8BFB-D57F9A1F005E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CBBD9E8D-49D8-43C0-8BFB-D57F9A1F005E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CBBD9E8D-49D8-43C0-8BFB-D57F9A1F005E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CBBD9E8D-49D8-43C0-8BFB-D57F9A1F005E}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -145,6 +157,8 @@ Global
 		{3298B290-B6FA-4F80-B76C-D24DF84F217D} = {8B00618C-73C9-4E85-A6DE-68022B51BB60}
 		{9F8375B7-4E61-4C4F-A207-DF6DB6AF0456} = {8B00618C-73C9-4E85-A6DE-68022B51BB60}
 		{230F35BF-CF5D-4459-9409-11F1ECC5E0E3} = {B8906C7C-AC3C-4E9F-A242-067B8C8FD397}
+		{4DBA09F3-687C-43BB-8D00-593C5DEBC768} = {8B00618C-73C9-4E85-A6DE-68022B51BB60}
+		{CBBD9E8D-49D8-43C0-8BFB-D57F9A1F005E} = {8B00618C-73C9-4E85-A6DE-68022B51BB60}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {75183472-5F20-4C1D-97E0-A08760E8F88C}

@@ -4,6 +4,7 @@ using HotBag.AspNetCore.CORS;
 using HotBag.AspNetCore.EventBus.Configuration;
 using HotBag.AspNetCore.Modules;
 using HotBag.AspNetCore.ResultWrapper.Extensions;
+using HotBag.AspNetCore.SignalR;
 using HotBag.AspNetCore.Swagger;
 using HotBag.AspNetCore.Web.BaseRepository;
 using Microsoft.AspNetCore.Builder;
@@ -47,12 +48,13 @@ namespace HotBag.AspNetCore
                        Description = ""
                    }); 
 
+            //register event based programming
             if (HotBagConfiguration.Configurations.ApplicationSettings.Features.IsEnableEventBus)
                 Task.FromResult(EventBusConfiguration.InitializeAllSubscriber());
 
-
-            //services.AddScoped(typeof(BaseRepository<,>), typeof(IBaseRepository<,>));
-
+            //register signalR in containers
+            if (HotBagConfiguration.Configurations.ApplicationSettings.Features.IsEnableSignalR)
+                services.AddHotBagSignalR();  
 
             return services;
         }
@@ -70,6 +72,9 @@ namespace HotBag.AspNetCore
             if (HotBagConfiguration.Configurations.ApplicationSettings.Features.IsEnableSwaggerApiDoc)
                  app.UseHotBagSwagger();
 
+            //add signalR in request pipeline
+            if (HotBagConfiguration.Configurations.ApplicationSettings.Features.IsEnableSignalR)
+                app.UseHotBagSignalR();
 
             //use authentication
             app.UseAuthentication();

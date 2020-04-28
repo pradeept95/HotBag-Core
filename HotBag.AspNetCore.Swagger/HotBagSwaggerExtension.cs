@@ -22,8 +22,7 @@ namespace HotBag.AspNetCore.Swagger
         }
 
         public static IServiceCollection AddHotBagSwagger(this IServiceCollection service, OpenApiInfo option)
-        {
-
+        { 
             // Register the Swagger generator, defining 1 or more Swagger documents
             option.Contact = new OpenApiContact
             {

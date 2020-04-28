@@ -28,6 +28,7 @@ namespace WebApp
         {
             services.AddHotBagCore();
             services.AddControllers();
+            services.AddControllersWithViews();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
@@ -44,12 +45,17 @@ namespace WebApp
 
             app.UseHotBagCore();
 
+            app.UseStaticFiles();
             //app.UseAuthorization();
 
             app.UseEndpoints(endpoints =>
             {
                 endpoints.MapControllers();
+                endpoints.MapControllerRoute(
+                   name: "default",
+                   pattern: "{controller=Home}/{action=Index}/{id?}");
             });
+
         }
     }
 }

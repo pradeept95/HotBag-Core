@@ -1,4 +1,5 @@
-﻿using HotBag.AspNetCore.AutoMapper.Attributes;
+﻿using AutoMapper;
+using HotBag.AspNetCore.AutoMapper.Attributes;
 using HotBag.AspNetCore.Data.Autofill;
 using HotBag.AspNetCore.Data.EntityBase;
 using System;
@@ -15,5 +16,19 @@ namespace WebApp.Models
         public string Address { get; set; }
          
         public DateTime DOB { get; set; }
+    }
+
+    [AutoMap(typeof(AddressDto))]
+    public class Address : EntityBase<Guid>
+    {
+
+        public string AddressLine1 { get; set; }
+
+        [IgnoreMap]
+        public string AddressLine2 { get; set; }
+        public string City { get; set; }
+        public string State { get; set; }
+        public string Country { get; set; }
+
     }
 }
