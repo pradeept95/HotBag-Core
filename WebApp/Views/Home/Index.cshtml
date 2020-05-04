@@ -1,8 +1,9 @@
-﻿
+﻿@*@using Microsoft.AspNetCore.Mvc.Localization
+@inject IViewLocalizer Localizer*@
 @{
     ViewData["Title"] = "Index";
 }
- 
+
 <div class="container">
     <div class="row">&nbsp;</div>
     <div class="row">
@@ -26,6 +27,9 @@
     </div>
 </div>
 <div class="row">
+    <div class="col-6">
+       @* <p>@Localizer["Hello world!"]</p>*@
+    </div>
     <div class="col-6">
         <ul id="messagesList"></ul>
     </div>

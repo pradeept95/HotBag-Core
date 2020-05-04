@@ -30,6 +30,7 @@
         public bool IsEnableLog { get; set; } = true;
         public bool IsEnableCORS { get; set; } = true;
         public bool IsEnableSignalR { get; set; } = true;
+        public bool IsEnableGoogleAnalytics { get; set; } = false;
     }
 
 

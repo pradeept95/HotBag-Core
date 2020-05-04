@@ -20,9 +20,12 @@
     <ProjectReference Include="..\HotBag.AspNetCore.EventBus\HotBag.AspNetCore.EventBus.csproj" />
     <ProjectReference Include="..\HotBag.AspNetCore.Extensions\HotBag.AspNetCore.Extensions.csproj" />
     <ProjectReference Include="..\HotBag.AspNetCore.FluentValidation\HotBag.AspNetCore.FluentValidation.csproj" />
+    <ProjectReference Include="..\HotBag.AspNetCore.GoogleAnalytics\HotBag.AspNetCore.GoogleAnalytics.csproj" />
     <ProjectReference Include="..\HotBag.AspNetCore.IO\HotBag.AspNetCore.IO.csproj" />
     <ProjectReference Include="..\HotBag.AspNetCore.Log\HotBag.AspNetCore.Log.csproj" />
+    <ProjectReference Include="..\HotBag.AspNetCore.PushNotification\HotBag.AspNetCore.PushNotification.csproj" />
     <ProjectReference Include="..\HotBag.AspNetCore.RabbitMQ\HotBag.AspNetCore.RabbitMQ.csproj" />
+    <ProjectReference Include="..\HotBag.AspNetCore.Reflection\HotBag.AspNetCore.Reflection.csproj" />
     <ProjectReference Include="..\HotBag.AspNetCore.ResultWrapper\HotBag.AspNetCore.ResultWrapper.csproj" />
     <ProjectReference Include="..\HotBag.AspNetCore.Security\HotBag.AspNetCore.Security.csproj" />
     <ProjectReference Include="..\HotBag.AspNetCore.SignalR\HotBag.AspNetCore.SignalR.csproj" />

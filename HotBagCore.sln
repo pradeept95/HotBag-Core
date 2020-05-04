@@ -49,9 +49,13 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "HotBag.AspNetCore.FluentVal
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "HotBag.AspNetCore.SignalR", "HotBag.AspNetCore.SignalR\HotBag.AspNetCore.SignalR.csproj", "{CBBD9E8D-49D8-43C0-8BFB-D57F9A1F005E}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HotBag.AspNetCore.PushNotification", "HotBag.AspNetCore.PushNotification\HotBag.AspNetCore.PushNotification.csproj", "{D5B9242B-48C1-4BDA-8919-F3DE20FFA95F}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "HotBag.AspNetCore.PushNotification", "HotBag.AspNetCore.PushNotification\HotBag.AspNetCore.PushNotification.csproj", "{D5B9242B-48C1-4BDA-8919-F3DE20FFA95F}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HotBag.AspNetCore.Reflection", "HotBag.AspNetCore.Reflection\HotBag.AspNetCore.Reflection.csproj", "{09AB7D7D-AD74-468B-AC44-6492C9DEA113}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "HotBag.AspNetCore.Reflection", "HotBag.AspNetCore.Reflection\HotBag.AspNetCore.Reflection.csproj", "{09AB7D7D-AD74-468B-AC44-6492C9DEA113}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "HotBag.AspNetCore.GoogleAnalytics", "HotBag.AspNetCore.GoogleAnalytics\HotBag.AspNetCore.GoogleAnalytics.csproj", "{8C383B31-4FDD-4A1A-8824-B135D9F6A43F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HotBag.AspNetCore.Localization.PO", "HotBag.AspNetCore.Localization.PO\HotBag.AspNetCore.Localization.PO.csproj", "{8E63BAC6-D18A-4AA2-8136-24DA5206A5E1}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -147,6 +151,14 @@ Global
 		{09AB7D7D-AD74-468B-AC44-6492C9DEA113}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{09AB7D7D-AD74-468B-AC44-6492C9DEA113}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{09AB7D7D-AD74-468B-AC44-6492C9DEA113}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8C383B31-4FDD-4A1A-8824-B135D9F6A43F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8C383B31-4FDD-4A1A-8824-B135D9F6A43F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8C383B31-4FDD-4A1A-8824-B135D9F6A43F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8C383B31-4FDD-4A1A-8824-B135D9F6A43F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8E63BAC6-D18A-4AA2-8136-24DA5206A5E1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8E63BAC6-D18A-4AA2-8136-24DA5206A5E1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8E63BAC6-D18A-4AA2-8136-24DA5206A5E1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8E63BAC6-D18A-4AA2-8136-24DA5206A5E1}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -173,6 +185,8 @@ Global
 		{CBBD9E8D-49D8-43C0-8BFB-D57F9A1F005E} = {8B00618C-73C9-4E85-A6DE-68022B51BB60}
 		{D5B9242B-48C1-4BDA-8919-F3DE20FFA95F} = {8B00618C-73C9-4E85-A6DE-68022B51BB60}
 		{09AB7D7D-AD74-468B-AC44-6492C9DEA113} = {8B00618C-73C9-4E85-A6DE-68022B51BB60}
+		{8C383B31-4FDD-4A1A-8824-B135D9F6A43F} = {8B00618C-73C9-4E85-A6DE-68022B51BB60}
+		{8E63BAC6-D18A-4AA2-8136-24DA5206A5E1} = {8B00618C-73C9-4E85-A6DE-68022B51BB60}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {75183472-5F20-4C1D-97E0-A08760E8F88C}

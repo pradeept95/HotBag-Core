@@ -13,7 +13,7 @@ using System.Reflection;
 
 namespace HotBag.AspNetCore.Modules
 {
-    internal class ModuleBootstrapper : IModuleBootstrapper
+    internal sealed class ModuleBootstrapper : IModuleBootstrapper
     {
         private readonly IServiceCollection _serviceCollection;
         private readonly IConfiguration _configuration;

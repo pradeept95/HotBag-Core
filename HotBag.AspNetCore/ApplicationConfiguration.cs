@@ -6,11 +6,9 @@ using HotBag.AspNetCore.Modules;
 using HotBag.AspNetCore.ResultWrapper.Extensions;
 using HotBag.AspNetCore.SignalR;
 using HotBag.AspNetCore.Swagger;
-using HotBag.AspNetCore.Web.BaseRepository;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
-using System;
 using System.Threading.Tasks;
 
 namespace HotBag.AspNetCore
@@ -54,7 +52,9 @@ namespace HotBag.AspNetCore
 
             //register signalR in containers
             if (HotBagConfiguration.Configurations.ApplicationSettings.Features.IsEnableSignalR)
-                services.AddHotBagSignalR();  
+                services.AddHotBagSignalR();
+
+            //services.AddHotBagPOLocalization();
 
             return services;
         }
@@ -75,6 +75,8 @@ namespace HotBag.AspNetCore
             //add signalR in request pipeline
             if (HotBagConfiguration.Configurations.ApplicationSettings.Features.IsEnableSignalR)
                 app.UseHotBagSignalR();
+
+            //app.UseHotBagPOLocalization();
 
             //use authentication
             app.UseAuthentication();

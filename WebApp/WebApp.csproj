@@ -2,6 +2,7 @@
 
   <PropertyGroup>
     <TargetFramework>netcoreapp3.1</TargetFramework>
+    <PackageIcon>linkedin_profile_image.png</PackageIcon>
   </PropertyGroup>
 
   <ItemGroup>
@@ -17,6 +18,13 @@
     <Content Update="modulesettings.json">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="..\..\..\..\Downloads\HatchfulExport-All\linkedin_profile_image.png">
+      <Pack>True</Pack>
+      <PackagePath></PackagePath>
+    </None>
   </ItemGroup>
 
 

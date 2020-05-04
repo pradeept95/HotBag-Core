@@ -67,6 +67,58 @@
           "lib/netstandard2.0/FluentValidation.DependencyInjectionExtensions.dll": {}
         }
       },
+      "Google.Apis/1.45.0": {
+        "type": "package",
+        "dependencies": {
+          "Google.Apis.Core": "1.45.0"
+        },
+        "compile": {
+          "lib/netstandard2.0/Google.Apis.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/Google.Apis.dll": {}
+        }
+      },
+      "Google.Apis.AnalyticsReporting.v4/1.45.0.1921": {
+        "type": "package",
+        "dependencies": {
+          "Google.Apis": "1.45.0",
+          "Google.Apis.Auth": "1.45.0"
+        },
+        "compile": {
+          "lib/netstandard2.0/Google.Apis.AnalyticsReporting.v4.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/Google.Apis.AnalyticsReporting.v4.dll": {}
+        }
+      },
+      "Google.Apis.Auth/1.45.0": {
+        "type": "package",
+        "dependencies": {
+          "Google.Apis": "1.45.0",
+          "Google.Apis.Core": "1.45.0"
+        },
+        "compile": {
+          "lib/netstandard2.0/Google.Apis.Auth.PlatformServices.dll": {},
+          "lib/netstandard2.0/Google.Apis.Auth.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/Google.Apis.Auth.PlatformServices.dll": {},
+          "lib/netstandard2.0/Google.Apis.Auth.dll": {}
+        }
+      },
+      "Google.Apis.Core/1.45.0": {
+        "type": "package",
+        "dependencies": {
+          "Newtonsoft.Json": "12.0.3"
+        },
+        "compile": {
+          "lib/netstandard2.0/Google.Apis.Core.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/Google.Apis.Core.dll": {}
+        }
+      },
       "Microsoft.AspNetCore.Antiforgery/2.1.0": {
         "type": "package",
         "dependencies": {
@@ -1379,7 +1431,7 @@
           "build/netstandard2.0/NETStandard.Library.targets": {}
         }
       },
-      "Newtonsoft.Json/11.0.2": {
+      "Newtonsoft.Json/12.0.3": {
         "type": "package",
         "compile": {
           "lib/netstandard2.0/Newtonsoft.Json.dll": {}
@@ -3400,6 +3452,19 @@
           "bin/placeholder/HotBag.AspNetCore.FluentValidation.dll": {}
         }
       },
+      "HotBag.AspNetCore.GoogleAnalytics/1.0.0": {
+        "type": "project",
+        "framework": ".NETStandard,Version=v2.0",
+        "dependencies": {
+          "Google.Apis.AnalyticsReporting.v4": "1.45.0.1921"
+        },
+        "compile": {
+          "bin/placeholder/HotBag.AspNetCore.GoogleAnalytics.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/HotBag.AspNetCore.GoogleAnalytics.dll": {}
+        }
+      },
       "HotBag.AspNetCore.IO/1.0.0": {
         "type": "project",
         "framework": ".NETStandard,Version=v2.0",
@@ -3426,6 +3491,16 @@
         },
         "runtime": {
           "bin/placeholder/HotBag.AspNetCore.Log.dll": {}
+        }
+      },
+      "HotBag.AspNetCore.PushNotification/1.0.0": {
+        "type": "project",
+        "framework": ".NETStandard,Version=v2.0",
+        "compile": {
+          "bin/placeholder/HotBag.AspNetCore.PushNotification.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/HotBag.AspNetCore.PushNotification.dll": {}
         }
       },
       "HotBag.AspNetCore.RabbitMQ/1.0.0": {
@@ -3609,6 +3684,103 @@
         "fluentvalidation.dependencyinjectionextensions.nuspec",
         "lib/netstandard2.0/FluentValidation.DependencyInjectionExtensions.dll",
         "lib/netstandard2.0/FluentValidation.DependencyInjectionExtensions.xml"
+      ]
+    },
+    "Google.Apis/1.45.0": {
+      "sha512": "V/huVWohIr8c2Zg9+W+8fBElPd8Smz03k8e+tq/X9JsRdvAPaCBNwvMVNoyPbH+x/2tEFyX+n1jvIGFNC4hLzw==",
+      "type": "package",
+      "path": "google.apis/1.45.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "LICENSE",
+        "NuGetIcon.png",
+        "google.apis.1.45.0.nupkg.sha512",
+        "google.apis.nuspec",
+        "lib/net45/Google.Apis.PlatformServices.dll",
+        "lib/net45/Google.Apis.dll",
+        "lib/net45/Google.Apis.pdb",
+        "lib/net45/Google.Apis.xml",
+        "lib/netstandard1.3/Google.Apis.dll",
+        "lib/netstandard1.3/Google.Apis.pdb",
+        "lib/netstandard1.3/Google.Apis.xml",
+        "lib/netstandard2.0/Google.Apis.dll",
+        "lib/netstandard2.0/Google.Apis.pdb",
+        "lib/netstandard2.0/Google.Apis.xml"
+      ]
+    },
+    "Google.Apis.AnalyticsReporting.v4/1.45.0.1921": {
+      "sha512": "K9BeqoWY4cebSQ9f6zOvrcjM+ZT1WR4EScW9JoOgDKoFztJX0t/+PLmvDkUVP1LEZhDie0XSDRdqnpCvE8rCYw==",
+      "type": "package",
+      "path": "google.apis.analyticsreporting.v4/1.45.0.1921",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "LICENSE",
+        "google.apis.analyticsreporting.v4.1.45.0.1921.nupkg.sha512",
+        "google.apis.analyticsreporting.v4.nuspec",
+        "lib/net40/Google.Apis.AnalyticsReporting.v4.dll",
+        "lib/net40/Google.Apis.AnalyticsReporting.v4.pdb",
+        "lib/net40/Google.Apis.AnalyticsReporting.v4.xml",
+        "lib/net45/Google.Apis.AnalyticsReporting.v4.dll",
+        "lib/net45/Google.Apis.AnalyticsReporting.v4.pdb",
+        "lib/net45/Google.Apis.AnalyticsReporting.v4.xml",
+        "lib/netstandard1.0/Google.Apis.AnalyticsReporting.v4.dll",
+        "lib/netstandard1.0/Google.Apis.AnalyticsReporting.v4.pdb",
+        "lib/netstandard1.0/Google.Apis.AnalyticsReporting.v4.xml",
+        "lib/netstandard1.3/Google.Apis.AnalyticsReporting.v4.dll",
+        "lib/netstandard1.3/Google.Apis.AnalyticsReporting.v4.pdb",
+        "lib/netstandard1.3/Google.Apis.AnalyticsReporting.v4.xml",
+        "lib/netstandard2.0/Google.Apis.AnalyticsReporting.v4.dll",
+        "lib/netstandard2.0/Google.Apis.AnalyticsReporting.v4.pdb",
+        "lib/netstandard2.0/Google.Apis.AnalyticsReporting.v4.xml"
+      ]
+    },
+    "Google.Apis.Auth/1.45.0": {
+      "sha512": "dPAhjWofPoGzNjjgmz1zUfnzOsj2lKr/cUgC03NETYIbSZoyLeC9Sc+OCZH9wL0DdklLnvopoFx/v7aTqVjamw==",
+      "type": "package",
+      "path": "google.apis.auth/1.45.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "LICENSE",
+        "NuGetIcon.png",
+        "google.apis.auth.1.45.0.nupkg.sha512",
+        "google.apis.auth.nuspec",
+        "lib/net45/Google.Apis.Auth.PlatformServices.dll",
+        "lib/net45/Google.Apis.Auth.dll",
+        "lib/net45/Google.Apis.Auth.pdb",
+        "lib/net45/Google.Apis.Auth.xml",
+        "lib/netstandard1.3/Google.Apis.Auth.PlatformServices.dll",
+        "lib/netstandard1.3/Google.Apis.Auth.dll",
+        "lib/netstandard1.3/Google.Apis.Auth.pdb",
+        "lib/netstandard1.3/Google.Apis.Auth.xml",
+        "lib/netstandard2.0/Google.Apis.Auth.PlatformServices.dll",
+        "lib/netstandard2.0/Google.Apis.Auth.dll",
+        "lib/netstandard2.0/Google.Apis.Auth.pdb",
+        "lib/netstandard2.0/Google.Apis.Auth.xml"
+      ]
+    },
+    "Google.Apis.Core/1.45.0": {
+      "sha512": "hYqI4v3kEIfWxiYierMo59XCAOFBoH30RqCzomSubK9JXGAv/o0Cp+gxEeAH9GspxQcZNZV50ouu/8Ypigd7fw==",
+      "type": "package",
+      "path": "google.apis.core/1.45.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "LICENSE",
+        "NuGetIcon.png",
+        "google.apis.core.1.45.0.nupkg.sha512",
+        "google.apis.core.nuspec",
+        "lib/net45/Google.Apis.Core.dll",
+        "lib/net45/Google.Apis.Core.pdb",
+        "lib/net45/Google.Apis.Core.xml",
+        "lib/netstandard1.3/Google.Apis.Core.dll",
+        "lib/netstandard1.3/Google.Apis.Core.pdb",
+        "lib/netstandard1.3/Google.Apis.Core.xml",
+        "lib/netstandard2.0/Google.Apis.Core.dll",
+        "lib/netstandard2.0/Google.Apis.Core.pdb",
+        "lib/netstandard2.0/Google.Apis.Core.xml"
       ]
     },
     "Microsoft.AspNetCore.Antiforgery/2.1.0": {
@@ -5168,10 +5340,10 @@
         "netstandard.library.nuspec"
       ]
     },
-    "Newtonsoft.Json/11.0.2": {
-      "sha512": "IvJe1pj7JHEsP8B8J8DwlMEx8UInrs/x+9oVY+oCD13jpLu4JbJU2WCIsMRn5C4yW9+DgkaO8uiVE5VHKjpmdQ==",
+    "Newtonsoft.Json/12.0.3": {
+      "sha512": "6mgjfnRB4jKMlzHSl+VD+oUc1IebOZabkbyWj2RiTgWwYPPuaK1H97G1sHqGwPlS5npiF5Q0OrxN1wni2n5QWg==",
       "type": "package",
-      "path": "newtonsoft.json/11.0.2",
+      "path": "newtonsoft.json/12.0.3",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
@@ -5194,8 +5366,9 @@
         "lib/portable-net40+sl5+win8+wp8+wpa81/Newtonsoft.Json.xml",
         "lib/portable-net45+win8+wp8+wpa81/Newtonsoft.Json.dll",
         "lib/portable-net45+win8+wp8+wpa81/Newtonsoft.Json.xml",
-        "newtonsoft.json.11.0.2.nupkg.sha512",
-        "newtonsoft.json.nuspec"
+        "newtonsoft.json.12.0.3.nupkg.sha512",
+        "newtonsoft.json.nuspec",
+        "packageIcon.png"
       ]
     },
     "Newtonsoft.Json.Bson/1.0.1": {
@@ -10005,6 +10178,11 @@
       "path": "../HotBag.AspNetCore.FluentValidation/HotBag.AspNetCore.FluentValidation.csproj",
       "msbuildProject": "../HotBag.AspNetCore.FluentValidation/HotBag.AspNetCore.FluentValidation.csproj"
     },
+    "HotBag.AspNetCore.GoogleAnalytics/1.0.0": {
+      "type": "project",
+      "path": "../HotBag.AspNetCore.GoogleAnalytics/HotBag.AspNetCore.GoogleAnalytics.csproj",
+      "msbuildProject": "../HotBag.AspNetCore.GoogleAnalytics/HotBag.AspNetCore.GoogleAnalytics.csproj"
+    },
     "HotBag.AspNetCore.IO/1.0.0": {
       "type": "project",
       "path": "../HotBag.AspNetCore.IO/HotBag.AspNetCore.IO.csproj",
@@ -10014,6 +10192,11 @@
       "type": "project",
       "path": "../HotBag.AspNetCore.Log/HotBag.AspNetCore.Log.csproj",
       "msbuildProject": "../HotBag.AspNetCore.Log/HotBag.AspNetCore.Log.csproj"
+    },
+    "HotBag.AspNetCore.PushNotification/1.0.0": {
+      "type": "project",
+      "path": "../HotBag.AspNetCore.PushNotification/HotBag.AspNetCore.PushNotification.csproj",
+      "msbuildProject": "../HotBag.AspNetCore.PushNotification/HotBag.AspNetCore.PushNotification.csproj"
     },
     "HotBag.AspNetCore.RabbitMQ/1.0.0": {
       "type": "project",
@@ -10061,9 +10244,12 @@
       "HotBag.AspNetCore.EventBus >= 1.0.0",
       "HotBag.AspNetCore.Extensions >= 1.0.0",
       "HotBag.AspNetCore.FluentValidation >= 1.0.0",
+      "HotBag.AspNetCore.GoogleAnalytics >= 1.0.0",
       "HotBag.AspNetCore.IO >= 1.0.0",
       "HotBag.AspNetCore.Log >= 1.0.0",
+      "HotBag.AspNetCore.PushNotification >= 1.0.0",
       "HotBag.AspNetCore.RabbitMQ >= 1.0.0",
+      "HotBag.AspNetCore.Reflection >= 1.0.0",
       "HotBag.AspNetCore.ResultWrapper >= 1.0.0",
       "HotBag.AspNetCore.Security >= 1.0.0",
       "HotBag.AspNetCore.SignalR >= 1.0.0",
@@ -10130,14 +10316,23 @@
             "C:\\Users\\prade\\source\\repos\\HotBagCore\\HotBag.AspNetCore.FluentValidation\\HotBag.AspNetCore.FluentValidation.csproj": {
               "projectPath": "C:\\Users\\prade\\source\\repos\\HotBagCore\\HotBag.AspNetCore.FluentValidation\\HotBag.AspNetCore.FluentValidation.csproj"
             },
+            "C:\\Users\\prade\\source\\repos\\HotBagCore\\HotBag.AspNetCore.GoogleAnalytics\\HotBag.AspNetCore.GoogleAnalytics.csproj": {
+              "projectPath": "C:\\Users\\prade\\source\\repos\\HotBagCore\\HotBag.AspNetCore.GoogleAnalytics\\HotBag.AspNetCore.GoogleAnalytics.csproj"
+            },
             "C:\\Users\\prade\\source\\repos\\HotBagCore\\HotBag.AspNetCore.IO\\HotBag.AspNetCore.IO.csproj": {
               "projectPath": "C:\\Users\\prade\\source\\repos\\HotBagCore\\HotBag.AspNetCore.IO\\HotBag.AspNetCore.IO.csproj"
             },
             "C:\\Users\\prade\\source\\repos\\HotBagCore\\HotBag.AspNetCore.Log\\HotBag.AspNetCore.Log.csproj": {
               "projectPath": "C:\\Users\\prade\\source\\repos\\HotBagCore\\HotBag.AspNetCore.Log\\HotBag.AspNetCore.Log.csproj"
             },
+            "C:\\Users\\prade\\source\\repos\\HotBagCore\\HotBag.AspNetCore.PushNotification\\HotBag.AspNetCore.PushNotification.csproj": {
+              "projectPath": "C:\\Users\\prade\\source\\repos\\HotBagCore\\HotBag.AspNetCore.PushNotification\\HotBag.AspNetCore.PushNotification.csproj"
+            },
             "C:\\Users\\prade\\source\\repos\\HotBagCore\\HotBag.AspNetCore.RabbitMQ\\HotBag.AspNetCore.RabbitMQ.csproj": {
               "projectPath": "C:\\Users\\prade\\source\\repos\\HotBagCore\\HotBag.AspNetCore.RabbitMQ\\HotBag.AspNetCore.RabbitMQ.csproj"
+            },
+            "C:\\Users\\prade\\source\\repos\\HotBagCore\\HotBag.AspNetCore.Reflection\\HotBag.AspNetCore.Reflection.csproj": {
+              "projectPath": "C:\\Users\\prade\\source\\repos\\HotBagCore\\HotBag.AspNetCore.Reflection\\HotBag.AspNetCore.Reflection.csproj"
             },
             "C:\\Users\\prade\\source\\repos\\HotBagCore\\HotBag.AspNetCore.ResultWrapper\\HotBag.AspNetCore.ResultWrapper.csproj": {
               "projectPath": "C:\\Users\\prade\\source\\repos\\HotBagCore\\HotBag.AspNetCore.ResultWrapper\\HotBag.AspNetCore.ResultWrapper.csproj"
