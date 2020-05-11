@@ -55,7 +55,7 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "HotBag.AspNetCore.Reflectio
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "HotBag.AspNetCore.GoogleAnalytics", "HotBag.AspNetCore.GoogleAnalytics\HotBag.AspNetCore.GoogleAnalytics.csproj", "{8C383B31-4FDD-4A1A-8824-B135D9F6A43F}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HotBag.AspNetCore.Localization.PO", "HotBag.AspNetCore.Localization.PO\HotBag.AspNetCore.Localization.PO.csproj", "{8E63BAC6-D18A-4AA2-8136-24DA5206A5E1}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "HotBag.AspNetCore.Localization.PO", "HotBag.AspNetCore.Localization.PO\HotBag.AspNetCore.Localization.PO.csproj", "{8E63BAC6-D18A-4AA2-8136-24DA5206A5E1}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

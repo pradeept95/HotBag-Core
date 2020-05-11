@@ -1,0 +1,9 @@
+C:\Users\prade\source\repos\HotBagCore\HotBag.AspNetCore.Extensions\bin\Debug\netstandard2.0\HotBag.AspNetCore.Extensions.deps.json
+C:\Users\prade\source\repos\HotBagCore\HotBag.AspNetCore.Extensions\bin\Debug\netstandard2.0\HotBag.AspNetCore.Extensions.dll
+C:\Users\prade\source\repos\HotBagCore\HotBag.AspNetCore.Extensions\bin\Debug\netstandard2.0\HotBag.AspNetCore.Extensions.pdb
+C:\Users\prade\source\repos\HotBagCore\HotBag.AspNetCore.Extensions\obj\Debug\netstandard2.0\HotBag.AspNetCore.Extensions.csprojAssemblyReference.cache
+C:\Users\prade\source\repos\HotBagCore\HotBag.AspNetCore.Extensions\obj\Debug\netstandard2.0\HotBag.AspNetCore.Extensions.csproj.CoreCompileInputs.cache
+C:\Users\prade\source\repos\HotBagCore\HotBag.AspNetCore.Extensions\obj\Debug\netstandard2.0\HotBag.AspNetCore.Extensions.AssemblyInfoInputs.cache
+C:\Users\prade\source\repos\HotBagCore\HotBag.AspNetCore.Extensions\obj\Debug\netstandard2.0\HotBag.AspNetCore.Extensions.AssemblyInfo.cs
+C:\Users\prade\source\repos\HotBagCore\HotBag.AspNetCore.Extensions\obj\Debug\netstandard2.0\HotBag.AspNetCore.Extensions.dll
+C:\Users\prade\source\repos\HotBagCore\HotBag.AspNetCore.Extensions\obj\Debug\netstandard2.0\HotBag.AspNetCore.Extensions.pdb
