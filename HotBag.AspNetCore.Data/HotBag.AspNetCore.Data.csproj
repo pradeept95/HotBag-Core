@@ -5,11 +5,8 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <PackageReference Include="HotBag.AspNetCore.Authorization" Version="1.0.0" />
     <PackageReference Include="System.ComponentModel.Annotations" Version="4.7.0" />
-  </ItemGroup>
-
-  <ItemGroup>
-    <ProjectReference Include="..\HotBag.AspNetCore.Authorization\HotBag.AspNetCore.Authorization.csproj" />
   </ItemGroup>
 
 </Project>

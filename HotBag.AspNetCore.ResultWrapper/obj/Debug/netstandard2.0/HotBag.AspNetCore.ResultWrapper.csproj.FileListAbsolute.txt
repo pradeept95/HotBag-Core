@@ -1,14 +1,9 @@
 C:\Users\prade\source\repos\HotBagCore\HotBag.AspNetCore.ResultWrapper\bin\Debug\netstandard2.0\HotBag.AspNetCore.ResultWrapper.deps.json
 C:\Users\prade\source\repos\HotBagCore\HotBag.AspNetCore.ResultWrapper\bin\Debug\netstandard2.0\HotBag.AspNetCore.ResultWrapper.dll
 C:\Users\prade\source\repos\HotBagCore\HotBag.AspNetCore.ResultWrapper\bin\Debug\netstandard2.0\HotBag.AspNetCore.ResultWrapper.pdb
-C:\Users\prade\source\repos\HotBagCore\HotBag.AspNetCore.ResultWrapper\bin\Debug\netstandard2.0\HotBag.AspNetCore.AppSettings.dll
-C:\Users\prade\source\repos\HotBagCore\HotBag.AspNetCore.ResultWrapper\bin\Debug\netstandard2.0\HotBag.AspNetCore.Extensions.dll
-C:\Users\prade\source\repos\HotBagCore\HotBag.AspNetCore.ResultWrapper\bin\Debug\netstandard2.0\HotBag.AspNetCore.AppSettings.pdb
-C:\Users\prade\source\repos\HotBagCore\HotBag.AspNetCore.ResultWrapper\bin\Debug\netstandard2.0\HotBag.AspNetCore.Extensions.pdb
 C:\Users\prade\source\repos\HotBagCore\HotBag.AspNetCore.ResultWrapper\obj\Debug\netstandard2.0\HotBag.AspNetCore.ResultWrapper.csprojAssemblyReference.cache
 C:\Users\prade\source\repos\HotBagCore\HotBag.AspNetCore.ResultWrapper\obj\Debug\netstandard2.0\HotBag.AspNetCore.ResultWrapper.csproj.CoreCompileInputs.cache
 C:\Users\prade\source\repos\HotBagCore\HotBag.AspNetCore.ResultWrapper\obj\Debug\netstandard2.0\HotBag.AspNetCore.ResultWrapper.AssemblyInfoInputs.cache
 C:\Users\prade\source\repos\HotBagCore\HotBag.AspNetCore.ResultWrapper\obj\Debug\netstandard2.0\HotBag.AspNetCore.ResultWrapper.AssemblyInfo.cs
-C:\Users\prade\source\repos\HotBagCore\HotBag.AspNetCore.ResultWrapper\obj\Debug\netstandard2.0\HotBag.AspNetCore.ResultWrapper.csproj.CopyComplete
 C:\Users\prade\source\repos\HotBagCore\HotBag.AspNetCore.ResultWrapper\obj\Debug\netstandard2.0\HotBag.AspNetCore.ResultWrapper.dll
 C:\Users\prade\source\repos\HotBagCore\HotBag.AspNetCore.ResultWrapper\obj\Debug\netstandard2.0\HotBag.AspNetCore.ResultWrapper.pdb

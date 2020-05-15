@@ -2,6 +2,28 @@
   "version": 3,
   "targets": {
     ".NETStandard,Version=v2.0": {
+      "HotBag.AspNetCore.AppSettings/1.0.0": {
+        "type": "package",
+        "dependencies": {
+          "HotBag.AspNetCore.Extensions": "1.0.0",
+          "Microsoft.Extensions.DependencyInjection": "2.2.0"
+        },
+        "compile": {
+          "lib/netstandard2.0/HotBag.AspNetCore.AppSettings.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/HotBag.AspNetCore.AppSettings.dll": {}
+        }
+      },
+      "HotBag.AspNetCore.Extensions/1.0.0": {
+        "type": "package",
+        "compile": {
+          "lib/netstandard2.0/HotBag.AspNetCore.Extensions.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/HotBag.AspNetCore.Extensions.dll": {}
+        }
+      },
       "Microsoft.AspNetCore.Authentication.Abstractions/2.2.0": {
         "type": "package",
         "dependencies": {
@@ -1056,34 +1078,34 @@
         "runtime": {
           "lib/netstandard1.3/System.Xml.XDocument.dll": {}
         }
-      },
-      "HotBag.AspNetCore.AppSettings/1.0.0": {
-        "type": "project",
-        "framework": ".NETStandard,Version=v2.0",
-        "dependencies": {
-          "HotBag.AspNetCore.Extensions": "1.0.0",
-          "Microsoft.Extensions.DependencyInjection": "2.2.0"
-        },
-        "compile": {
-          "bin/placeholder/HotBag.AspNetCore.AppSettings.dll": {}
-        },
-        "runtime": {
-          "bin/placeholder/HotBag.AspNetCore.AppSettings.dll": {}
-        }
-      },
-      "HotBag.AspNetCore.Extensions/1.0.0": {
-        "type": "project",
-        "framework": ".NETStandard,Version=v2.0",
-        "compile": {
-          "bin/placeholder/HotBag.AspNetCore.Extensions.dll": {}
-        },
-        "runtime": {
-          "bin/placeholder/HotBag.AspNetCore.Extensions.dll": {}
-        }
       }
     }
   },
   "libraries": {
+    "HotBag.AspNetCore.AppSettings/1.0.0": {
+      "sha512": "dwEFFlZMYxTG2hgofVyPi2QFgLpjshoU2YIgzg5P0nD3CZOm/sD1UfjQ7ManoDV2+Ch5+Aab5F5z/g1YRXBqjA==",
+      "type": "package",
+      "path": "hotbag.aspnetcore.appsettings/1.0.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "hotbag.aspnetcore.appsettings.1.0.0.nupkg.sha512",
+        "hotbag.aspnetcore.appsettings.nuspec",
+        "lib/netstandard2.0/HotBag.AspNetCore.AppSettings.dll"
+      ]
+    },
+    "HotBag.AspNetCore.Extensions/1.0.0": {
+      "sha512": "ptTb8+8dZU+HyLQw3xs+rIrQaQ3Lrxe+BHFCnbCF8sY5XAw0bz33qR7lUzv5aSPcEQA991CW4nq7dW4dkpZb7g==",
+      "type": "package",
+      "path": "hotbag.aspnetcore.extensions/1.0.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "hotbag.aspnetcore.extensions.1.0.0.nupkg.sha512",
+        "hotbag.aspnetcore.extensions.nuspec",
+        "lib/netstandard2.0/HotBag.AspNetCore.Extensions.dll"
+      ]
+    },
     "Microsoft.AspNetCore.Authentication.Abstractions/2.2.0": {
       "sha512": "VloMLDJMf3n/9ic5lCBOa42IBYJgyB1JhzLsL68Zqg+2bEPWfGBj/xCJy/LrKTArN0coOcZp3wyVTZlx0y9pHQ==",
       "type": "package",
@@ -4054,16 +4076,6 @@
         "system.xml.xdocument.4.0.11.nupkg.sha512",
         "system.xml.xdocument.nuspec"
       ]
-    },
-    "HotBag.AspNetCore.AppSettings/1.0.0": {
-      "type": "project",
-      "path": "../HotBag.AspNetCore.AppSettings/HotBag.AspNetCore.AppSettings.csproj",
-      "msbuildProject": "../HotBag.AspNetCore.AppSettings/HotBag.AspNetCore.AppSettings.csproj"
-    },
-    "HotBag.AspNetCore.Extensions/1.0.0": {
-      "type": "project",
-      "path": "../HotBag.AspNetCore.Extensions/HotBag.AspNetCore.Extensions.csproj",
-      "msbuildProject": "../HotBag.AspNetCore.Extensions/HotBag.AspNetCore.Extensions.csproj"
     }
   },
   "projectFileDependencyGroups": {
@@ -4102,11 +4114,7 @@
       },
       "frameworks": {
         "netstandard2.0": {
-          "projectReferences": {
-            "C:\\Users\\prade\\source\\repos\\HotBagCore\\HotBag.AspNetCore.AppSettings\\HotBag.AspNetCore.AppSettings.csproj": {
-              "projectPath": "C:\\Users\\prade\\source\\repos\\HotBagCore\\HotBag.AspNetCore.AppSettings\\HotBag.AspNetCore.AppSettings.csproj"
-            }
-          }
+          "projectReferences": {}
         }
       },
       "warningProperties": {
@@ -4118,6 +4126,10 @@
     "frameworks": {
       "netstandard2.0": {
         "dependencies": {
+          "HotBag.AspNetCore.AppSettings": {
+            "target": "Package",
+            "version": "[1.0.0, )"
+          },
           "Microsoft.AspNetCore.Mvc.Core": {
             "target": "Package",
             "version": "[2.2.5, )"

@@ -28,6 +28,41 @@
           "lib/netstandard2.0/AutoMapper.Extensions.Microsoft.DependencyInjection.dll": {}
         }
       },
+      "HotBag.AspNetCore.Authorization/1.0.0": {
+        "type": "package",
+        "dependencies": {
+          "HotBag.AspNetCore.Security": "1.0.0",
+          "Microsoft.AspNetCore.Authentication.JwtBearer": "2.2.0",
+          "Microsoft.AspNetCore.Mvc.Core": "2.2.5"
+        },
+        "compile": {
+          "lib/netstandard2.0/HotBag.AspNetCore.Authorization.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/HotBag.AspNetCore.Authorization.dll": {}
+        }
+      },
+      "HotBag.AspNetCore.Extensions/1.0.0": {
+        "type": "package",
+        "compile": {
+          "lib/netstandard2.0/HotBag.AspNetCore.Extensions.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/HotBag.AspNetCore.Extensions.dll": {}
+        }
+      },
+      "HotBag.AspNetCore.Security/1.0.0": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.AspNetCore.Cryptography.KeyDerivation": "2.2.0"
+        },
+        "compile": {
+          "lib/netstandard2.0/HotBag.AspNetCore.Security.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/HotBag.AspNetCore.Security.dll": {}
+        }
+      },
       "Microsoft.AspNetCore.Authentication/2.2.0": {
         "type": "package",
         "dependencies": {
@@ -2126,21 +2161,6 @@
           "bin/placeholder/HotBag.AspNetCore.AppSettings.dll": {}
         }
       },
-      "HotBag.AspNetCore.Authorization/1.0.0": {
-        "type": "project",
-        "framework": ".NETStandard,Version=v2.0",
-        "dependencies": {
-          "HotBag.AspNetCore.Security": "1.0.0",
-          "Microsoft.AspNetCore.Authentication.JwtBearer": "2.2.0",
-          "Microsoft.AspNetCore.Mvc.Core": "2.2.5"
-        },
-        "compile": {
-          "bin/placeholder/HotBag.AspNetCore.Authorization.dll": {}
-        },
-        "runtime": {
-          "bin/placeholder/HotBag.AspNetCore.Authorization.dll": {}
-        }
-      },
       "HotBag.AspNetCore.AutoMapper/1.0.0": {
         "type": "project",
         "framework": ".NETStandard,Version=v2.0",
@@ -2192,16 +2212,6 @@
           "bin/placeholder/HotBag.AspNetCore.DI.dll": {}
         }
       },
-      "HotBag.AspNetCore.Extensions/1.0.0": {
-        "type": "project",
-        "framework": ".NETStandard,Version=v2.0",
-        "compile": {
-          "bin/placeholder/HotBag.AspNetCore.Extensions.dll": {}
-        },
-        "runtime": {
-          "bin/placeholder/HotBag.AspNetCore.Extensions.dll": {}
-        }
-      },
       "HotBag.AspNetCore.Reflection/1.0.0": {
         "type": "project",
         "framework": ".NETStandard,Version=v2.0",
@@ -2227,19 +2237,6 @@
         },
         "runtime": {
           "bin/placeholder/HotBag.AspNetCore.ResultWrapper.dll": {}
-        }
-      },
-      "HotBag.AspNetCore.Security/1.0.0": {
-        "type": "project",
-        "framework": ".NETStandard,Version=v2.0",
-        "dependencies": {
-          "Microsoft.AspNetCore.Cryptography.KeyDerivation": "2.2.0"
-        },
-        "compile": {
-          "bin/placeholder/HotBag.AspNetCore.Security.dll": {}
-        },
-        "runtime": {
-          "bin/placeholder/HotBag.AspNetCore.Security.dll": {}
         }
       }
     }
@@ -2273,6 +2270,42 @@
         "automapper.extensions.microsoft.dependencyinjection.nuspec",
         "lib/netstandard2.0/AutoMapper.Extensions.Microsoft.DependencyInjection.dll",
         "lib/netstandard2.0/AutoMapper.Extensions.Microsoft.DependencyInjection.pdb"
+      ]
+    },
+    "HotBag.AspNetCore.Authorization/1.0.0": {
+      "sha512": "hzLcY56zKpbGHrIQzIzDc/Urx7KV7ILfZ5FUkqT4b3NVhvXW8l/RAiXC4bAHb4Mz4h7YZuL4Fi8FkYb0nXQOOQ==",
+      "type": "package",
+      "path": "hotbag.aspnetcore.authorization/1.0.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "hotbag.aspnetcore.authorization.1.0.0.nupkg.sha512",
+        "hotbag.aspnetcore.authorization.nuspec",
+        "lib/netstandard2.0/HotBag.AspNetCore.Authorization.dll"
+      ]
+    },
+    "HotBag.AspNetCore.Extensions/1.0.0": {
+      "sha512": "ptTb8+8dZU+HyLQw3xs+rIrQaQ3Lrxe+BHFCnbCF8sY5XAw0bz33qR7lUzv5aSPcEQA991CW4nq7dW4dkpZb7g==",
+      "type": "package",
+      "path": "hotbag.aspnetcore.extensions/1.0.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "hotbag.aspnetcore.extensions.1.0.0.nupkg.sha512",
+        "hotbag.aspnetcore.extensions.nuspec",
+        "lib/netstandard2.0/HotBag.AspNetCore.Extensions.dll"
+      ]
+    },
+    "HotBag.AspNetCore.Security/1.0.0": {
+      "sha512": "1YsKCZwQeCEIHvvuNg2G9aewqhtW016iH+TZy9Dk256iJ+kOEq2S81zS/EYK27jSbZXzrbMm6/riQ1AIgJcQww==",
+      "type": "package",
+      "path": "hotbag.aspnetcore.security/1.0.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "hotbag.aspnetcore.security.1.0.0.nupkg.sha512",
+        "hotbag.aspnetcore.security.nuspec",
+        "lib/netstandard2.0/HotBag.AspNetCore.Security.dll"
       ]
     },
     "Microsoft.AspNetCore.Authentication/2.2.0": {
@@ -7275,11 +7308,6 @@
       "path": "../HotBag.AspNetCore.AppSettings/HotBag.AspNetCore.AppSettings.csproj",
       "msbuildProject": "../HotBag.AspNetCore.AppSettings/HotBag.AspNetCore.AppSettings.csproj"
     },
-    "HotBag.AspNetCore.Authorization/1.0.0": {
-      "type": "project",
-      "path": "../HotBag.AspNetCore.Authorization/HotBag.AspNetCore.Authorization.csproj",
-      "msbuildProject": "../HotBag.AspNetCore.Authorization/HotBag.AspNetCore.Authorization.csproj"
-    },
     "HotBag.AspNetCore.AutoMapper/1.0.0": {
       "type": "project",
       "path": "../HotBag.AspNetCore.Automapper/HotBag.AspNetCore.AutoMapper.csproj",
@@ -7295,11 +7323,6 @@
       "path": "../HotBag.AspNetCore.DI/HotBag.AspNetCore.DI.csproj",
       "msbuildProject": "../HotBag.AspNetCore.DI/HotBag.AspNetCore.DI.csproj"
     },
-    "HotBag.AspNetCore.Extensions/1.0.0": {
-      "type": "project",
-      "path": "../HotBag.AspNetCore.Extensions/HotBag.AspNetCore.Extensions.csproj",
-      "msbuildProject": "../HotBag.AspNetCore.Extensions/HotBag.AspNetCore.Extensions.csproj"
-    },
     "HotBag.AspNetCore.Reflection/1.0.0": {
       "type": "project",
       "path": "../HotBag.AspNetCore.Reflection/HotBag.AspNetCore.Reflection.csproj",
@@ -7309,11 +7332,6 @@
       "type": "project",
       "path": "../HotBag.AspNetCore.ResultWrapper/HotBag.AspNetCore.ResultWrapper.csproj",
       "msbuildProject": "../HotBag.AspNetCore.ResultWrapper/HotBag.AspNetCore.ResultWrapper.csproj"
-    },
-    "HotBag.AspNetCore.Security/1.0.0": {
-      "type": "project",
-      "path": "../HotBag.AspNetCore.Security/HotBag.AspNetCore.Security.csproj",
-      "msbuildProject": "../HotBag.AspNetCore.Security/HotBag.AspNetCore.Security.csproj"
     }
   },
   "projectFileDependencyGroups": {

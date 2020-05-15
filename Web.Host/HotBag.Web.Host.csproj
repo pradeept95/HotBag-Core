@@ -5,8 +5,11 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <PackageReference Include="HotBag.AspNetCore" Version="1.0.1" />
+  </ItemGroup>
+
+  <ItemGroup>
     <ProjectReference Include="..\HotBag.AspNetCore.EventBus\HotBag.AspNetCore.EventBus.csproj" />
-    <ProjectReference Include="..\HotBag.AspNetCore\HotBag.AspNetCore.csproj" />
   </ItemGroup>
 
 </Project>

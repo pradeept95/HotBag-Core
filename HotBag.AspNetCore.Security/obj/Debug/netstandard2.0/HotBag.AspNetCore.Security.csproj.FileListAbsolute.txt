@@ -1,7 +1,6 @@
 C:\Users\prade\source\repos\HotBagCore\HotBag.AspNetCore.Security\bin\Debug\netstandard2.0\HotBag.AspNetCore.Security.deps.json
 C:\Users\prade\source\repos\HotBagCore\HotBag.AspNetCore.Security\bin\Debug\netstandard2.0\HotBag.AspNetCore.Security.dll
 C:\Users\prade\source\repos\HotBagCore\HotBag.AspNetCore.Security\bin\Debug\netstandard2.0\HotBag.AspNetCore.Security.pdb
-C:\Users\prade\source\repos\HotBagCore\HotBag.AspNetCore.Security\obj\Debug\netstandard2.0\HotBag.AspNetCore.Security.csprojAssemblyReference.cache
 C:\Users\prade\source\repos\HotBagCore\HotBag.AspNetCore.Security\obj\Debug\netstandard2.0\HotBag.AspNetCore.Security.csproj.CoreCompileInputs.cache
 C:\Users\prade\source\repos\HotBagCore\HotBag.AspNetCore.Security\obj\Debug\netstandard2.0\HotBag.AspNetCore.Security.AssemblyInfoInputs.cache
 C:\Users\prade\source\repos\HotBagCore\HotBag.AspNetCore.Security\obj\Debug\netstandard2.0\HotBag.AspNetCore.Security.AssemblyInfo.cs

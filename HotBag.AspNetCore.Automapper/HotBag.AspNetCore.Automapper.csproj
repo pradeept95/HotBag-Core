@@ -6,13 +6,10 @@
 
   <ItemGroup>
     <PackageReference Include="AutoMapper.Extensions.Microsoft.DependencyInjection" Version="6.0.0" />
-  </ItemGroup>
-
-  <ItemGroup>
-    <ProjectReference Include="..\HotBag.AspNetCore.Data\HotBag.AspNetCore.Data.csproj" />
-    <ProjectReference Include="..\HotBag.AspNetCore.DI\HotBag.AspNetCore.DI.csproj" />
-    <ProjectReference Include="..\HotBag.AspNetCore.Extensions\HotBag.AspNetCore.Extensions.csproj" />
-    <ProjectReference Include="..\HotBag.AspNetCore.Reflection\HotBag.AspNetCore.Reflection.csproj" />
+    <PackageReference Include="HotBag.AspNetCore.Data" Version="1.0.0" />
+    <PackageReference Include="HotBag.AspNetCore.DI" Version="1.0.0" />
+    <PackageReference Include="HotBag.AspNetCore.Extensions" Version="1.0.0" />
+    <PackageReference Include="HotBag.AspNetCore.Reflection" Version="1.0.0" />
   </ItemGroup>
 
 </Project>

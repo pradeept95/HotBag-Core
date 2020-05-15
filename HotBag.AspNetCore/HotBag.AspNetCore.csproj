@@ -2,35 +2,30 @@
 
   <PropertyGroup>
     <TargetFramework>netstandard2.0</TargetFramework>
+    <Version>1.0.1</Version>
   </PropertyGroup>
 
   <ItemGroup>
+    <PackageReference Include="HotBag.AspNetCore.AppSettings" Version="1.0.0" />
+    <PackageReference Include="HotBag.AspNetCore.Authorization" Version="1.0.0" />
+    <PackageReference Include="HotBag.AspNetCore.AutoMapper" Version="1.0.0" />
+    <PackageReference Include="HotBag.AspNetCore.Data" Version="1.0.0" />
+    <PackageReference Include="HotBag.AspNetCore.DI" Version="1.0.0" />
+    <PackageReference Include="HotBag.AspNetCore.EventBus" Version="1.0.0" />
+    <PackageReference Include="HotBag.AspNetCore.Extensions" Version="1.0.0" />
+    <PackageReference Include="HotBag.AspNetCore.IO" Version="1.0.0" />
+    <PackageReference Include="HotBag.AspNetCore.Log" Version="1.0.0" />
+    <PackageReference Include="HotBag.AspNetCore.RabbitMQ" Version="1.0.0" />
+    <PackageReference Include="HotBag.AspNetCore.Reflection" Version="1.0.0" />
+    <PackageReference Include="HotBag.AspNetCore.ResultWrapper" Version="1.0.0" />
+    <PackageReference Include="HotBag.AspNetCore.Security" Version="1.0.0" />
+    <PackageReference Include="HotBag.AspNetCore.SignalR" Version="1.0.0" />
+    <PackageReference Include="HotBag.AspNetCore.Swagger" Version="1.0.0" />
+    <PackageReference Include="HotBag.AspNetCore.Web" Version="1.0.0" />
     <PackageReference Include="Microsoft.AspNetCore.Cors" Version="2.2.0" />
     <PackageReference Include="Microsoft.AspNetCore.Http" Version="2.2.0" />
     <PackageReference Include="Microsoft.Extensions.Configuration.Abstractions" Version="2.2.0" />
     <PackageReference Include="Microsoft.Extensions.DependencyInjection" Version="2.2.0" />
-  </ItemGroup>
-
-  <ItemGroup>
-    <ProjectReference Include="..\HotBag.AspNetCore.AppSettings\HotBag.AspNetCore.AppSettings.csproj" />
-    <ProjectReference Include="..\HotBag.AspNetCore.Authorization\HotBag.AspNetCore.Authorization.csproj" />
-    <ProjectReference Include="..\HotBag.AspNetCore.Automapper\HotBag.AspNetCore.AutoMapper.csproj" />
-    <ProjectReference Include="..\HotBag.AspNetCore.Data\HotBag.AspNetCore.Data.csproj" />
-    <ProjectReference Include="..\HotBag.AspNetCore.DI\HotBag.AspNetCore.DI.csproj" />
-    <ProjectReference Include="..\HotBag.AspNetCore.EventBus\HotBag.AspNetCore.EventBus.csproj" />
-    <ProjectReference Include="..\HotBag.AspNetCore.Extensions\HotBag.AspNetCore.Extensions.csproj" />
-    <ProjectReference Include="..\HotBag.AspNetCore.FluentValidation\HotBag.AspNetCore.FluentValidation.csproj" />
-    <ProjectReference Include="..\HotBag.AspNetCore.GoogleAnalytics\HotBag.AspNetCore.GoogleAnalytics.csproj" />
-    <ProjectReference Include="..\HotBag.AspNetCore.IO\HotBag.AspNetCore.IO.csproj" />
-    <ProjectReference Include="..\HotBag.AspNetCore.Log\HotBag.AspNetCore.Log.csproj" />
-    <ProjectReference Include="..\HotBag.AspNetCore.PushNotification\HotBag.AspNetCore.PushNotification.csproj" />
-    <ProjectReference Include="..\HotBag.AspNetCore.RabbitMQ\HotBag.AspNetCore.RabbitMQ.csproj" />
-    <ProjectReference Include="..\HotBag.AspNetCore.Reflection\HotBag.AspNetCore.Reflection.csproj" />
-    <ProjectReference Include="..\HotBag.AspNetCore.ResultWrapper\HotBag.AspNetCore.ResultWrapper.csproj" />
-    <ProjectReference Include="..\HotBag.AspNetCore.Security\HotBag.AspNetCore.Security.csproj" />
-    <ProjectReference Include="..\HotBag.AspNetCore.SignalR\HotBag.AspNetCore.SignalR.csproj" />
-    <ProjectReference Include="..\HotBag.AspNetCore.Swagger\HotBag.AspNetCore.Swagger.csproj" />
-    <ProjectReference Include="..\HotBag.AspNetCore.Web\HotBag.AspNetCore.Web.csproj" />
   </ItemGroup>
 
 </Project>

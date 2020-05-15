@@ -2,6 +2,15 @@
   "version": 3,
   "targets": {
     ".NETStandard,Version=v2.0": {
+      "HotBag.AspNetCore.Extensions/1.0.0": {
+        "type": "package",
+        "compile": {
+          "lib/netstandard2.0/HotBag.AspNetCore.Extensions.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/HotBag.AspNetCore.Extensions.dll": {}
+        }
+      },
       "Microsoft.Extensions.DependencyInjection/2.2.0": {
         "type": "package",
         "dependencies": {
@@ -46,20 +55,22 @@
         "build": {
           "build/netstandard2.0/NETStandard.Library.targets": {}
         }
-      },
-      "HotBag.AspNetCore.Extensions/1.0.0": {
-        "type": "project",
-        "framework": ".NETStandard,Version=v2.0",
-        "compile": {
-          "bin/placeholder/HotBag.AspNetCore.Extensions.dll": {}
-        },
-        "runtime": {
-          "bin/placeholder/HotBag.AspNetCore.Extensions.dll": {}
-        }
       }
     }
   },
   "libraries": {
+    "HotBag.AspNetCore.Extensions/1.0.0": {
+      "sha512": "ptTb8+8dZU+HyLQw3xs+rIrQaQ3Lrxe+BHFCnbCF8sY5XAw0bz33qR7lUzv5aSPcEQA991CW4nq7dW4dkpZb7g==",
+      "type": "package",
+      "path": "hotbag.aspnetcore.extensions/1.0.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "hotbag.aspnetcore.extensions.1.0.0.nupkg.sha512",
+        "hotbag.aspnetcore.extensions.nuspec",
+        "lib/netstandard2.0/HotBag.AspNetCore.Extensions.dll"
+      ]
+    },
     "Microsoft.Extensions.DependencyInjection/2.2.0": {
       "sha512": "MZtBIwfDFork5vfjpJdG5g8wuJFt7d/y3LOSVVtDK/76wlbtz6cjltfKHqLx2TKVqTj5/c41t77m1+h20zqtPA==",
       "type": "package",
@@ -232,11 +243,6 @@
         "netstandard.library.2.0.3.nupkg.sha512",
         "netstandard.library.nuspec"
       ]
-    },
-    "HotBag.AspNetCore.Extensions/1.0.0": {
-      "type": "project",
-      "path": "../HotBag.AspNetCore.Extensions/HotBag.AspNetCore.Extensions.csproj",
-      "msbuildProject": "../HotBag.AspNetCore.Extensions/HotBag.AspNetCore.Extensions.csproj"
     }
   },
   "projectFileDependencyGroups": {
@@ -275,11 +281,7 @@
       },
       "frameworks": {
         "netstandard2.0": {
-          "projectReferences": {
-            "C:\\Users\\prade\\source\\repos\\HotBagCore\\HotBag.AspNetCore.Extensions\\HotBag.AspNetCore.Extensions.csproj": {
-              "projectPath": "C:\\Users\\prade\\source\\repos\\HotBagCore\\HotBag.AspNetCore.Extensions\\HotBag.AspNetCore.Extensions.csproj"
-            }
-          }
+          "projectReferences": {}
         }
       },
       "warningProperties": {
@@ -291,6 +293,10 @@
     "frameworks": {
       "netstandard2.0": {
         "dependencies": {
+          "HotBag.AspNetCore.Extensions": {
+            "target": "Package",
+            "version": "[1.0.0, )"
+          },
           "Microsoft.Extensions.DependencyInjection": {
             "target": "Package",
             "version": "[2.2.0, )"

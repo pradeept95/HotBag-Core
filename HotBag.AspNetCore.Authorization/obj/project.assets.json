@@ -2,6 +2,18 @@
   "version": 3,
   "targets": {
     ".NETStandard,Version=v2.0": {
+      "HotBag.AspNetCore.Security/1.0.0": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.AspNetCore.Cryptography.KeyDerivation": "2.2.0"
+        },
+        "compile": {
+          "lib/netstandard2.0/HotBag.AspNetCore.Security.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/HotBag.AspNetCore.Security.dll": {}
+        }
+      },
       "Microsoft.AspNetCore.Authentication/2.2.0": {
         "type": "package",
         "dependencies": {
@@ -2093,23 +2105,22 @@
         "runtime": {
           "lib/netstandard1.3/System.Xml.XmlSerializer.dll": {}
         }
-      },
-      "HotBag.AspNetCore.Security/1.0.0": {
-        "type": "project",
-        "framework": ".NETStandard,Version=v2.0",
-        "dependencies": {
-          "Microsoft.AspNetCore.Cryptography.KeyDerivation": "2.2.0"
-        },
-        "compile": {
-          "bin/placeholder/HotBag.AspNetCore.Security.dll": {}
-        },
-        "runtime": {
-          "bin/placeholder/HotBag.AspNetCore.Security.dll": {}
-        }
       }
     }
   },
   "libraries": {
+    "HotBag.AspNetCore.Security/1.0.0": {
+      "sha512": "1YsKCZwQeCEIHvvuNg2G9aewqhtW016iH+TZy9Dk256iJ+kOEq2S81zS/EYK27jSbZXzrbMm6/riQ1AIgJcQww==",
+      "type": "package",
+      "path": "hotbag.aspnetcore.security/1.0.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "hotbag.aspnetcore.security.1.0.0.nupkg.sha512",
+        "hotbag.aspnetcore.security.nuspec",
+        "lib/netstandard2.0/HotBag.AspNetCore.Security.dll"
+      ]
+    },
     "Microsoft.AspNetCore.Authentication/2.2.0": {
       "sha512": "b0R9X7L6zMqNsssKDvhYHuNi5x0s4DyHTeXybIAyGaitKiW1Q5aAGKdV2codHPiePv9yHfC9hAMyScXQ/xXhPw==",
       "type": "package",
@@ -7057,11 +7068,6 @@
         "system.xml.xmlserializer.4.3.0.nupkg.sha512",
         "system.xml.xmlserializer.nuspec"
       ]
-    },
-    "HotBag.AspNetCore.Security/1.0.0": {
-      "type": "project",
-      "path": "../HotBag.AspNetCore.Security/HotBag.AspNetCore.Security.csproj",
-      "msbuildProject": "../HotBag.AspNetCore.Security/HotBag.AspNetCore.Security.csproj"
     }
   },
   "projectFileDependencyGroups": {
@@ -7101,11 +7107,7 @@
       },
       "frameworks": {
         "netstandard2.0": {
-          "projectReferences": {
-            "C:\\Users\\prade\\source\\repos\\HotBagCore\\HotBag.AspNetCore.Security\\HotBag.AspNetCore.Security.csproj": {
-              "projectPath": "C:\\Users\\prade\\source\\repos\\HotBagCore\\HotBag.AspNetCore.Security\\HotBag.AspNetCore.Security.csproj"
-            }
-          }
+          "projectReferences": {}
         }
       },
       "warningProperties": {
@@ -7117,6 +7119,10 @@
     "frameworks": {
       "netstandard2.0": {
         "dependencies": {
+          "HotBag.AspNetCore.Security": {
+            "target": "Package",
+            "version": "[1.0.0, )"
+          },
           "Microsoft.AspNetCore.Authentication.JwtBearer": {
             "target": "Package",
             "version": "[2.2.0, )"

@@ -5,11 +5,8 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <PackageReference Include="HotBag.AspNetCore.Extensions" Version="1.0.0" />
     <PackageReference Include="Microsoft.Extensions.DependencyInjection" Version="2.2.0" />
-  </ItemGroup>
-
-  <ItemGroup>
-    <ProjectReference Include="..\HotBag.AspNetCore.Extensions\HotBag.AspNetCore.Extensions.csproj" />
   </ItemGroup>
 
 </Project>

@@ -28,111 +28,221 @@
           "lib/netstandard2.0/AutoMapper.Extensions.Microsoft.DependencyInjection.dll": {}
         }
       },
-      "FluentValidation/8.6.2": {
+      "HotBag.AspNetCore.AppSettings/1.0.0": {
         "type": "package",
         "dependencies": {
-          "System.ComponentModel.Annotations": "4.4.1"
+          "HotBag.AspNetCore.Extensions": "1.0.0",
+          "Microsoft.Extensions.DependencyInjection": "2.2.0"
         },
         "compile": {
-          "lib/netstandard2.0/FluentValidation.dll": {}
+          "lib/netstandard2.0/HotBag.AspNetCore.AppSettings.dll": {}
         },
         "runtime": {
-          "lib/netstandard2.0/FluentValidation.dll": {}
+          "lib/netstandard2.0/HotBag.AspNetCore.AppSettings.dll": {}
         }
       },
-      "FluentValidation.AspNetCore/8.6.2": {
+      "HotBag.AspNetCore.Authorization/1.0.0": {
         "type": "package",
         "dependencies": {
-          "FluentValidation": "8.6.2",
-          "FluentValidation.DependencyInjectionExtensions": "8.6.2",
-          "Microsoft.AspNetCore.Mvc": "2.1.0"
+          "HotBag.AspNetCore.Security": "1.0.0",
+          "Microsoft.AspNetCore.Authentication.JwtBearer": "2.2.0",
+          "Microsoft.AspNetCore.Mvc.Core": "2.2.5"
         },
         "compile": {
-          "lib/netstandard2.0/FluentValidation.AspNetCore.dll": {}
+          "lib/netstandard2.0/HotBag.AspNetCore.Authorization.dll": {}
         },
         "runtime": {
-          "lib/netstandard2.0/FluentValidation.AspNetCore.dll": {}
+          "lib/netstandard2.0/HotBag.AspNetCore.Authorization.dll": {}
         }
       },
-      "FluentValidation.DependencyInjectionExtensions/8.6.2": {
+      "HotBag.AspNetCore.AutoMapper/1.0.0": {
         "type": "package",
         "dependencies": {
-          "FluentValidation": "8.6.2",
-          "Microsoft.Extensions.Dependencyinjection.Abstractions": "2.1.0"
+          "AutoMapper.Extensions.Microsoft.DependencyInjection": "6.0.0",
+          "HotBag.AspNetCore.DI": "1.0.0",
+          "HotBag.AspNetCore.Data": "1.0.0",
+          "HotBag.AspNetCore.Extensions": "1.0.0",
+          "HotBag.AspNetCore.Reflection": "1.0.0"
         },
         "compile": {
-          "lib/netstandard2.0/FluentValidation.DependencyInjectionExtensions.dll": {}
+          "lib/netstandard2.0/HotBag.AspNetCore.AutoMapper.dll": {}
         },
         "runtime": {
-          "lib/netstandard2.0/FluentValidation.DependencyInjectionExtensions.dll": {}
+          "lib/netstandard2.0/HotBag.AspNetCore.AutoMapper.dll": {}
         }
       },
-      "Google.Apis/1.45.0": {
+      "HotBag.AspNetCore.Data/1.0.0": {
         "type": "package",
         "dependencies": {
-          "Google.Apis.Core": "1.45.0"
+          "HotBag.AspNetCore.Authorization": "1.0.0",
+          "System.ComponentModel.Annotations": "4.7.0"
         },
         "compile": {
-          "lib/netstandard2.0/Google.Apis.dll": {}
+          "lib/netstandard2.0/HotBag.AspNetCore.Data.dll": {}
         },
         "runtime": {
-          "lib/netstandard2.0/Google.Apis.dll": {}
+          "lib/netstandard2.0/HotBag.AspNetCore.Data.dll": {}
         }
       },
-      "Google.Apis.AnalyticsReporting.v4/1.45.0.1921": {
+      "HotBag.AspNetCore.DI/1.0.0": {
         "type": "package",
         "dependencies": {
-          "Google.Apis": "1.45.0",
-          "Google.Apis.Auth": "1.45.0"
+          "HotBag.AspNetCore.Reflection": "1.0.0",
+          "Microsoft.AspNetCore.Hosting.Abstractions": "2.2.0",
+          "Microsoft.AspNetCore.Http.Abstractions": "2.2.0",
+          "Microsoft.Extensions.DependencyInjection": "2.2.0",
+          "Microsoft.Extensions.DependencyInjection.Abstractions": "2.2.0",
+          "Microsoft.Extensions.DependencyModel": "2.1.0",
+          "Scrutor": "2.2.0",
+          "System.Reflection.TypeExtensions": "4.7.0"
         },
         "compile": {
-          "lib/netstandard2.0/Google.Apis.AnalyticsReporting.v4.dll": {}
+          "lib/netstandard2.0/HotBag.AspNetCore.DI.dll": {}
         },
         "runtime": {
-          "lib/netstandard2.0/Google.Apis.AnalyticsReporting.v4.dll": {}
+          "lib/netstandard2.0/HotBag.AspNetCore.DI.dll": {}
         }
       },
-      "Google.Apis.Auth/1.45.0": {
+      "HotBag.AspNetCore.EventBus/1.0.0": {
         "type": "package",
         "dependencies": {
-          "Google.Apis": "1.45.0",
-          "Google.Apis.Core": "1.45.0"
+          "HotBag.AspNetCore.Reflection": "1.0.0",
+          "Microsoft.Extensions.DependencyModel": "2.1.0"
         },
         "compile": {
-          "lib/netstandard2.0/Google.Apis.Auth.PlatformServices.dll": {},
-          "lib/netstandard2.0/Google.Apis.Auth.dll": {}
+          "lib/netstandard2.0/HotBag.AspNetCore.EventBus.dll": {}
         },
         "runtime": {
-          "lib/netstandard2.0/Google.Apis.Auth.PlatformServices.dll": {},
-          "lib/netstandard2.0/Google.Apis.Auth.dll": {}
+          "lib/netstandard2.0/HotBag.AspNetCore.EventBus.dll": {}
         }
       },
-      "Google.Apis.Core/1.45.0": {
+      "HotBag.AspNetCore.Extensions/1.0.0": {
         "type": "package",
-        "dependencies": {
-          "Newtonsoft.Json": "12.0.3"
-        },
         "compile": {
-          "lib/netstandard2.0/Google.Apis.Core.dll": {}
+          "lib/netstandard2.0/HotBag.AspNetCore.Extensions.dll": {}
         },
         "runtime": {
-          "lib/netstandard2.0/Google.Apis.Core.dll": {}
+          "lib/netstandard2.0/HotBag.AspNetCore.Extensions.dll": {}
         }
       },
-      "Microsoft.AspNetCore.Antiforgery/2.1.0": {
+      "HotBag.AspNetCore.IO/1.0.0": {
         "type": "package",
         "dependencies": {
-          "Microsoft.AspNetCore.DataProtection": "2.1.0",
-          "Microsoft.AspNetCore.Http.Abstractions": "2.1.0",
-          "Microsoft.AspNetCore.Http.Extensions": "2.1.0",
-          "Microsoft.AspNetCore.WebUtilities": "2.1.0",
-          "Microsoft.Extensions.ObjectPool": "2.1.0"
+          "Microsoft.AspNetCore.Hosting.Abstractions": "2.2.0",
+          "Microsoft.AspNetCore.Http.Features": "2.2.0"
         },
         "compile": {
-          "lib/netstandard2.0/Microsoft.AspNetCore.Antiforgery.dll": {}
+          "lib/netstandard2.0/HotBag.AspNetCore.IO.dll": {}
         },
         "runtime": {
-          "lib/netstandard2.0/Microsoft.AspNetCore.Antiforgery.dll": {}
+          "lib/netstandard2.0/HotBag.AspNetCore.IO.dll": {}
+        }
+      },
+      "HotBag.AspNetCore.Log/1.0.0": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.AspNetCore.Mvc.Core": "2.2.5",
+          "Microsoft.Extensions.DependencyInjection.Abstractions": "3.1.3"
+        },
+        "compile": {
+          "lib/netstandard2.0/HotBag.AspNetCore.Log.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/HotBag.AspNetCore.Log.dll": {}
+        }
+      },
+      "HotBag.AspNetCore.RabbitMQ/1.0.0": {
+        "type": "package",
+        "dependencies": {
+          "HotBag.AspNetCore.DI": "1.0.0",
+          "RabbitMQ.Client": "6.0.0",
+          "Serilog.AspNetCore": "3.2.0",
+          "Serilog.Sinks.File": "4.1.0"
+        },
+        "compile": {
+          "lib/netstandard2.0/HotBag.AspNetCore.RabbitMQ.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/HotBag.AspNetCore.RabbitMQ.dll": {}
+        }
+      },
+      "HotBag.AspNetCore.Reflection/1.0.0": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.Extensions.DependencyModel": "2.1.0"
+        },
+        "compile": {
+          "lib/netstandard2.0/HotBag.AspNetCore.Reflection.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/HotBag.AspNetCore.Reflection.dll": {}
+        }
+      },
+      "HotBag.AspNetCore.ResultWrapper/1.0.0": {
+        "type": "package",
+        "dependencies": {
+          "HotBag.AspNetCore.AppSettings": "1.0.0",
+          "Microsoft.AspNetCore.Mvc.Core": "2.2.5"
+        },
+        "compile": {
+          "lib/netstandard2.0/HotBag.AspNetCore.ResultWrapper.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/HotBag.AspNetCore.ResultWrapper.dll": {}
+        }
+      },
+      "HotBag.AspNetCore.Security/1.0.0": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.AspNetCore.Cryptography.KeyDerivation": "2.2.0"
+        },
+        "compile": {
+          "lib/netstandard2.0/HotBag.AspNetCore.Security.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/HotBag.AspNetCore.Security.dll": {}
+        }
+      },
+      "HotBag.AspNetCore.SignalR/1.0.0": {
+        "type": "package",
+        "dependencies": {
+          "HotBag.AspNetCore.Reflection": "1.0.0",
+          "Microsoft.AspNetCore.SignalR": "1.1.0",
+          "Microsoft.Extensions.DependencyModel": "2.1.0"
+        },
+        "compile": {
+          "lib/netstandard2.0/HotBag.AspNetCore.SignalR.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/HotBag.AspNetCore.SignalR.dll": {}
+        }
+      },
+      "HotBag.AspNetCore.Swagger/1.0.0": {
+        "type": "package",
+        "dependencies": {
+          "Swashbuckle.AspNetCore": "5.3.3"
+        },
+        "compile": {
+          "lib/netstandard2.0/HotBag.AspNetCore.Swagger.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/HotBag.AspNetCore.Swagger.dll": {}
+        }
+      },
+      "HotBag.AspNetCore.Web/1.0.0": {
+        "type": "package",
+        "dependencies": {
+          "HotBag.AspNetCore.AutoMapper": "1.0.0",
+          "HotBag.AspNetCore.DI": "1.0.0",
+          "HotBag.AspNetCore.Data": "1.0.0",
+          "HotBag.AspNetCore.ResultWrapper": "1.0.0",
+          "Microsoft.AspNetCore.Mvc.Core": "2.2.5"
+        },
+        "compile": {
+          "lib/netstandard2.0/HotBag.AspNetCore.Web.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/HotBag.AspNetCore.Web.dll": {}
         }
       },
       "Microsoft.AspNetCore.Authentication/2.2.0": {
@@ -299,15 +409,6 @@
           "lib/netstandard2.0/Microsoft.AspNetCore.DataProtection.Abstractions.dll": {}
         }
       },
-      "Microsoft.AspNetCore.Diagnostics.Abstractions/2.1.0": {
-        "type": "package",
-        "compile": {
-          "lib/netstandard2.0/Microsoft.AspNetCore.Diagnostics.Abstractions.dll": {}
-        },
-        "runtime": {
-          "lib/netstandard2.0/Microsoft.AspNetCore.Diagnostics.Abstractions.dll": {}
-        }
-      },
       "Microsoft.AspNetCore.Hosting.Abstractions/2.2.0": {
         "type": "package",
         "dependencies": {
@@ -333,18 +434,6 @@
         },
         "runtime": {
           "lib/netstandard2.0/Microsoft.AspNetCore.Hosting.Server.Abstractions.dll": {}
-        }
-      },
-      "Microsoft.AspNetCore.Html.Abstractions/2.1.0": {
-        "type": "package",
-        "dependencies": {
-          "System.Text.Encodings.Web": "4.5.0"
-        },
-        "compile": {
-          "lib/netstandard2.0/Microsoft.AspNetCore.Html.Abstractions.dll": {}
-        },
-        "runtime": {
-          "lib/netstandard2.0/Microsoft.AspNetCore.Html.Abstractions.dll": {}
         }
       },
       "Microsoft.AspNetCore.Http/2.2.0": {
@@ -436,57 +525,6 @@
           "lib/netstandard2.0/Microsoft.AspNetCore.Http.Features.dll": {}
         }
       },
-      "Microsoft.AspNetCore.JsonPatch/2.1.0": {
-        "type": "package",
-        "dependencies": {
-          "Microsoft.CSharp": "4.5.0",
-          "Newtonsoft.Json": "11.0.2"
-        },
-        "compile": {
-          "lib/netstandard2.0/Microsoft.AspNetCore.JsonPatch.dll": {}
-        },
-        "runtime": {
-          "lib/netstandard2.0/Microsoft.AspNetCore.JsonPatch.dll": {}
-        }
-      },
-      "Microsoft.AspNetCore.Localization/2.1.0": {
-        "type": "package",
-        "dependencies": {
-          "Microsoft.AspNetCore.Http.Extensions": "2.1.0",
-          "Microsoft.Extensions.Localization.Abstractions": "2.1.0",
-          "Microsoft.Extensions.Logging.Abstractions": "2.1.0",
-          "Microsoft.Extensions.Options": "2.1.0"
-        },
-        "compile": {
-          "lib/netstandard2.0/Microsoft.AspNetCore.Localization.dll": {}
-        },
-        "runtime": {
-          "lib/netstandard2.0/Microsoft.AspNetCore.Localization.dll": {}
-        }
-      },
-      "Microsoft.AspNetCore.Mvc/2.1.0": {
-        "type": "package",
-        "dependencies": {
-          "Microsoft.AspNetCore.Mvc.ApiExplorer": "2.1.0",
-          "Microsoft.AspNetCore.Mvc.Cors": "2.1.0",
-          "Microsoft.AspNetCore.Mvc.DataAnnotations": "2.1.0",
-          "Microsoft.AspNetCore.Mvc.Formatters.Json": "2.1.0",
-          "Microsoft.AspNetCore.Mvc.Localization": "2.1.0",
-          "Microsoft.AspNetCore.Mvc.Razor.Extensions": "2.1.0",
-          "Microsoft.AspNetCore.Mvc.RazorPages": "2.1.0",
-          "Microsoft.AspNetCore.Mvc.TagHelpers": "2.1.0",
-          "Microsoft.AspNetCore.Mvc.ViewFeatures": "2.1.0",
-          "Microsoft.AspNetCore.Razor.Design": "2.1.0",
-          "Microsoft.Extensions.Caching.Memory": "2.1.0",
-          "Microsoft.Extensions.DependencyInjection": "2.1.0"
-        },
-        "compile": {
-          "lib/netstandard2.0/Microsoft.AspNetCore.Mvc.dll": {}
-        },
-        "runtime": {
-          "lib/netstandard2.0/Microsoft.AspNetCore.Mvc.dll": {}
-        }
-      },
       "Microsoft.AspNetCore.Mvc.Abstractions/2.2.0": {
         "type": "package",
         "dependencies": {
@@ -538,19 +576,6 @@
           "lib/netstandard2.0/Microsoft.AspNetCore.Mvc.Core.dll": {}
         }
       },
-      "Microsoft.AspNetCore.Mvc.Cors/2.1.0": {
-        "type": "package",
-        "dependencies": {
-          "Microsoft.AspNetCore.Cors": "2.1.0",
-          "Microsoft.AspNetCore.Mvc.Core": "2.1.0"
-        },
-        "compile": {
-          "lib/netstandard2.0/Microsoft.AspNetCore.Mvc.Cors.dll": {}
-        },
-        "runtime": {
-          "lib/netstandard2.0/Microsoft.AspNetCore.Mvc.Cors.dll": {}
-        }
-      },
       "Microsoft.AspNetCore.Mvc.DataAnnotations/2.1.0": {
         "type": "package",
         "dependencies": {
@@ -563,159 +588,6 @@
         },
         "runtime": {
           "lib/netstandard2.0/Microsoft.AspNetCore.Mvc.DataAnnotations.dll": {}
-        }
-      },
-      "Microsoft.AspNetCore.Mvc.Formatters.Json/2.1.0": {
-        "type": "package",
-        "dependencies": {
-          "Microsoft.AspNetCore.JsonPatch": "2.1.0",
-          "Microsoft.AspNetCore.Mvc.Core": "2.1.0"
-        },
-        "compile": {
-          "lib/netstandard2.0/Microsoft.AspNetCore.Mvc.Formatters.Json.dll": {}
-        },
-        "runtime": {
-          "lib/netstandard2.0/Microsoft.AspNetCore.Mvc.Formatters.Json.dll": {}
-        }
-      },
-      "Microsoft.AspNetCore.Mvc.Localization/2.1.0": {
-        "type": "package",
-        "dependencies": {
-          "Microsoft.AspNetCore.Localization": "2.1.0",
-          "Microsoft.AspNetCore.Mvc.Razor": "2.1.0",
-          "Microsoft.Extensions.DependencyInjection": "2.1.0",
-          "Microsoft.Extensions.Localization": "2.1.0"
-        },
-        "compile": {
-          "lib/netstandard2.0/Microsoft.AspNetCore.Mvc.Localization.dll": {}
-        },
-        "runtime": {
-          "lib/netstandard2.0/Microsoft.AspNetCore.Mvc.Localization.dll": {}
-        }
-      },
-      "Microsoft.AspNetCore.Mvc.Razor/2.1.0": {
-        "type": "package",
-        "dependencies": {
-          "Microsoft.AspNetCore.Mvc.Razor.Extensions": "2.1.0",
-          "Microsoft.AspNetCore.Mvc.ViewFeatures": "2.1.0",
-          "Microsoft.AspNetCore.Razor.Runtime": "2.1.0",
-          "Microsoft.CodeAnalysis.CSharp": "2.8.0",
-          "Microsoft.CodeAnalysis.Razor": "2.1.0",
-          "Microsoft.Extensions.Caching.Memory": "2.1.0",
-          "Microsoft.Extensions.FileProviders.Composite": "2.1.0"
-        },
-        "compile": {
-          "lib/netstandard2.0/Microsoft.AspNetCore.Mvc.Razor.dll": {}
-        },
-        "runtime": {
-          "lib/netstandard2.0/Microsoft.AspNetCore.Mvc.Razor.dll": {}
-        }
-      },
-      "Microsoft.AspNetCore.Mvc.Razor.Extensions/2.1.0": {
-        "type": "package",
-        "dependencies": {
-          "Microsoft.AspNetCore.Razor.Language": "2.1.0",
-          "Microsoft.CodeAnalysis.Razor": "2.1.0"
-        },
-        "compile": {
-          "lib/netstandard2.0/Microsoft.AspNetCore.Mvc.Razor.Extensions.dll": {}
-        },
-        "runtime": {
-          "lib/netstandard2.0/Microsoft.AspNetCore.Mvc.Razor.Extensions.dll": {}
-        },
-        "build": {
-          "build/netstandard2.0/_._": {}
-        }
-      },
-      "Microsoft.AspNetCore.Mvc.RazorPages/2.1.0": {
-        "type": "package",
-        "dependencies": {
-          "Microsoft.AspNetCore.Mvc.Razor": "2.1.0"
-        },
-        "compile": {
-          "lib/netstandard2.0/Microsoft.AspNetCore.Mvc.RazorPages.dll": {}
-        },
-        "runtime": {
-          "lib/netstandard2.0/Microsoft.AspNetCore.Mvc.RazorPages.dll": {}
-        }
-      },
-      "Microsoft.AspNetCore.Mvc.TagHelpers/2.1.0": {
-        "type": "package",
-        "dependencies": {
-          "Microsoft.AspNetCore.Mvc.Razor": "2.1.0",
-          "Microsoft.AspNetCore.Razor.Runtime": "2.1.0",
-          "Microsoft.AspNetCore.Routing.Abstractions": "2.1.0",
-          "Microsoft.Extensions.Caching.Memory": "2.1.0",
-          "Microsoft.Extensions.FileSystemGlobbing": "2.1.0",
-          "Microsoft.Extensions.Primitives": "2.1.0"
-        },
-        "compile": {
-          "lib/netstandard2.0/Microsoft.AspNetCore.Mvc.TagHelpers.dll": {}
-        },
-        "runtime": {
-          "lib/netstandard2.0/Microsoft.AspNetCore.Mvc.TagHelpers.dll": {}
-        }
-      },
-      "Microsoft.AspNetCore.Mvc.ViewFeatures/2.1.0": {
-        "type": "package",
-        "dependencies": {
-          "Microsoft.AspNetCore.Antiforgery": "2.1.0",
-          "Microsoft.AspNetCore.Diagnostics.Abstractions": "2.1.0",
-          "Microsoft.AspNetCore.Html.Abstractions": "2.1.0",
-          "Microsoft.AspNetCore.Mvc.Core": "2.1.0",
-          "Microsoft.AspNetCore.Mvc.DataAnnotations": "2.1.0",
-          "Microsoft.AspNetCore.Mvc.Formatters.Json": "2.1.0",
-          "Microsoft.Extensions.WebEncoders": "2.1.0",
-          "Newtonsoft.Json.Bson": "1.0.1"
-        },
-        "compile": {
-          "lib/netstandard2.0/Microsoft.AspNetCore.Mvc.ViewFeatures.dll": {}
-        },
-        "runtime": {
-          "lib/netstandard2.0/Microsoft.AspNetCore.Mvc.ViewFeatures.dll": {}
-        }
-      },
-      "Microsoft.AspNetCore.Razor/2.1.0": {
-        "type": "package",
-        "dependencies": {
-          "Microsoft.AspNetCore.Html.Abstractions": "2.1.0"
-        },
-        "compile": {
-          "lib/netstandard2.0/Microsoft.AspNetCore.Razor.dll": {}
-        },
-        "runtime": {
-          "lib/netstandard2.0/Microsoft.AspNetCore.Razor.dll": {}
-        }
-      },
-      "Microsoft.AspNetCore.Razor.Design/2.1.0": {
-        "type": "package",
-        "build": {
-          "build/netstandard2.0/_._": {}
-        },
-        "buildMultiTargeting": {
-          "buildMultiTargeting/_._": {}
-        }
-      },
-      "Microsoft.AspNetCore.Razor.Language/2.1.0": {
-        "type": "package",
-        "compile": {
-          "lib/netstandard2.0/Microsoft.AspNetCore.Razor.Language.dll": {}
-        },
-        "runtime": {
-          "lib/netstandard2.0/Microsoft.AspNetCore.Razor.Language.dll": {}
-        }
-      },
-      "Microsoft.AspNetCore.Razor.Runtime/2.1.0": {
-        "type": "package",
-        "dependencies": {
-          "Microsoft.AspNetCore.Html.Abstractions": "2.1.0",
-          "Microsoft.AspNetCore.Razor": "2.1.0"
-        },
-        "compile": {
-          "lib/netstandard2.0/Microsoft.AspNetCore.Razor.Runtime.dll": {}
-        },
-        "runtime": {
-          "lib/netstandard2.0/Microsoft.AspNetCore.Razor.Runtime.dll": {}
         }
       },
       "Microsoft.AspNetCore.ResponseCaching.Abstractions/2.2.0": {
@@ -873,85 +745,6 @@
           "lib/netstandard2.0/Microsoft.Bcl.AsyncInterfaces.dll": {}
         }
       },
-      "Microsoft.CodeAnalysis.Analyzers/1.1.0": {
-        "type": "package"
-      },
-      "Microsoft.CodeAnalysis.Common/2.8.0": {
-        "type": "package",
-        "dependencies": {
-          "Microsoft.CodeAnalysis.Analyzers": "1.1.0",
-          "System.AppContext": "4.3.0",
-          "System.Collections": "4.3.0",
-          "System.Collections.Concurrent": "4.3.0",
-          "System.Collections.Immutable": "1.3.1",
-          "System.Console": "4.3.0",
-          "System.Diagnostics.Debug": "4.3.0",
-          "System.Diagnostics.FileVersionInfo": "4.3.0",
-          "System.Diagnostics.StackTrace": "4.3.0",
-          "System.Diagnostics.Tools": "4.3.0",
-          "System.Dynamic.Runtime": "4.3.0",
-          "System.Globalization": "4.3.0",
-          "System.IO.Compression": "4.3.0",
-          "System.IO.FileSystem": "4.3.0",
-          "System.IO.FileSystem.Primitives": "4.3.0",
-          "System.Linq": "4.3.0",
-          "System.Linq.Expressions": "4.3.0",
-          "System.Reflection": "4.3.0",
-          "System.Reflection.Metadata": "1.4.2",
-          "System.Resources.ResourceManager": "4.3.0",
-          "System.Runtime": "4.3.0",
-          "System.Runtime.Extensions": "4.3.0",
-          "System.Runtime.InteropServices": "4.3.0",
-          "System.Runtime.Numerics": "4.3.0",
-          "System.Security.Cryptography.Algorithms": "4.3.0",
-          "System.Security.Cryptography.Encoding": "4.3.0",
-          "System.Security.Cryptography.X509Certificates": "4.3.0",
-          "System.Text.Encoding": "4.3.0",
-          "System.Text.Encoding.CodePages": "4.3.0",
-          "System.Text.Encoding.Extensions": "4.3.0",
-          "System.Threading": "4.3.0",
-          "System.Threading.Tasks": "4.3.0",
-          "System.Threading.Tasks.Parallel": "4.3.0",
-          "System.Threading.Thread": "4.3.0",
-          "System.ValueTuple": "4.3.0",
-          "System.Xml.ReaderWriter": "4.3.0",
-          "System.Xml.XDocument": "4.3.0",
-          "System.Xml.XPath.XDocument": "4.3.0",
-          "System.Xml.XmlDocument": "4.3.0"
-        },
-        "compile": {
-          "lib/netstandard1.3/Microsoft.CodeAnalysis.dll": {}
-        },
-        "runtime": {
-          "lib/netstandard1.3/Microsoft.CodeAnalysis.dll": {}
-        }
-      },
-      "Microsoft.CodeAnalysis.CSharp/2.8.0": {
-        "type": "package",
-        "dependencies": {
-          "Microsoft.CodeAnalysis.Common": "[2.8.0]"
-        },
-        "compile": {
-          "lib/netstandard1.3/Microsoft.CodeAnalysis.CSharp.dll": {}
-        },
-        "runtime": {
-          "lib/netstandard1.3/Microsoft.CodeAnalysis.CSharp.dll": {}
-        }
-      },
-      "Microsoft.CodeAnalysis.Razor/2.1.0": {
-        "type": "package",
-        "dependencies": {
-          "Microsoft.AspNetCore.Razor.Language": "2.1.0",
-          "Microsoft.CodeAnalysis.CSharp": "2.8.0",
-          "Microsoft.CodeAnalysis.Common": "2.8.0"
-        },
-        "compile": {
-          "lib/netstandard2.0/Microsoft.CodeAnalysis.Razor.dll": {}
-        },
-        "runtime": {
-          "lib/netstandard2.0/Microsoft.CodeAnalysis.Razor.dll": {}
-        }
-      },
       "Microsoft.CSharp/4.5.0": {
         "type": "package",
         "compile": {
@@ -987,32 +780,6 @@
         },
         "buildMultiTargeting": {
           "buildMultiTargeting/_._": {}
-        }
-      },
-      "Microsoft.Extensions.Caching.Abstractions/2.1.0": {
-        "type": "package",
-        "dependencies": {
-          "Microsoft.Extensions.Primitives": "2.1.0"
-        },
-        "compile": {
-          "lib/netstandard2.0/Microsoft.Extensions.Caching.Abstractions.dll": {}
-        },
-        "runtime": {
-          "lib/netstandard2.0/Microsoft.Extensions.Caching.Abstractions.dll": {}
-        }
-      },
-      "Microsoft.Extensions.Caching.Memory/2.1.0": {
-        "type": "package",
-        "dependencies": {
-          "Microsoft.Extensions.Caching.Abstractions": "2.1.0",
-          "Microsoft.Extensions.DependencyInjection.Abstractions": "2.1.0",
-          "Microsoft.Extensions.Options": "2.1.0"
-        },
-        "compile": {
-          "lib/netstandard2.0/Microsoft.Extensions.Caching.Memory.dll": {}
-        },
-        "runtime": {
-          "lib/netstandard2.0/Microsoft.Extensions.Caching.Memory.dll": {}
         }
       },
       "Microsoft.Extensions.Configuration/2.0.0": {
@@ -1100,18 +867,6 @@
           "lib/netstandard2.0/Microsoft.Extensions.FileProviders.Abstractions.dll": {}
         }
       },
-      "Microsoft.Extensions.FileProviders.Composite/2.1.0": {
-        "type": "package",
-        "dependencies": {
-          "Microsoft.Extensions.FileProviders.Abstractions": "2.1.0"
-        },
-        "compile": {
-          "lib/netstandard2.0/Microsoft.Extensions.FileProviders.Composite.dll": {}
-        },
-        "runtime": {
-          "lib/netstandard2.0/Microsoft.Extensions.FileProviders.Composite.dll": {}
-        }
-      },
       "Microsoft.Extensions.FileProviders.Embedded/2.1.0": {
         "type": "package",
         "dependencies": {
@@ -1128,15 +883,6 @@
         },
         "buildMultiTargeting": {
           "buildMultiTargeting/_._": {}
-        }
-      },
-      "Microsoft.Extensions.FileSystemGlobbing/2.1.0": {
-        "type": "package",
-        "compile": {
-          "lib/netstandard2.0/Microsoft.Extensions.FileSystemGlobbing.dll": {}
-        },
-        "runtime": {
-          "lib/netstandard2.0/Microsoft.Extensions.FileSystemGlobbing.dll": {}
         }
       },
       "Microsoft.Extensions.Hosting.Abstractions/2.2.0": {
@@ -1431,26 +1177,13 @@
           "build/netstandard2.0/NETStandard.Library.targets": {}
         }
       },
-      "Newtonsoft.Json/12.0.3": {
+      "Newtonsoft.Json/11.0.2": {
         "type": "package",
         "compile": {
           "lib/netstandard2.0/Newtonsoft.Json.dll": {}
         },
         "runtime": {
           "lib/netstandard2.0/Newtonsoft.Json.dll": {}
-        }
-      },
-      "Newtonsoft.Json.Bson/1.0.1": {
-        "type": "package",
-        "dependencies": {
-          "NETStandard.Library": "1.6.1",
-          "Newtonsoft.Json": "10.0.1"
-        },
-        "compile": {
-          "lib/netstandard1.3/Newtonsoft.Json.Bson.dll": {}
-        },
-        "runtime": {
-          "lib/netstandard1.3/Newtonsoft.Json.Bson.dll": {}
         }
       },
       "RabbitMQ.Client/6.0.0": {
@@ -1493,19 +1226,6 @@
         }
       },
       "runtime.native.System/4.3.0": {
-        "type": "package",
-        "dependencies": {
-          "Microsoft.NETCore.Platforms": "1.1.0",
-          "Microsoft.NETCore.Targets": "1.1.0"
-        },
-        "compile": {
-          "lib/netstandard1.0/_._": {}
-        },
-        "runtime": {
-          "lib/netstandard1.0/_._": {}
-        }
-      },
-      "runtime.native.System.IO.Compression/4.3.0": {
         "type": "package",
         "dependencies": {
           "Microsoft.NETCore.Platforms": "1.1.0",
@@ -1834,10 +1554,10 @@
           "lib/netstandard2.0/Swashbuckle.AspNetCore.SwaggerUI.dll": {}
         }
       },
-      "System.AppContext/4.3.0": {
+      "System.AppContext/4.1.0": {
         "type": "package",
         "dependencies": {
-          "System.Runtime": "4.3.0"
+          "System.Runtime": "4.1.0"
         },
         "compile": {
           "ref/netstandard1.6/System.AppContext.dll": {}
@@ -1881,29 +1601,10 @@
           "System.Threading.Tasks": "4.3.0"
         },
         "compile": {
-          "ref/netstandard1.3/System.Collections.Concurrent.dll": {}
+          "ref/netstandard1.3/_._": {}
         },
         "runtime": {
           "lib/netstandard1.3/System.Collections.Concurrent.dll": {}
-        }
-      },
-      "System.Collections.Immutable/1.3.1": {
-        "type": "package",
-        "dependencies": {
-          "System.Collections": "4.3.0",
-          "System.Diagnostics.Debug": "4.3.0",
-          "System.Globalization": "4.3.0",
-          "System.Linq": "4.3.0",
-          "System.Resources.ResourceManager": "4.3.0",
-          "System.Runtime": "4.3.0",
-          "System.Runtime.Extensions": "4.3.0",
-          "System.Threading": "4.3.0"
-        },
-        "compile": {
-          "lib/netstandard1.0/System.Collections.Immutable.dll": {}
-        },
-        "runtime": {
-          "lib/netstandard1.0/System.Collections.Immutable.dll": {}
         }
       },
       "System.Collections.NonGeneric/4.3.0": {
@@ -1993,48 +1694,6 @@
         },
         "runtime": {
           "lib/netstandard1.3/System.Diagnostics.DiagnosticSource.dll": {}
-        }
-      },
-      "System.Diagnostics.FileVersionInfo/4.3.0": {
-        "type": "package",
-        "dependencies": {
-          "Microsoft.NETCore.Platforms": "1.1.0",
-          "System.Globalization": "4.3.0",
-          "System.IO": "4.3.0",
-          "System.IO.FileSystem": "4.3.0",
-          "System.IO.FileSystem.Primitives": "4.3.0",
-          "System.Reflection.Metadata": "1.4.1",
-          "System.Runtime": "4.3.0",
-          "System.Runtime.Extensions": "4.3.0",
-          "System.Runtime.InteropServices": "4.3.0"
-        },
-        "compile": {
-          "ref/netstandard1.3/_._": {}
-        },
-        "runtimeTargets": {
-          "runtimes/unix/lib/netstandard1.3/System.Diagnostics.FileVersionInfo.dll": {
-            "assetType": "runtime",
-            "rid": "unix"
-          },
-          "runtimes/win/lib/netstandard1.3/System.Diagnostics.FileVersionInfo.dll": {
-            "assetType": "runtime",
-            "rid": "win"
-          }
-        }
-      },
-      "System.Diagnostics.StackTrace/4.3.0": {
-        "type": "package",
-        "dependencies": {
-          "System.IO.FileSystem": "4.3.0",
-          "System.Reflection": "4.3.0",
-          "System.Reflection.Metadata": "1.4.1",
-          "System.Runtime": "4.3.0"
-        },
-        "compile": {
-          "ref/netstandard1.3/_._": {}
-        },
-        "runtime": {
-          "lib/netstandard1.3/System.Diagnostics.StackTrace.dll": {}
         }
       },
       "System.Diagnostics.Tools/4.3.0": {
@@ -2156,39 +1815,6 @@
         },
         "compile": {
           "ref/netstandard1.5/System.IO.dll": {}
-        }
-      },
-      "System.IO.Compression/4.3.0": {
-        "type": "package",
-        "dependencies": {
-          "Microsoft.NETCore.Platforms": "1.1.0",
-          "System.Buffers": "4.3.0",
-          "System.Collections": "4.3.0",
-          "System.Diagnostics.Debug": "4.3.0",
-          "System.IO": "4.3.0",
-          "System.Resources.ResourceManager": "4.3.0",
-          "System.Runtime": "4.3.0",
-          "System.Runtime.Extensions": "4.3.0",
-          "System.Runtime.Handles": "4.3.0",
-          "System.Runtime.InteropServices": "4.3.0",
-          "System.Text.Encoding": "4.3.0",
-          "System.Threading": "4.3.0",
-          "System.Threading.Tasks": "4.3.0",
-          "runtime.native.System": "4.3.0",
-          "runtime.native.System.IO.Compression": "4.3.0"
-        },
-        "compile": {
-          "ref/netstandard1.3/System.IO.Compression.dll": {}
-        },
-        "runtimeTargets": {
-          "runtimes/unix/lib/netstandard1.3/System.IO.Compression.dll": {
-            "assetType": "runtime",
-            "rid": "unix"
-          },
-          "runtimes/win/lib/netstandard1.3/System.IO.Compression.dll": {
-            "assetType": "runtime",
-            "rid": "win"
-          }
         }
       },
       "System.IO.FileSystem/4.3.0": {
@@ -2491,34 +2117,7 @@
           "System.Runtime": "4.3.0"
         },
         "compile": {
-          "ref/netstandard1.0/System.Reflection.Extensions.dll": {}
-        }
-      },
-      "System.Reflection.Metadata/1.4.2": {
-        "type": "package",
-        "dependencies": {
-          "System.Collections": "4.3.0",
-          "System.Collections.Immutable": "1.3.1",
-          "System.Diagnostics.Debug": "4.3.0",
-          "System.IO": "4.3.0",
-          "System.IO.Compression": "4.3.0",
-          "System.Linq": "4.3.0",
-          "System.Reflection": "4.3.0",
-          "System.Reflection.Extensions": "4.3.0",
-          "System.Reflection.Primitives": "4.3.0",
-          "System.Resources.ResourceManager": "4.3.0",
-          "System.Runtime": "4.3.0",
-          "System.Runtime.Extensions": "4.3.0",
-          "System.Runtime.InteropServices": "4.3.0",
-          "System.Text.Encoding": "4.3.0",
-          "System.Text.Encoding.Extensions": "4.3.0",
-          "System.Threading": "4.3.0"
-        },
-        "compile": {
-          "lib/netstandard1.1/System.Reflection.Metadata.dll": {}
-        },
-        "runtime": {
-          "lib/netstandard1.1/System.Reflection.Metadata.dll": {}
+          "ref/netstandard1.0/_._": {}
         }
       },
       "System.Reflection.Primitives/4.3.0": {
@@ -2551,7 +2150,7 @@
           "System.Runtime": "4.3.0"
         },
         "compile": {
-          "ref/netstandard1.0/System.Resources.ResourceManager.dll": {}
+          "ref/netstandard1.0/_._": {}
         }
       },
       "System.Runtime/4.3.0": {
@@ -2646,7 +2245,7 @@
           "System.Runtime.Extensions": "4.3.0"
         },
         "compile": {
-          "ref/netstandard1.1/System.Runtime.Numerics.dll": {}
+          "ref/netstandard1.1/_._": {}
         },
         "runtime": {
           "lib/netstandard1.3/System.Runtime.Numerics.dll": {}
@@ -3004,36 +2603,6 @@
           "ref/netstandard1.3/System.Text.Encoding.dll": {}
         }
       },
-      "System.Text.Encoding.CodePages/4.3.0": {
-        "type": "package",
-        "dependencies": {
-          "Microsoft.NETCore.Platforms": "1.1.0",
-          "System.Collections": "4.3.0",
-          "System.Globalization": "4.3.0",
-          "System.IO": "4.3.0",
-          "System.Reflection": "4.3.0",
-          "System.Resources.ResourceManager": "4.3.0",
-          "System.Runtime": "4.3.0",
-          "System.Runtime.Extensions": "4.3.0",
-          "System.Runtime.Handles": "4.3.0",
-          "System.Runtime.InteropServices": "4.3.0",
-          "System.Text.Encoding": "4.3.0",
-          "System.Threading": "4.3.0"
-        },
-        "compile": {
-          "ref/netstandard1.3/_._": {}
-        },
-        "runtimeTargets": {
-          "runtimes/unix/lib/netstandard1.3/System.Text.Encoding.CodePages.dll": {
-            "assetType": "runtime",
-            "rid": "unix"
-          },
-          "runtimes/win/lib/netstandard1.3/System.Text.Encoding.CodePages.dll": {
-            "assetType": "runtime",
-            "rid": "win"
-          }
-        }
-      },
       "System.Text.Encoding.Extensions/4.3.0": {
         "type": "package",
         "dependencies": {
@@ -3141,37 +2710,6 @@
           "lib/netstandard2.0/System.Threading.Tasks.Extensions.dll": {}
         }
       },
-      "System.Threading.Tasks.Parallel/4.3.0": {
-        "type": "package",
-        "dependencies": {
-          "System.Collections.Concurrent": "4.3.0",
-          "System.Diagnostics.Debug": "4.3.0",
-          "System.Diagnostics.Tracing": "4.3.0",
-          "System.Resources.ResourceManager": "4.3.0",
-          "System.Runtime": "4.3.0",
-          "System.Runtime.Extensions": "4.3.0",
-          "System.Threading": "4.3.0",
-          "System.Threading.Tasks": "4.3.0"
-        },
-        "compile": {
-          "ref/netstandard1.1/System.Threading.Tasks.Parallel.dll": {}
-        },
-        "runtime": {
-          "lib/netstandard1.3/System.Threading.Tasks.Parallel.dll": {}
-        }
-      },
-      "System.Threading.Thread/4.3.0": {
-        "type": "package",
-        "dependencies": {
-          "System.Runtime": "4.3.0"
-        },
-        "compile": {
-          "ref/netstandard1.3/_._": {}
-        },
-        "runtime": {
-          "lib/netstandard1.3/System.Threading.Thread.dll": {}
-        }
-      },
       "System.Threading.Timer/4.0.1": {
         "type": "package",
         "dependencies": {
@@ -3181,20 +2719,6 @@
         },
         "compile": {
           "ref/netstandard1.2/System.Threading.Timer.dll": {}
-        }
-      },
-      "System.ValueTuple/4.3.0": {
-        "type": "package",
-        "dependencies": {
-          "System.Collections": "4.3.0",
-          "System.Resources.ResourceManager": "4.3.0",
-          "System.Runtime": "4.3.0"
-        },
-        "compile": {
-          "lib/netstandard1.0/System.ValueTuple.dll": {}
-        },
-        "runtime": {
-          "lib/netstandard1.0/System.ValueTuple.dll": {}
         }
       },
       "System.Xml.ReaderWriter/4.3.0": {
@@ -3240,7 +2764,7 @@
           "System.Xml.ReaderWriter": "4.3.0"
         },
         "compile": {
-          "ref/netstandard1.3/System.Xml.XDocument.dll": {}
+          "ref/netstandard1.3/_._": {}
         },
         "runtime": {
           "lib/netstandard1.3/System.Xml.XDocument.dll": {}
@@ -3294,315 +2818,6 @@
         "runtime": {
           "lib/netstandard1.3/System.Xml.XmlSerializer.dll": {}
         }
-      },
-      "System.Xml.XPath/4.3.0": {
-        "type": "package",
-        "dependencies": {
-          "System.Collections": "4.3.0",
-          "System.Diagnostics.Debug": "4.3.0",
-          "System.Globalization": "4.3.0",
-          "System.IO": "4.3.0",
-          "System.Resources.ResourceManager": "4.3.0",
-          "System.Runtime": "4.3.0",
-          "System.Runtime.Extensions": "4.3.0",
-          "System.Threading": "4.3.0",
-          "System.Xml.ReaderWriter": "4.3.0"
-        },
-        "compile": {
-          "ref/netstandard1.3/_._": {}
-        },
-        "runtime": {
-          "lib/netstandard1.3/System.Xml.XPath.dll": {}
-        }
-      },
-      "System.Xml.XPath.XDocument/4.3.0": {
-        "type": "package",
-        "dependencies": {
-          "System.Diagnostics.Debug": "4.3.0",
-          "System.Linq": "4.3.0",
-          "System.Resources.ResourceManager": "4.3.0",
-          "System.Runtime": "4.3.0",
-          "System.Runtime.Extensions": "4.3.0",
-          "System.Threading": "4.3.0",
-          "System.Xml.ReaderWriter": "4.3.0",
-          "System.Xml.XDocument": "4.3.0",
-          "System.Xml.XPath": "4.3.0"
-        },
-        "compile": {
-          "ref/netstandard1.3/_._": {}
-        },
-        "runtime": {
-          "lib/netstandard1.3/System.Xml.XPath.XDocument.dll": {}
-        }
-      },
-      "HotBag.AspNetCore.AppSettings/1.0.0": {
-        "type": "project",
-        "framework": ".NETStandard,Version=v2.0",
-        "dependencies": {
-          "HotBag.AspNetCore.Extensions": "1.0.0",
-          "Microsoft.Extensions.DependencyInjection": "2.2.0"
-        },
-        "compile": {
-          "bin/placeholder/HotBag.AspNetCore.AppSettings.dll": {}
-        },
-        "runtime": {
-          "bin/placeholder/HotBag.AspNetCore.AppSettings.dll": {}
-        }
-      },
-      "HotBag.AspNetCore.Authorization/1.0.0": {
-        "type": "project",
-        "framework": ".NETStandard,Version=v2.0",
-        "dependencies": {
-          "HotBag.AspNetCore.Security": "1.0.0",
-          "Microsoft.AspNetCore.Authentication.JwtBearer": "2.2.0",
-          "Microsoft.AspNetCore.Mvc.Core": "2.2.5"
-        },
-        "compile": {
-          "bin/placeholder/HotBag.AspNetCore.Authorization.dll": {}
-        },
-        "runtime": {
-          "bin/placeholder/HotBag.AspNetCore.Authorization.dll": {}
-        }
-      },
-      "HotBag.AspNetCore.AutoMapper/1.0.0": {
-        "type": "project",
-        "framework": ".NETStandard,Version=v2.0",
-        "dependencies": {
-          "AutoMapper.Extensions.Microsoft.DependencyInjection": "6.0.0",
-          "HotBag.AspNetCore.DI": "1.0.0",
-          "HotBag.AspNetCore.Data": "1.0.0",
-          "HotBag.AspNetCore.Extensions": "1.0.0",
-          "HotBag.AspNetCore.Reflection": "1.0.0"
-        },
-        "compile": {
-          "bin/placeholder/HotBag.AspNetCore.AutoMapper.dll": {}
-        },
-        "runtime": {
-          "bin/placeholder/HotBag.AspNetCore.AutoMapper.dll": {}
-        }
-      },
-      "HotBag.AspNetCore.Data/1.0.0": {
-        "type": "project",
-        "framework": ".NETStandard,Version=v2.0",
-        "dependencies": {
-          "HotBag.AspNetCore.Authorization": "1.0.0",
-          "System.ComponentModel.Annotations": "4.7.0"
-        },
-        "compile": {
-          "bin/placeholder/HotBag.AspNetCore.Data.dll": {}
-        },
-        "runtime": {
-          "bin/placeholder/HotBag.AspNetCore.Data.dll": {}
-        }
-      },
-      "HotBag.AspNetCore.DI/1.0.0": {
-        "type": "project",
-        "framework": ".NETStandard,Version=v2.0",
-        "dependencies": {
-          "HotBag.AspNetCore.Reflection": "1.0.0",
-          "Microsoft.AspNetCore.Hosting.Abstractions": "2.2.0",
-          "Microsoft.AspNetCore.Http.Abstractions": "2.2.0",
-          "Microsoft.Extensions.DependencyInjection": "2.2.0",
-          "Microsoft.Extensions.DependencyInjection.Abstractions": "2.2.0",
-          "Microsoft.Extensions.DependencyModel": "2.1.0",
-          "Scrutor": "2.2.0",
-          "System.Reflection.TypeExtensions": "4.7.0"
-        },
-        "compile": {
-          "bin/placeholder/HotBag.AspNetCore.DI.dll": {}
-        },
-        "runtime": {
-          "bin/placeholder/HotBag.AspNetCore.DI.dll": {}
-        }
-      },
-      "HotBag.AspNetCore.EventBus/1.0.0": {
-        "type": "project",
-        "framework": ".NETStandard,Version=v2.0",
-        "dependencies": {
-          "HotBag.AspNetCore.Reflection": "1.0.0",
-          "Microsoft.Extensions.DependencyModel": "2.1.0"
-        },
-        "compile": {
-          "bin/placeholder/HotBag.AspNetCore.EventBus.dll": {}
-        },
-        "runtime": {
-          "bin/placeholder/HotBag.AspNetCore.EventBus.dll": {}
-        }
-      },
-      "HotBag.AspNetCore.Extensions/1.0.0": {
-        "type": "project",
-        "framework": ".NETStandard,Version=v2.0",
-        "compile": {
-          "bin/placeholder/HotBag.AspNetCore.Extensions.dll": {}
-        },
-        "runtime": {
-          "bin/placeholder/HotBag.AspNetCore.Extensions.dll": {}
-        }
-      },
-      "HotBag.AspNetCore.FluentValidation/1.0.0": {
-        "type": "project",
-        "framework": ".NETStandard,Version=v2.0",
-        "dependencies": {
-          "FluentValidation.AspNetCore": "8.6.2"
-        },
-        "compile": {
-          "bin/placeholder/HotBag.AspNetCore.FluentValidation.dll": {}
-        },
-        "runtime": {
-          "bin/placeholder/HotBag.AspNetCore.FluentValidation.dll": {}
-        }
-      },
-      "HotBag.AspNetCore.GoogleAnalytics/1.0.0": {
-        "type": "project",
-        "framework": ".NETStandard,Version=v2.0",
-        "dependencies": {
-          "Google.Apis.AnalyticsReporting.v4": "1.45.0.1921"
-        },
-        "compile": {
-          "bin/placeholder/HotBag.AspNetCore.GoogleAnalytics.dll": {}
-        },
-        "runtime": {
-          "bin/placeholder/HotBag.AspNetCore.GoogleAnalytics.dll": {}
-        }
-      },
-      "HotBag.AspNetCore.IO/1.0.0": {
-        "type": "project",
-        "framework": ".NETStandard,Version=v2.0",
-        "dependencies": {
-          "Microsoft.AspNetCore.Hosting.Abstractions": "2.2.0",
-          "Microsoft.AspNetCore.Http.Features": "2.2.0"
-        },
-        "compile": {
-          "bin/placeholder/HotBag.AspNetCore.IO.dll": {}
-        },
-        "runtime": {
-          "bin/placeholder/HotBag.AspNetCore.IO.dll": {}
-        }
-      },
-      "HotBag.AspNetCore.Log/1.0.0": {
-        "type": "project",
-        "framework": ".NETStandard,Version=v2.0",
-        "dependencies": {
-          "Microsoft.AspNetCore.Mvc.Core": "2.2.5",
-          "Microsoft.Extensions.DependencyInjection.Abstractions": "3.1.3"
-        },
-        "compile": {
-          "bin/placeholder/HotBag.AspNetCore.Log.dll": {}
-        },
-        "runtime": {
-          "bin/placeholder/HotBag.AspNetCore.Log.dll": {}
-        }
-      },
-      "HotBag.AspNetCore.PushNotification/1.0.0": {
-        "type": "project",
-        "framework": ".NETStandard,Version=v2.0",
-        "compile": {
-          "bin/placeholder/HotBag.AspNetCore.PushNotification.dll": {}
-        },
-        "runtime": {
-          "bin/placeholder/HotBag.AspNetCore.PushNotification.dll": {}
-        }
-      },
-      "HotBag.AspNetCore.RabbitMQ/1.0.0": {
-        "type": "project",
-        "framework": ".NETStandard,Version=v2.0",
-        "dependencies": {
-          "HotBag.AspNetCore.DI": "1.0.0",
-          "RabbitMQ.Client": "6.0.0",
-          "Serilog.AspNetCore": "3.2.0",
-          "Serilog.Sinks.File": "4.1.0"
-        },
-        "compile": {
-          "bin/placeholder/HotBag.AspNetCore.RabbitMQ.dll": {}
-        },
-        "runtime": {
-          "bin/placeholder/HotBag.AspNetCore.RabbitMQ.dll": {}
-        }
-      },
-      "HotBag.AspNetCore.Reflection/1.0.0": {
-        "type": "project",
-        "framework": ".NETStandard,Version=v2.0",
-        "dependencies": {
-          "Microsoft.Extensions.DependencyModel": "2.1.0"
-        },
-        "compile": {
-          "bin/placeholder/HotBag.AspNetCore.Reflection.dll": {}
-        },
-        "runtime": {
-          "bin/placeholder/HotBag.AspNetCore.Reflection.dll": {}
-        }
-      },
-      "HotBag.AspNetCore.ResultWrapper/1.0.0": {
-        "type": "project",
-        "framework": ".NETStandard,Version=v2.0",
-        "dependencies": {
-          "HotBag.AspNetCore.AppSettings": "1.0.0",
-          "Microsoft.AspNetCore.Mvc.Core": "2.2.5"
-        },
-        "compile": {
-          "bin/placeholder/HotBag.AspNetCore.ResultWrapper.dll": {}
-        },
-        "runtime": {
-          "bin/placeholder/HotBag.AspNetCore.ResultWrapper.dll": {}
-        }
-      },
-      "HotBag.AspNetCore.Security/1.0.0": {
-        "type": "project",
-        "framework": ".NETStandard,Version=v2.0",
-        "dependencies": {
-          "Microsoft.AspNetCore.Cryptography.KeyDerivation": "2.2.0"
-        },
-        "compile": {
-          "bin/placeholder/HotBag.AspNetCore.Security.dll": {}
-        },
-        "runtime": {
-          "bin/placeholder/HotBag.AspNetCore.Security.dll": {}
-        }
-      },
-      "HotBag.AspNetCore.SignalR/1.0.0": {
-        "type": "project",
-        "framework": ".NETStandard,Version=v2.0",
-        "dependencies": {
-          "HotBag.AspNetCore.Reflection": "1.0.0",
-          "Microsoft.AspNetCore.SignalR": "1.1.0",
-          "Microsoft.Extensions.DependencyModel": "2.1.0"
-        },
-        "compile": {
-          "bin/placeholder/HotBag.AspNetCore.SignalR.dll": {}
-        },
-        "runtime": {
-          "bin/placeholder/HotBag.AspNetCore.SignalR.dll": {}
-        }
-      },
-      "HotBag.AspNetCore.Swagger/1.0.0": {
-        "type": "project",
-        "framework": ".NETStandard,Version=v2.0",
-        "dependencies": {
-          "Swashbuckle.AspNetCore": "5.3.3"
-        },
-        "compile": {
-          "bin/placeholder/HotBag.AspNetCore.Swagger.dll": {}
-        },
-        "runtime": {
-          "bin/placeholder/HotBag.AspNetCore.Swagger.dll": {}
-        }
-      },
-      "HotBag.AspNetCore.Web/1.0.0": {
-        "type": "project",
-        "framework": ".NETStandard,Version=v2.0",
-        "dependencies": {
-          "HotBag.AspNetCore.AutoMapper": "1.0.0",
-          "HotBag.AspNetCore.DI": "1.0.0",
-          "HotBag.AspNetCore.Data": "1.0.0",
-          "HotBag.AspNetCore.ResultWrapper": "1.0.0",
-          "Microsoft.AspNetCore.Mvc.Core": "2.2.5"
-        },
-        "compile": {
-          "bin/placeholder/HotBag.AspNetCore.Web.dll": {}
-        },
-        "runtime": {
-          "bin/placeholder/HotBag.AspNetCore.Web.dll": {}
-        }
       }
     }
   },
@@ -3637,163 +2852,196 @@
         "lib/netstandard2.0/AutoMapper.Extensions.Microsoft.DependencyInjection.pdb"
       ]
     },
-    "FluentValidation/8.6.2": {
-      "sha512": "N2vz+f6pAX9AI19hu83U2LJjjc/ETzWGlICVanu3DIG76QhzEu3PR/CQSFBX69PRuBTivrW4jhBzeV7dXIfqyw==",
+    "HotBag.AspNetCore.AppSettings/1.0.0": {
+      "sha512": "dwEFFlZMYxTG2hgofVyPi2QFgLpjshoU2YIgzg5P0nD3CZOm/sD1UfjQ7ManoDV2+Ch5+Aab5F5z/g1YRXBqjA==",
       "type": "package",
-      "path": "fluentvalidation/8.6.2",
+      "path": "hotbag.aspnetcore.appsettings/1.0.0",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
-        "fluentvalidation.8.6.2.nupkg.sha512",
-        "fluentvalidation.nuspec",
-        "lib/net45/FluentValidation.dll",
-        "lib/net45/FluentValidation.xml",
-        "lib/netstandard1.1/FluentValidation.dll",
-        "lib/netstandard1.1/FluentValidation.xml",
-        "lib/netstandard1.6/FluentValidation.dll",
-        "lib/netstandard1.6/FluentValidation.xml",
-        "lib/netstandard2.0/FluentValidation.dll",
-        "lib/netstandard2.0/FluentValidation.xml"
+        "hotbag.aspnetcore.appsettings.1.0.0.nupkg.sha512",
+        "hotbag.aspnetcore.appsettings.nuspec",
+        "lib/netstandard2.0/HotBag.AspNetCore.AppSettings.dll"
       ]
     },
-    "FluentValidation.AspNetCore/8.6.2": {
-      "sha512": "55s9XfDEtykWAd3KjWiB9xM6FsYQW4K0gTWY4Sl4f65vEdb2nlS3uijtKIpRuayLYMC5/Bvd9QUhOsSGZ11Pwg==",
+    "HotBag.AspNetCore.Authorization/1.0.0": {
+      "sha512": "hzLcY56zKpbGHrIQzIzDc/Urx7KV7ILfZ5FUkqT4b3NVhvXW8l/RAiXC4bAHb4Mz4h7YZuL4Fi8FkYb0nXQOOQ==",
       "type": "package",
-      "path": "fluentvalidation.aspnetcore/8.6.2",
+      "path": "hotbag.aspnetcore.authorization/1.0.0",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
-        "fluentvalidation.aspnetcore.8.6.2.nupkg.sha512",
-        "fluentvalidation.aspnetcore.nuspec",
-        "lib/netcoreapp3.0/FluentValidation.AspNetCore.dll",
-        "lib/netcoreapp3.0/FluentValidation.AspNetCore.xml",
-        "lib/netcoreapp3.1/FluentValidation.AspNetCore.dll",
-        "lib/netcoreapp3.1/FluentValidation.AspNetCore.xml",
-        "lib/netstandard2.0/FluentValidation.AspNetCore.dll",
-        "lib/netstandard2.0/FluentValidation.AspNetCore.xml"
+        "hotbag.aspnetcore.authorization.1.0.0.nupkg.sha512",
+        "hotbag.aspnetcore.authorization.nuspec",
+        "lib/netstandard2.0/HotBag.AspNetCore.Authorization.dll"
       ]
     },
-    "FluentValidation.DependencyInjectionExtensions/8.6.2": {
-      "sha512": "A3Hw0xjB/j6b/UiC8RgLsp5TkApZOsLzh5LAmfZkbQpWBrAqo8B4eOm+uyYhN3crSg0E6kgse8k6EdZpRoj+sQ==",
+    "HotBag.AspNetCore.AutoMapper/1.0.0": {
+      "sha512": "AXj2vm5d9RayV+pZGTyU+Fh77RVNTCy+yXv1nn14sZfL2FAoDYMQZD9IPkDKQjJE0lE6xAarIZYk7iRcqZdBVA==",
       "type": "package",
-      "path": "fluentvalidation.dependencyinjectionextensions/8.6.2",
+      "path": "hotbag.aspnetcore.automapper/1.0.0",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
-        "fluentvalidation.dependencyinjectionextensions.8.6.2.nupkg.sha512",
-        "fluentvalidation.dependencyinjectionextensions.nuspec",
-        "lib/netstandard2.0/FluentValidation.DependencyInjectionExtensions.dll",
-        "lib/netstandard2.0/FluentValidation.DependencyInjectionExtensions.xml"
+        "hotbag.aspnetcore.automapper.1.0.0.nupkg.sha512",
+        "hotbag.aspnetcore.automapper.nuspec",
+        "lib/netstandard2.0/HotBag.AspNetCore.AutoMapper.dll"
       ]
     },
-    "Google.Apis/1.45.0": {
-      "sha512": "V/huVWohIr8c2Zg9+W+8fBElPd8Smz03k8e+tq/X9JsRdvAPaCBNwvMVNoyPbH+x/2tEFyX+n1jvIGFNC4hLzw==",
+    "HotBag.AspNetCore.Data/1.0.0": {
+      "sha512": "5eosDyspbd/IyHW8Yq9EzsMv5GlnWd/Xu+f5NksZKM+4xfxXlYEwPw0eDp4r5QDK6rhY5MNYhUD+2KGgOcYYBw==",
       "type": "package",
-      "path": "google.apis/1.45.0",
+      "path": "hotbag.aspnetcore.data/1.0.0",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
-        "LICENSE",
-        "NuGetIcon.png",
-        "google.apis.1.45.0.nupkg.sha512",
-        "google.apis.nuspec",
-        "lib/net45/Google.Apis.PlatformServices.dll",
-        "lib/net45/Google.Apis.dll",
-        "lib/net45/Google.Apis.pdb",
-        "lib/net45/Google.Apis.xml",
-        "lib/netstandard1.3/Google.Apis.dll",
-        "lib/netstandard1.3/Google.Apis.pdb",
-        "lib/netstandard1.3/Google.Apis.xml",
-        "lib/netstandard2.0/Google.Apis.dll",
-        "lib/netstandard2.0/Google.Apis.pdb",
-        "lib/netstandard2.0/Google.Apis.xml"
+        "hotbag.aspnetcore.data.1.0.0.nupkg.sha512",
+        "hotbag.aspnetcore.data.nuspec",
+        "lib/netstandard2.0/HotBag.AspNetCore.Data.dll"
       ]
     },
-    "Google.Apis.AnalyticsReporting.v4/1.45.0.1921": {
-      "sha512": "K9BeqoWY4cebSQ9f6zOvrcjM+ZT1WR4EScW9JoOgDKoFztJX0t/+PLmvDkUVP1LEZhDie0XSDRdqnpCvE8rCYw==",
+    "HotBag.AspNetCore.DI/1.0.0": {
+      "sha512": "8xlzVmU0QhVxsX0zF7PD0PQqxTwrSQpmZQFw5dpcQZvzf4foE9ONbKZBTv/FdZkq2nsffB2YK4bUAMlREkjLfw==",
       "type": "package",
-      "path": "google.apis.analyticsreporting.v4/1.45.0.1921",
+      "path": "hotbag.aspnetcore.di/1.0.0",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
-        "LICENSE",
-        "google.apis.analyticsreporting.v4.1.45.0.1921.nupkg.sha512",
-        "google.apis.analyticsreporting.v4.nuspec",
-        "lib/net40/Google.Apis.AnalyticsReporting.v4.dll",
-        "lib/net40/Google.Apis.AnalyticsReporting.v4.pdb",
-        "lib/net40/Google.Apis.AnalyticsReporting.v4.xml",
-        "lib/net45/Google.Apis.AnalyticsReporting.v4.dll",
-        "lib/net45/Google.Apis.AnalyticsReporting.v4.pdb",
-        "lib/net45/Google.Apis.AnalyticsReporting.v4.xml",
-        "lib/netstandard1.0/Google.Apis.AnalyticsReporting.v4.dll",
-        "lib/netstandard1.0/Google.Apis.AnalyticsReporting.v4.pdb",
-        "lib/netstandard1.0/Google.Apis.AnalyticsReporting.v4.xml",
-        "lib/netstandard1.3/Google.Apis.AnalyticsReporting.v4.dll",
-        "lib/netstandard1.3/Google.Apis.AnalyticsReporting.v4.pdb",
-        "lib/netstandard1.3/Google.Apis.AnalyticsReporting.v4.xml",
-        "lib/netstandard2.0/Google.Apis.AnalyticsReporting.v4.dll",
-        "lib/netstandard2.0/Google.Apis.AnalyticsReporting.v4.pdb",
-        "lib/netstandard2.0/Google.Apis.AnalyticsReporting.v4.xml"
+        "hotbag.aspnetcore.di.1.0.0.nupkg.sha512",
+        "hotbag.aspnetcore.di.nuspec",
+        "lib/netstandard2.0/HotBag.AspNetCore.DI.dll"
       ]
     },
-    "Google.Apis.Auth/1.45.0": {
-      "sha512": "dPAhjWofPoGzNjjgmz1zUfnzOsj2lKr/cUgC03NETYIbSZoyLeC9Sc+OCZH9wL0DdklLnvopoFx/v7aTqVjamw==",
+    "HotBag.AspNetCore.EventBus/1.0.0": {
+      "sha512": "6Yu82a/FqM31cT5AJebXl+f/u5gcU7PNo+5f6yLdYEJyUnJ495CR0qVzS8IAs8LgI1H6ybBIJXNG9/h/n+DU0A==",
       "type": "package",
-      "path": "google.apis.auth/1.45.0",
+      "path": "hotbag.aspnetcore.eventbus/1.0.0",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
-        "LICENSE",
-        "NuGetIcon.png",
-        "google.apis.auth.1.45.0.nupkg.sha512",
-        "google.apis.auth.nuspec",
-        "lib/net45/Google.Apis.Auth.PlatformServices.dll",
-        "lib/net45/Google.Apis.Auth.dll",
-        "lib/net45/Google.Apis.Auth.pdb",
-        "lib/net45/Google.Apis.Auth.xml",
-        "lib/netstandard1.3/Google.Apis.Auth.PlatformServices.dll",
-        "lib/netstandard1.3/Google.Apis.Auth.dll",
-        "lib/netstandard1.3/Google.Apis.Auth.pdb",
-        "lib/netstandard1.3/Google.Apis.Auth.xml",
-        "lib/netstandard2.0/Google.Apis.Auth.PlatformServices.dll",
-        "lib/netstandard2.0/Google.Apis.Auth.dll",
-        "lib/netstandard2.0/Google.Apis.Auth.pdb",
-        "lib/netstandard2.0/Google.Apis.Auth.xml"
+        "hotbag.aspnetcore.eventbus.1.0.0.nupkg.sha512",
+        "hotbag.aspnetcore.eventbus.nuspec",
+        "lib/netstandard2.0/HotBag.AspNetCore.EventBus.dll"
       ]
     },
-    "Google.Apis.Core/1.45.0": {
-      "sha512": "hYqI4v3kEIfWxiYierMo59XCAOFBoH30RqCzomSubK9JXGAv/o0Cp+gxEeAH9GspxQcZNZV50ouu/8Ypigd7fw==",
+    "HotBag.AspNetCore.Extensions/1.0.0": {
+      "sha512": "ptTb8+8dZU+HyLQw3xs+rIrQaQ3Lrxe+BHFCnbCF8sY5XAw0bz33qR7lUzv5aSPcEQA991CW4nq7dW4dkpZb7g==",
       "type": "package",
-      "path": "google.apis.core/1.45.0",
+      "path": "hotbag.aspnetcore.extensions/1.0.0",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
-        "LICENSE",
-        "NuGetIcon.png",
-        "google.apis.core.1.45.0.nupkg.sha512",
-        "google.apis.core.nuspec",
-        "lib/net45/Google.Apis.Core.dll",
-        "lib/net45/Google.Apis.Core.pdb",
-        "lib/net45/Google.Apis.Core.xml",
-        "lib/netstandard1.3/Google.Apis.Core.dll",
-        "lib/netstandard1.3/Google.Apis.Core.pdb",
-        "lib/netstandard1.3/Google.Apis.Core.xml",
-        "lib/netstandard2.0/Google.Apis.Core.dll",
-        "lib/netstandard2.0/Google.Apis.Core.pdb",
-        "lib/netstandard2.0/Google.Apis.Core.xml"
+        "hotbag.aspnetcore.extensions.1.0.0.nupkg.sha512",
+        "hotbag.aspnetcore.extensions.nuspec",
+        "lib/netstandard2.0/HotBag.AspNetCore.Extensions.dll"
       ]
     },
-    "Microsoft.AspNetCore.Antiforgery/2.1.0": {
-      "sha512": "G6VSkdD0bp64YjxS4nR2QpfOv1W0Zf3mCnahAIEBG8CJ4vhOqZZZmY9uls4NXlb9EhDPU4H3JTvW1HOfopcjRA==",
+    "HotBag.AspNetCore.IO/1.0.0": {
+      "sha512": "d4FeMp2uje9/38uaKwEabl/9rVYHm0Jk3aY5HXkBWRzAA+qoA6Ic6WELk8RbhGIPJNtH+/VHSxQRmKiQHk7fLw==",
       "type": "package",
-      "path": "microsoft.aspnetcore.antiforgery/2.1.0",
+      "path": "hotbag.aspnetcore.io/1.0.0",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
-        "lib/netstandard2.0/Microsoft.AspNetCore.Antiforgery.dll",
-        "lib/netstandard2.0/Microsoft.AspNetCore.Antiforgery.xml",
-        "microsoft.aspnetcore.antiforgery.2.1.0.nupkg.sha512",
-        "microsoft.aspnetcore.antiforgery.nuspec"
+        "hotbag.aspnetcore.io.1.0.0.nupkg.sha512",
+        "hotbag.aspnetcore.io.nuspec",
+        "lib/netstandard2.0/HotBag.AspNetCore.IO.dll"
+      ]
+    },
+    "HotBag.AspNetCore.Log/1.0.0": {
+      "sha512": "qE/tPbWbvSUDtphS5oKnqNyiAxDCPBroRPQU4E6huGu5KwLDhug4hA72GxBTWiFgKFz6f7DZSoMNrXrvIyVL5Q==",
+      "type": "package",
+      "path": "hotbag.aspnetcore.log/1.0.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "hotbag.aspnetcore.log.1.0.0.nupkg.sha512",
+        "hotbag.aspnetcore.log.nuspec",
+        "lib/netstandard2.0/HotBag.AspNetCore.Log.dll"
+      ]
+    },
+    "HotBag.AspNetCore.RabbitMQ/1.0.0": {
+      "sha512": "zyX+pZOjiWKe8mknjkQnzWtKw3q/lsOcs5KH3KgefehGnTNvmuN6o16qADHmXWWDa0pJK1kEC+kfSynn51496g==",
+      "type": "package",
+      "path": "hotbag.aspnetcore.rabbitmq/1.0.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "hotbag.aspnetcore.rabbitmq.1.0.0.nupkg.sha512",
+        "hotbag.aspnetcore.rabbitmq.nuspec",
+        "lib/netstandard2.0/HotBag.AspNetCore.RabbitMQ.dll"
+      ]
+    },
+    "HotBag.AspNetCore.Reflection/1.0.0": {
+      "sha512": "qhJpCkr5BtuBIwK/EFs9Zgegnp22418OSKfJ6ykkY6fzOQ6y/OJ736J8vIBxxlmFWHKNj3HrNQpbvmQFwcPC7w==",
+      "type": "package",
+      "path": "hotbag.aspnetcore.reflection/1.0.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "hotbag.aspnetcore.reflection.1.0.0.nupkg.sha512",
+        "hotbag.aspnetcore.reflection.nuspec",
+        "lib/netstandard2.0/HotBag.AspNetCore.Reflection.dll"
+      ]
+    },
+    "HotBag.AspNetCore.ResultWrapper/1.0.0": {
+      "sha512": "ZmSn2LelWfGQyO+07TN5AaDjgwJxRomDpmMfwxvxe6hq89sIHlrHIsTshVy9LZs/sC/esMqb+qb9JTzjNZklcg==",
+      "type": "package",
+      "path": "hotbag.aspnetcore.resultwrapper/1.0.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "hotbag.aspnetcore.resultwrapper.1.0.0.nupkg.sha512",
+        "hotbag.aspnetcore.resultwrapper.nuspec",
+        "lib/netstandard2.0/HotBag.AspNetCore.ResultWrapper.dll"
+      ]
+    },
+    "HotBag.AspNetCore.Security/1.0.0": {
+      "sha512": "1YsKCZwQeCEIHvvuNg2G9aewqhtW016iH+TZy9Dk256iJ+kOEq2S81zS/EYK27jSbZXzrbMm6/riQ1AIgJcQww==",
+      "type": "package",
+      "path": "hotbag.aspnetcore.security/1.0.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "hotbag.aspnetcore.security.1.0.0.nupkg.sha512",
+        "hotbag.aspnetcore.security.nuspec",
+        "lib/netstandard2.0/HotBag.AspNetCore.Security.dll"
+      ]
+    },
+    "HotBag.AspNetCore.SignalR/1.0.0": {
+      "sha512": "8aQUl24Ra+Rac5JchosvCVOQq2Z0719j6bR1VHnNgma2qkhWTa9fitOwVYDNioo0+B3AnmjJMFHz65RihdRqyg==",
+      "type": "package",
+      "path": "hotbag.aspnetcore.signalr/1.0.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "hotbag.aspnetcore.signalr.1.0.0.nupkg.sha512",
+        "hotbag.aspnetcore.signalr.nuspec",
+        "lib/netstandard2.0/HotBag.AspNetCore.SignalR.dll"
+      ]
+    },
+    "HotBag.AspNetCore.Swagger/1.0.0": {
+      "sha512": "b2uX2XR9MVcJTWrMrkQfKWjQn1714OMVjr+pZFUWBmfT8PsYHNPPO3aNrVAD7p/wMVQkq0Wul+zSYdKVLTUC+w==",
+      "type": "package",
+      "path": "hotbag.aspnetcore.swagger/1.0.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "hotbag.aspnetcore.swagger.1.0.0.nupkg.sha512",
+        "hotbag.aspnetcore.swagger.nuspec",
+        "lib/netstandard2.0/HotBag.AspNetCore.Swagger.dll"
+      ]
+    },
+    "HotBag.AspNetCore.Web/1.0.0": {
+      "sha512": "AAuGkonEP6WivRAC7eOJkAmCwn4yXYYZ9T5PVfs9yUR5Hw3z+Vl78PWn3F3vsD4Iae0DISFzROGI8S64ouNirw==",
+      "type": "package",
+      "path": "hotbag.aspnetcore.web/1.0.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "hotbag.aspnetcore.web.1.0.0.nupkg.sha512",
+        "hotbag.aspnetcore.web.nuspec",
+        "lib/netstandard2.0/HotBag.AspNetCore.Web.dll"
       ]
     },
     "Microsoft.AspNetCore.Authentication/2.2.0": {
@@ -3954,19 +3202,6 @@
         "microsoft.aspnetcore.dataprotection.abstractions.nuspec"
       ]
     },
-    "Microsoft.AspNetCore.Diagnostics.Abstractions/2.1.0": {
-      "sha512": "5tNSFciI+wcaZHUrF0xVYjZjPdQNZjNQCEYlxwaQaXK1saBNN/YB2XAh3iEgQdpmkBQDrS8l/GipWVBlO4TZoA==",
-      "type": "package",
-      "path": "microsoft.aspnetcore.diagnostics.abstractions/2.1.0",
-      "files": [
-        ".nupkg.metadata",
-        ".signature.p7s",
-        "lib/netstandard2.0/Microsoft.AspNetCore.Diagnostics.Abstractions.dll",
-        "lib/netstandard2.0/Microsoft.AspNetCore.Diagnostics.Abstractions.xml",
-        "microsoft.aspnetcore.diagnostics.abstractions.2.1.0.nupkg.sha512",
-        "microsoft.aspnetcore.diagnostics.abstractions.nuspec"
-      ]
-    },
     "Microsoft.AspNetCore.Hosting.Abstractions/2.2.0": {
       "sha512": "ubycklv+ZY7Kutdwuy1W4upWcZ6VFR8WUXU7l7B2+mvbDBBPAcfpi+E+Y5GFe+Q157YfA3C49D2GCjAZc7Mobw==",
       "type": "package",
@@ -3991,19 +3226,6 @@
         "lib/netstandard2.0/Microsoft.AspNetCore.Hosting.Server.Abstractions.xml",
         "microsoft.aspnetcore.hosting.server.abstractions.2.2.0.nupkg.sha512",
         "microsoft.aspnetcore.hosting.server.abstractions.nuspec"
-      ]
-    },
-    "Microsoft.AspNetCore.Html.Abstractions/2.1.0": {
-      "sha512": "RA/znq+vLku3uzSWSn7EddEV1Wrh9l1K/nhN02GKAYgbjm5ecWEyuXH6vFLp84TzZsBwh4OerZ3Q0S4WzxHc3g==",
-      "type": "package",
-      "path": "microsoft.aspnetcore.html.abstractions/2.1.0",
-      "files": [
-        ".nupkg.metadata",
-        ".signature.p7s",
-        "lib/netstandard2.0/Microsoft.AspNetCore.Html.Abstractions.dll",
-        "lib/netstandard2.0/Microsoft.AspNetCore.Html.Abstractions.xml",
-        "microsoft.aspnetcore.html.abstractions.2.1.0.nupkg.sha512",
-        "microsoft.aspnetcore.html.abstractions.nuspec"
       ]
     },
     "Microsoft.AspNetCore.Http/2.2.0": {
@@ -4086,45 +3308,6 @@
         "microsoft.aspnetcore.http.features.nuspec"
       ]
     },
-    "Microsoft.AspNetCore.JsonPatch/2.1.0": {
-      "sha512": "JE5LRurYn0rglbY/Nj3sB1a+yGPacyYHsuLRgvZtmjLG73R0zEfSIjGmzwtIym0HDLX0RIym8q+BLH4w1nWdog==",
-      "type": "package",
-      "path": "microsoft.aspnetcore.jsonpatch/2.1.0",
-      "files": [
-        ".nupkg.metadata",
-        ".signature.p7s",
-        "lib/netstandard2.0/Microsoft.AspNetCore.JsonPatch.dll",
-        "lib/netstandard2.0/Microsoft.AspNetCore.JsonPatch.xml",
-        "microsoft.aspnetcore.jsonpatch.2.1.0.nupkg.sha512",
-        "microsoft.aspnetcore.jsonpatch.nuspec"
-      ]
-    },
-    "Microsoft.AspNetCore.Localization/2.1.0": {
-      "sha512": "xnLs3CnF71+z/F7thhm0UR/iZh5pqSjRE7sj9ExO0cNgj3YhRWaFxPOYffmBjG0EXfNBb8JpFSUVofsN6RF/cA==",
-      "type": "package",
-      "path": "microsoft.aspnetcore.localization/2.1.0",
-      "files": [
-        ".nupkg.metadata",
-        ".signature.p7s",
-        "lib/netstandard2.0/Microsoft.AspNetCore.Localization.dll",
-        "lib/netstandard2.0/Microsoft.AspNetCore.Localization.xml",
-        "microsoft.aspnetcore.localization.2.1.0.nupkg.sha512",
-        "microsoft.aspnetcore.localization.nuspec"
-      ]
-    },
-    "Microsoft.AspNetCore.Mvc/2.1.0": {
-      "sha512": "ROrK6mpSlxaScu9C7fWrrIDjE5++7m/QGCceH9FQp2kfaPasd/UVmEpHL3gWJjTGNRXu5cSoQRgjOMuU0gvsWw==",
-      "type": "package",
-      "path": "microsoft.aspnetcore.mvc/2.1.0",
-      "files": [
-        ".nupkg.metadata",
-        ".signature.p7s",
-        "lib/netstandard2.0/Microsoft.AspNetCore.Mvc.dll",
-        "lib/netstandard2.0/Microsoft.AspNetCore.Mvc.xml",
-        "microsoft.aspnetcore.mvc.2.1.0.nupkg.sha512",
-        "microsoft.aspnetcore.mvc.nuspec"
-      ]
-    },
     "Microsoft.AspNetCore.Mvc.Abstractions/2.2.0": {
       "sha512": "ET6uZpfVbGR1NjCuLaLy197cQ3qZUjzl7EG5SL4GfJH/c9KRE89MMBrQegqWsh0w1iRUB/zQaK0anAjxa/pz4g==",
       "type": "package",
@@ -4164,19 +3347,6 @@
         "microsoft.aspnetcore.mvc.core.nuspec"
       ]
     },
-    "Microsoft.AspNetCore.Mvc.Cors/2.1.0": {
-      "sha512": "U5amE6owASkKnplsEZM9yR2J53HkYVA5ERAuSaGapQkyu/SH/L4IJwrYuoSNrdjt/ABNYPO3zteOzpeVSXT2JA==",
-      "type": "package",
-      "path": "microsoft.aspnetcore.mvc.cors/2.1.0",
-      "files": [
-        ".nupkg.metadata",
-        ".signature.p7s",
-        "lib/netstandard2.0/Microsoft.AspNetCore.Mvc.Cors.dll",
-        "lib/netstandard2.0/Microsoft.AspNetCore.Mvc.Cors.xml",
-        "microsoft.aspnetcore.mvc.cors.2.1.0.nupkg.sha512",
-        "microsoft.aspnetcore.mvc.cors.nuspec"
-      ]
-    },
     "Microsoft.AspNetCore.Mvc.DataAnnotations/2.1.0": {
       "sha512": "JHcJKYjf8ASL++LVMGYZTa3NYVWXKBwDmP1sBIVWD21wDI58/b+NkUiGrcKxmG4VAYrHnEy6XkLbXxh0gVmBRw==",
       "type": "package",
@@ -4188,169 +3358,6 @@
         "lib/netstandard2.0/Microsoft.AspNetCore.Mvc.DataAnnotations.xml",
         "microsoft.aspnetcore.mvc.dataannotations.2.1.0.nupkg.sha512",
         "microsoft.aspnetcore.mvc.dataannotations.nuspec"
-      ]
-    },
-    "Microsoft.AspNetCore.Mvc.Formatters.Json/2.1.0": {
-      "sha512": "Xkbx6LWehUL44rx0gcry+qY013m5LbAjqWfdeisdiSPx2bU/q4EdteRY+zDmO8vT3jKbWcAuvTVUf6AcPPQpTQ==",
-      "type": "package",
-      "path": "microsoft.aspnetcore.mvc.formatters.json/2.1.0",
-      "files": [
-        ".nupkg.metadata",
-        ".signature.p7s",
-        "lib/netstandard2.0/Microsoft.AspNetCore.Mvc.Formatters.Json.dll",
-        "lib/netstandard2.0/Microsoft.AspNetCore.Mvc.Formatters.Json.xml",
-        "microsoft.aspnetcore.mvc.formatters.json.2.1.0.nupkg.sha512",
-        "microsoft.aspnetcore.mvc.formatters.json.nuspec"
-      ]
-    },
-    "Microsoft.AspNetCore.Mvc.Localization/2.1.0": {
-      "sha512": "mdqAn3po1MVyuwNKLFpzW5U1HlvSkOJBzsMKYzAs2GY3hs+QQIqJ3pjvr+P8hHBaPD5AoB9ZSzcZ61KvSOtdyw==",
-      "type": "package",
-      "path": "microsoft.aspnetcore.mvc.localization/2.1.0",
-      "files": [
-        ".nupkg.metadata",
-        ".signature.p7s",
-        "lib/netstandard2.0/Microsoft.AspNetCore.Mvc.Localization.dll",
-        "lib/netstandard2.0/Microsoft.AspNetCore.Mvc.Localization.xml",
-        "microsoft.aspnetcore.mvc.localization.2.1.0.nupkg.sha512",
-        "microsoft.aspnetcore.mvc.localization.nuspec"
-      ]
-    },
-    "Microsoft.AspNetCore.Mvc.Razor/2.1.0": {
-      "sha512": "3OYnFzhWwFHqIF0ta5Qku9Z/GgB6Nz4BZW3XadwO/o12uxlZEydvl4NAUZHBpayMBvnS9RBlEkU3wHN09cm8Bw==",
-      "type": "package",
-      "path": "microsoft.aspnetcore.mvc.razor/2.1.0",
-      "files": [
-        ".nupkg.metadata",
-        ".signature.p7s",
-        "lib/netstandard2.0/Microsoft.AspNetCore.Mvc.Razor.dll",
-        "lib/netstandard2.0/Microsoft.AspNetCore.Mvc.Razor.xml",
-        "microsoft.aspnetcore.mvc.razor.2.1.0.nupkg.sha512",
-        "microsoft.aspnetcore.mvc.razor.nuspec"
-      ]
-    },
-    "Microsoft.AspNetCore.Mvc.Razor.Extensions/2.1.0": {
-      "sha512": "894S6+TqW/kCTzXUtNwrH8c3oRGtYPopgPRa4m/5WHvtls1h6+scvWmZ0mqNSpfjxMVN/VFEouRHCVUq5DQUZg==",
-      "type": "package",
-      "path": "microsoft.aspnetcore.mvc.razor.extensions/2.1.0",
-      "files": [
-        ".nupkg.metadata",
-        ".signature.p7s",
-        "build/netstandard2.0/Microsoft.AspNetCore.Mvc.Razor.Extensions.props",
-        "build/netstandard2.0/Microsoft.AspNetCore.Mvc.Razor.Extensions.targets",
-        "lib/net46/Microsoft.AspNetCore.Mvc.Razor.Extensions.dll",
-        "lib/net46/Microsoft.AspNetCore.Mvc.Razor.Extensions.xml",
-        "lib/netstandard2.0/Microsoft.AspNetCore.Mvc.Razor.Extensions.dll",
-        "lib/netstandard2.0/Microsoft.AspNetCore.Mvc.Razor.Extensions.xml",
-        "microsoft.aspnetcore.mvc.razor.extensions.2.1.0.nupkg.sha512",
-        "microsoft.aspnetcore.mvc.razor.extensions.nuspec"
-      ]
-    },
-    "Microsoft.AspNetCore.Mvc.RazorPages/2.1.0": {
-      "sha512": "xzgaiiwGt75QP20ycnFtJBAsH4aC0+93arQLrnpoTNkSyW5h+cYovbuAoypQWU6HCGIt2Ql3Qkqm5fgY/Ww75A==",
-      "type": "package",
-      "path": "microsoft.aspnetcore.mvc.razorpages/2.1.0",
-      "files": [
-        ".nupkg.metadata",
-        ".signature.p7s",
-        "lib/netstandard2.0/Microsoft.AspNetCore.Mvc.RazorPages.dll",
-        "lib/netstandard2.0/Microsoft.AspNetCore.Mvc.RazorPages.xml",
-        "microsoft.aspnetcore.mvc.razorpages.2.1.0.nupkg.sha512",
-        "microsoft.aspnetcore.mvc.razorpages.nuspec"
-      ]
-    },
-    "Microsoft.AspNetCore.Mvc.TagHelpers/2.1.0": {
-      "sha512": "UMrW2CAyA5wezHHRYUGDacrVbLw391+ZqFRrY1X9Whs+ltrSXKJiyLiPky2Zt/O7p+FzOt6PLZEyPWNonh8dxg==",
-      "type": "package",
-      "path": "microsoft.aspnetcore.mvc.taghelpers/2.1.0",
-      "files": [
-        ".nupkg.metadata",
-        ".signature.p7s",
-        "lib/netstandard2.0/Microsoft.AspNetCore.Mvc.TagHelpers.dll",
-        "lib/netstandard2.0/Microsoft.AspNetCore.Mvc.TagHelpers.xml",
-        "microsoft.aspnetcore.mvc.taghelpers.2.1.0.nupkg.sha512",
-        "microsoft.aspnetcore.mvc.taghelpers.nuspec"
-      ]
-    },
-    "Microsoft.AspNetCore.Mvc.ViewFeatures/2.1.0": {
-      "sha512": "/6k/99aj5c8xM4uwnXRr6lLlvoIZL5IebSt4I21HjMsvIeCQqhivBJsqCKq1bqsJlWZB3ak4AxsPesvRERcbcg==",
-      "type": "package",
-      "path": "microsoft.aspnetcore.mvc.viewfeatures/2.1.0",
-      "files": [
-        ".nupkg.metadata",
-        ".signature.p7s",
-        "lib/netstandard2.0/Microsoft.AspNetCore.Mvc.ViewFeatures.dll",
-        "lib/netstandard2.0/Microsoft.AspNetCore.Mvc.ViewFeatures.xml",
-        "microsoft.aspnetcore.mvc.viewfeatures.2.1.0.nupkg.sha512",
-        "microsoft.aspnetcore.mvc.viewfeatures.nuspec"
-      ]
-    },
-    "Microsoft.AspNetCore.Razor/2.1.0": {
-      "sha512": "xYMZg36TMyhiE8lrW13c0ZgQjqT9rLSHs3AM16PoXAX+wGcp7kfio+2H4E6rUjH2iibm3dcxWaZw2Dji0Xfa6g==",
-      "type": "package",
-      "path": "microsoft.aspnetcore.razor/2.1.0",
-      "files": [
-        ".nupkg.metadata",
-        ".signature.p7s",
-        "lib/netstandard2.0/Microsoft.AspNetCore.Razor.dll",
-        "lib/netstandard2.0/Microsoft.AspNetCore.Razor.xml",
-        "microsoft.aspnetcore.razor.2.1.0.nupkg.sha512",
-        "microsoft.aspnetcore.razor.nuspec"
-      ]
-    },
-    "Microsoft.AspNetCore.Razor.Design/2.1.0": {
-      "sha512": "NGpC8STZnIO4V0kBgf4hZIK0Pjc0pNuvy28irNr4Z+jCo0o4WfRDAo9zcfKhk9Sm9OriOAlRYoKr1+gBBNC0NA==",
-      "type": "package",
-      "path": "microsoft.aspnetcore.razor.design/2.1.0",
-      "hasTools": true,
-      "files": [
-        ".nupkg.metadata",
-        ".signature.p7s",
-        "build/netstandard2.0/Microsoft.AspNetCore.Razor.Design.CodeGeneration.targets",
-        "build/netstandard2.0/Microsoft.AspNetCore.Razor.Design.props",
-        "buildMultiTargeting/Microsoft.AspNetCore.Razor.Design.props",
-        "microsoft.aspnetcore.razor.design.2.1.0.nupkg.sha512",
-        "microsoft.aspnetcore.razor.design.nuspec",
-        "tasks/net46/Microsoft.AspNetCore.Razor.Tasks.dll",
-        "tasks/netstandard2.0/Microsoft.AspNetCore.Razor.Tasks.dll",
-        "tools/Microsoft.AspNetCore.Razor.Language.dll",
-        "tools/Microsoft.CodeAnalysis.CSharp.dll",
-        "tools/Microsoft.CodeAnalysis.Razor.dll",
-        "tools/Microsoft.CodeAnalysis.dll",
-        "tools/Newtonsoft.Json.dll",
-        "tools/runtimes/unix/lib/netstandard1.3/System.Text.Encoding.CodePages.dll",
-        "tools/runtimes/win/lib/netstandard1.3/System.Text.Encoding.CodePages.dll",
-        "tools/rzc.deps.json",
-        "tools/rzc.dll",
-        "tools/rzc.runtimeconfig.json"
-      ]
-    },
-    "Microsoft.AspNetCore.Razor.Language/2.1.0": {
-      "sha512": "cZz3JwbzTd4/6xLD2LsnTSVGmH15z4oWa2/40vrpjDa87siqG6xibF7z2s29oNsHFhFog2F+KqI0ay6Q6Dj1BA==",
-      "type": "package",
-      "path": "microsoft.aspnetcore.razor.language/2.1.0",
-      "files": [
-        ".nupkg.metadata",
-        ".signature.p7s",
-        "lib/net46/Microsoft.AspNetCore.Razor.Language.dll",
-        "lib/net46/Microsoft.AspNetCore.Razor.Language.xml",
-        "lib/netstandard2.0/Microsoft.AspNetCore.Razor.Language.dll",
-        "lib/netstandard2.0/Microsoft.AspNetCore.Razor.Language.xml",
-        "microsoft.aspnetcore.razor.language.2.1.0.nupkg.sha512",
-        "microsoft.aspnetcore.razor.language.nuspec"
-      ]
-    },
-    "Microsoft.AspNetCore.Razor.Runtime/2.1.0": {
-      "sha512": "tpBIKen4pJUAmYMGH72voZlyNgEy9s2IaOwZQ0/INiqlunZmG7ptvHs5Z6q+XTL1lX8bzKX5RgEH08NjL4zCdA==",
-      "type": "package",
-      "path": "microsoft.aspnetcore.razor.runtime/2.1.0",
-      "files": [
-        ".nupkg.metadata",
-        ".signature.p7s",
-        "lib/netstandard2.0/Microsoft.AspNetCore.Razor.Runtime.dll",
-        "lib/netstandard2.0/Microsoft.AspNetCore.Razor.Runtime.xml",
-        "microsoft.aspnetcore.razor.runtime.2.1.0.nupkg.sha512",
-        "microsoft.aspnetcore.razor.runtime.nuspec"
       ]
     },
     "Microsoft.AspNetCore.ResponseCaching.Abstractions/2.2.0": {
@@ -4511,67 +3518,6 @@
         "version.txt"
       ]
     },
-    "Microsoft.CodeAnalysis.Analyzers/1.1.0": {
-      "sha512": "HS3iRWZKcUw/8eZ/08GXKY2Bn7xNzQPzf8gRPHGSowX7u7XXu9i9YEaBeBNKUXWfI7qjvT2zXtLUvbN0hds8vg==",
-      "type": "package",
-      "path": "microsoft.codeanalysis.analyzers/1.1.0",
-      "hasTools": true,
-      "files": [
-        ".nupkg.metadata",
-        "ThirdPartyNotices.rtf",
-        "analyzers/dotnet/cs/Microsoft.CodeAnalysis.Analyzers.dll",
-        "analyzers/dotnet/cs/Microsoft.CodeAnalysis.CSharp.Analyzers.dll",
-        "analyzers/dotnet/vb/Microsoft.CodeAnalysis.Analyzers.dll",
-        "analyzers/dotnet/vb/Microsoft.CodeAnalysis.VisualBasic.Analyzers.dll",
-        "microsoft.codeanalysis.analyzers.1.1.0.nupkg.sha512",
-        "microsoft.codeanalysis.analyzers.nuspec",
-        "tools/install.ps1",
-        "tools/uninstall.ps1"
-      ]
-    },
-    "Microsoft.CodeAnalysis.Common/2.8.0": {
-      "sha512": "06AzG7oOLKTCN1EnoVYL1bQz+Zwa10LMpUn7Kc+PdpN8CQXRqXTyhfxuKIz6t0qWfoatBNXdHD0OLcEYp5pOvQ==",
-      "type": "package",
-      "path": "microsoft.codeanalysis.common/2.8.0",
-      "files": [
-        ".nupkg.metadata",
-        ".signature.p7s",
-        "lib/netstandard1.3/Microsoft.CodeAnalysis.dll",
-        "lib/netstandard1.3/Microsoft.CodeAnalysis.pdb",
-        "lib/netstandard1.3/Microsoft.CodeAnalysis.xml",
-        "microsoft.codeanalysis.common.2.8.0.nupkg.sha512",
-        "microsoft.codeanalysis.common.nuspec"
-      ]
-    },
-    "Microsoft.CodeAnalysis.CSharp/2.8.0": {
-      "sha512": "RizcFXuHgGmeuZhxxE1qQdhFA9lGOHlk0MJlCUt6LOnYsevo72gNikPcbANFHY02YK8L/buNrihchY0TroGvXQ==",
-      "type": "package",
-      "path": "microsoft.codeanalysis.csharp/2.8.0",
-      "files": [
-        ".nupkg.metadata",
-        ".signature.p7s",
-        "lib/netstandard1.3/Microsoft.CodeAnalysis.CSharp.dll",
-        "lib/netstandard1.3/Microsoft.CodeAnalysis.CSharp.pdb",
-        "lib/netstandard1.3/Microsoft.CodeAnalysis.CSharp.xml",
-        "microsoft.codeanalysis.csharp.2.8.0.nupkg.sha512",
-        "microsoft.codeanalysis.csharp.nuspec"
-      ]
-    },
-    "Microsoft.CodeAnalysis.Razor/2.1.0": {
-      "sha512": "vZzi2Y+kvKAURFPJscERrGo1z72DnvN7oGLDAmaiwsqsF+jNu1IEu3cmjVpWb3LShQ9j5oHW5/ZuI3zXAJgpMA==",
-      "type": "package",
-      "path": "microsoft.codeanalysis.razor/2.1.0",
-      "files": [
-        ".nupkg.metadata",
-        ".signature.p7s",
-        "lib/net46/Microsoft.CodeAnalysis.Razor.dll",
-        "lib/net46/Microsoft.CodeAnalysis.Razor.xml",
-        "lib/netstandard2.0/Microsoft.CodeAnalysis.Razor.dll",
-        "lib/netstandard2.0/Microsoft.CodeAnalysis.Razor.xml",
-        "microsoft.codeanalysis.razor.2.1.0.nupkg.sha512",
-        "microsoft.codeanalysis.razor.nuspec"
-      ]
-    },
     "Microsoft.CSharp/4.5.0": {
       "sha512": "kaj6Wb4qoMuH3HySFJhxwQfe8R/sJsNJnANrvv8WdFPMoNbKY5htfNscv+LHCu5ipz+49m2e+WQXpLXr9XYemQ==",
       "type": "package",
@@ -4682,32 +3628,6 @@
         "tools/netcoreapp2.1/GetDocument.Insider.runtimeconfig.json"
       ]
     },
-    "Microsoft.Extensions.Caching.Abstractions/2.1.0": {
-      "sha512": "R7uAb/JRwb9YQBB0qqLlX2qv4RBC/BqqIqFDqzvCjT0T2uPpbuTINLKGp+7uX2dbxjt3cpebSu5GvebeiKYpQA==",
-      "type": "package",
-      "path": "microsoft.extensions.caching.abstractions/2.1.0",
-      "files": [
-        ".nupkg.metadata",
-        ".signature.p7s",
-        "lib/netstandard2.0/Microsoft.Extensions.Caching.Abstractions.dll",
-        "lib/netstandard2.0/Microsoft.Extensions.Caching.Abstractions.xml",
-        "microsoft.extensions.caching.abstractions.2.1.0.nupkg.sha512",
-        "microsoft.extensions.caching.abstractions.nuspec"
-      ]
-    },
-    "Microsoft.Extensions.Caching.Memory/2.1.0": {
-      "sha512": "Jc1TrYtOxX9gsUXI4ZPVfPLI9aGjGTzVEs/qsBPw2GA+Td840YN4CvXCjgrLtWJckxl6KRNHgoYYBQgZZ/LTqg==",
-      "type": "package",
-      "path": "microsoft.extensions.caching.memory/2.1.0",
-      "files": [
-        ".nupkg.metadata",
-        ".signature.p7s",
-        "lib/netstandard2.0/Microsoft.Extensions.Caching.Memory.dll",
-        "lib/netstandard2.0/Microsoft.Extensions.Caching.Memory.xml",
-        "microsoft.extensions.caching.memory.2.1.0.nupkg.sha512",
-        "microsoft.extensions.caching.memory.nuspec"
-      ]
-    },
     "Microsoft.Extensions.Configuration/2.0.0": {
       "sha512": "SsI4RqI8EH00+cYO96tbftlh87sNUv1eeyuBU1XZdQkG0RrHAOjWgl7P0FoLeTSMXJpOnfweeOWj2d1/5H3FxA==",
       "type": "package",
@@ -4807,19 +3727,6 @@
         "microsoft.extensions.fileproviders.abstractions.nuspec"
       ]
     },
-    "Microsoft.Extensions.FileProviders.Composite/2.1.0": {
-      "sha512": "vc2oy4OlHaTH3hMZlMGymk4vzi93Nz3T1T+kMHBpoq9Ka287DHP8vZxK9MhgTsnNYP7S4hrqiUxsc5wEPyDYGg==",
-      "type": "package",
-      "path": "microsoft.extensions.fileproviders.composite/2.1.0",
-      "files": [
-        ".nupkg.metadata",
-        ".signature.p7s",
-        "lib/netstandard2.0/Microsoft.Extensions.FileProviders.Composite.dll",
-        "lib/netstandard2.0/Microsoft.Extensions.FileProviders.Composite.xml",
-        "microsoft.extensions.fileproviders.composite.2.1.0.nupkg.sha512",
-        "microsoft.extensions.fileproviders.composite.nuspec"
-      ]
-    },
     "Microsoft.Extensions.FileProviders.Embedded/2.1.0": {
       "sha512": "Zh8BkC4aneMITeGzflkDZKDkgDC+YhsvjAaeDLWEmgzNoAGPLbH+tbvn9Boo94V0cryfR/5396goB5KAElKzfw==",
       "type": "package",
@@ -4837,19 +3744,6 @@
         "microsoft.extensions.fileproviders.embedded.nuspec",
         "tasks/net461/Microsoft.Extensions.FileProviders.Embedded.Manifest.Task.dll",
         "tasks/netstandard1.5/Microsoft.Extensions.FileProviders.Embedded.Manifest.Task.dll"
-      ]
-    },
-    "Microsoft.Extensions.FileSystemGlobbing/2.1.0": {
-      "sha512": "JEwwhwbVTEXJu4W4l/FFx7FG9Fh5R8999mZl6qJImjM/LY4DxQsFYzpSkziMdY022n7TQpNUxJlH9bKZc7TqWw==",
-      "type": "package",
-      "path": "microsoft.extensions.filesystemglobbing/2.1.0",
-      "files": [
-        ".nupkg.metadata",
-        ".signature.p7s",
-        "lib/netstandard2.0/Microsoft.Extensions.FileSystemGlobbing.dll",
-        "lib/netstandard2.0/Microsoft.Extensions.FileSystemGlobbing.xml",
-        "microsoft.extensions.filesystemglobbing.2.1.0.nupkg.sha512",
-        "microsoft.extensions.filesystemglobbing.nuspec"
       ]
     },
     "Microsoft.Extensions.Hosting.Abstractions/2.2.0": {
@@ -5340,10 +4234,10 @@
         "netstandard.library.nuspec"
       ]
     },
-    "Newtonsoft.Json/12.0.3": {
-      "sha512": "6mgjfnRB4jKMlzHSl+VD+oUc1IebOZabkbyWj2RiTgWwYPPuaK1H97G1sHqGwPlS5npiF5Q0OrxN1wni2n5QWg==",
+    "Newtonsoft.Json/11.0.2": {
+      "sha512": "IvJe1pj7JHEsP8B8J8DwlMEx8UInrs/x+9oVY+oCD13jpLu4JbJU2WCIsMRn5C4yW9+DgkaO8uiVE5VHKjpmdQ==",
       "type": "package",
-      "path": "newtonsoft.json/12.0.3",
+      "path": "newtonsoft.json/11.0.2",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
@@ -5366,24 +4260,8 @@
         "lib/portable-net40+sl5+win8+wp8+wpa81/Newtonsoft.Json.xml",
         "lib/portable-net45+win8+wp8+wpa81/Newtonsoft.Json.dll",
         "lib/portable-net45+win8+wp8+wpa81/Newtonsoft.Json.xml",
-        "newtonsoft.json.12.0.3.nupkg.sha512",
-        "newtonsoft.json.nuspec",
-        "packageIcon.png"
-      ]
-    },
-    "Newtonsoft.Json.Bson/1.0.1": {
-      "sha512": "5PYT/IqQ+UK31AmZiSS102R6EsTo+LGTSI8bp7WAUqDKaF4wHXD8U9u4WxTI1vc64tYi++8p3dk3WWNqPFgldw==",
-      "type": "package",
-      "path": "newtonsoft.json.bson/1.0.1",
-      "files": [
-        ".nupkg.metadata",
-        ".signature.p7s",
-        "lib/net45/Newtonsoft.Json.Bson.dll",
-        "lib/net45/Newtonsoft.Json.Bson.xml",
-        "lib/netstandard1.3/Newtonsoft.Json.Bson.dll",
-        "lib/netstandard1.3/Newtonsoft.Json.Bson.xml",
-        "newtonsoft.json.bson.1.0.1.nupkg.sha512",
-        "newtonsoft.json.bson.nuspec"
+        "newtonsoft.json.11.0.2.nupkg.sha512",
+        "newtonsoft.json.nuspec"
       ]
     },
     "RabbitMQ.Client/6.0.0": {
@@ -5455,19 +4333,6 @@
         "lib/netstandard1.0/_._",
         "runtime.native.system.4.3.0.nupkg.sha512",
         "runtime.native.system.nuspec"
-      ]
-    },
-    "runtime.native.System.IO.Compression/4.3.0": {
-      "sha512": "INBPonS5QPEgn7naufQFXJEp3zX6L4bwHgJ/ZH78aBTpeNfQMtf7C6VrAFhlq2xxWBveIOWyFzQjJ8XzHMhdOQ==",
-      "type": "package",
-      "path": "runtime.native.system.io.compression/4.3.0",
-      "files": [
-        ".nupkg.metadata",
-        "ThirdPartyNotices.txt",
-        "dotnet_library_license.txt",
-        "lib/netstandard1.0/_._",
-        "runtime.native.system.io.compression.4.3.0.nupkg.sha512",
-        "runtime.native.system.io.compression.nuspec"
       ]
     },
     "runtime.native.System.Net.Http/4.3.0": {
@@ -5841,10 +4706,10 @@
         "swashbuckle.aspnetcore.swaggerui.nuspec"
       ]
     },
-    "System.AppContext/4.3.0": {
-      "sha512": "fKC+rmaLfeIzUhagxY17Q9siv/sPrjjKcfNg1Ic8IlQkZLipo8ljcaZQu4VtI4Jqbzjc2VTjzGLF6WmsRXAEgA==",
+    "System.AppContext/4.1.0": {
+      "sha512": "3QjO4jNV7PdKkmQAVp9atA+usVnKRwI3Kx1nMwJ93T0LcQfx7pKAYk0nKz5wn1oP5iqlhZuy6RXOFdhr7rDwow==",
       "type": "package",
-      "path": "system.appcontext/4.3.0",
+      "path": "system.appcontext/4.1.0",
       "files": [
         ".nupkg.metadata",
         "ThirdPartyNotices.txt",
@@ -5891,7 +4756,7 @@
         "ref/xamarintvos10/_._",
         "ref/xamarinwatchos10/_._",
         "runtimes/aot/lib/netcore50/System.AppContext.dll",
-        "system.appcontext.4.3.0.nupkg.sha512",
+        "system.appcontext.4.1.0.nupkg.sha512",
         "system.appcontext.nuspec"
       ]
     },
@@ -6058,22 +4923,6 @@
         "ref/xamarinwatchos10/_._",
         "system.collections.concurrent.4.3.0.nupkg.sha512",
         "system.collections.concurrent.nuspec"
-      ]
-    },
-    "System.Collections.Immutable/1.3.1": {
-      "sha512": "n+AGX7zmiZumW9aggOkXaHzUeAS3EfeTErnkKCusyONUozbTv+kMb8VE36m+ldV6kF9g57G2c641KCdgH9E0pg==",
-      "type": "package",
-      "path": "system.collections.immutable/1.3.1",
-      "files": [
-        ".nupkg.metadata",
-        "ThirdPartyNotices.txt",
-        "dotnet_library_license.txt",
-        "lib/netstandard1.0/System.Collections.Immutable.dll",
-        "lib/netstandard1.0/System.Collections.Immutable.xml",
-        "lib/portable-net45+win8+wp8+wpa81/System.Collections.Immutable.dll",
-        "lib/portable-net45+win8+wp8+wpa81/System.Collections.Immutable.xml",
-        "system.collections.immutable.1.3.1.nupkg.sha512",
-        "system.collections.immutable.nuspec"
       ]
     },
     "System.Collections.NonGeneric/4.3.0": {
@@ -6427,86 +5276,6 @@
         "system.diagnostics.diagnosticsource.nuspec",
         "useSharedDesignerContext.txt",
         "version.txt"
-      ]
-    },
-    "System.Diagnostics.FileVersionInfo/4.3.0": {
-      "sha512": "omCF64wzQ3Q2CeIqkD6lmmxeMZtGHUmzgFMPjfVaOsyqpR66p/JaZzManMw1s33osoAb5gqpncsjie67+yUPHQ==",
-      "type": "package",
-      "path": "system.diagnostics.fileversioninfo/4.3.0",
-      "files": [
-        ".nupkg.metadata",
-        "ThirdPartyNotices.txt",
-        "dotnet_library_license.txt",
-        "lib/MonoAndroid10/_._",
-        "lib/MonoTouch10/_._",
-        "lib/net46/System.Diagnostics.FileVersionInfo.dll",
-        "lib/xamarinios10/_._",
-        "lib/xamarinmac20/_._",
-        "lib/xamarintvos10/_._",
-        "lib/xamarinwatchos10/_._",
-        "ref/MonoAndroid10/_._",
-        "ref/MonoTouch10/_._",
-        "ref/net46/System.Diagnostics.FileVersionInfo.dll",
-        "ref/netstandard1.3/System.Diagnostics.FileVersionInfo.dll",
-        "ref/netstandard1.3/System.Diagnostics.FileVersionInfo.xml",
-        "ref/netstandard1.3/de/System.Diagnostics.FileVersionInfo.xml",
-        "ref/netstandard1.3/es/System.Diagnostics.FileVersionInfo.xml",
-        "ref/netstandard1.3/fr/System.Diagnostics.FileVersionInfo.xml",
-        "ref/netstandard1.3/it/System.Diagnostics.FileVersionInfo.xml",
-        "ref/netstandard1.3/ja/System.Diagnostics.FileVersionInfo.xml",
-        "ref/netstandard1.3/ko/System.Diagnostics.FileVersionInfo.xml",
-        "ref/netstandard1.3/ru/System.Diagnostics.FileVersionInfo.xml",
-        "ref/netstandard1.3/zh-hans/System.Diagnostics.FileVersionInfo.xml",
-        "ref/netstandard1.3/zh-hant/System.Diagnostics.FileVersionInfo.xml",
-        "ref/xamarinios10/_._",
-        "ref/xamarinmac20/_._",
-        "ref/xamarintvos10/_._",
-        "ref/xamarinwatchos10/_._",
-        "runtimes/unix/lib/netstandard1.3/System.Diagnostics.FileVersionInfo.dll",
-        "runtimes/win/lib/net46/System.Diagnostics.FileVersionInfo.dll",
-        "runtimes/win/lib/netcore50/System.Diagnostics.FileVersionInfo.dll",
-        "runtimes/win/lib/netstandard1.3/System.Diagnostics.FileVersionInfo.dll",
-        "system.diagnostics.fileversioninfo.4.3.0.nupkg.sha512",
-        "system.diagnostics.fileversioninfo.nuspec"
-      ]
-    },
-    "System.Diagnostics.StackTrace/4.3.0": {
-      "sha512": "BiHg0vgtd35/DM9jvtaC1eKRpWZxr0gcQd643ABG7GnvSlf5pOkY2uyd42mMOJoOmKvnpNj0F4tuoS1pacTwYw==",
-      "type": "package",
-      "path": "system.diagnostics.stacktrace/4.3.0",
-      "files": [
-        ".nupkg.metadata",
-        "ThirdPartyNotices.txt",
-        "dotnet_library_license.txt",
-        "lib/MonoAndroid10/_._",
-        "lib/MonoTouch10/_._",
-        "lib/net46/System.Diagnostics.StackTrace.dll",
-        "lib/netstandard1.3/System.Diagnostics.StackTrace.dll",
-        "lib/xamarinios10/_._",
-        "lib/xamarinmac20/_._",
-        "lib/xamarintvos10/_._",
-        "lib/xamarinwatchos10/_._",
-        "ref/MonoAndroid10/_._",
-        "ref/MonoTouch10/_._",
-        "ref/net46/System.Diagnostics.StackTrace.dll",
-        "ref/netstandard1.3/System.Diagnostics.StackTrace.dll",
-        "ref/netstandard1.3/System.Diagnostics.StackTrace.xml",
-        "ref/netstandard1.3/de/System.Diagnostics.StackTrace.xml",
-        "ref/netstandard1.3/es/System.Diagnostics.StackTrace.xml",
-        "ref/netstandard1.3/fr/System.Diagnostics.StackTrace.xml",
-        "ref/netstandard1.3/it/System.Diagnostics.StackTrace.xml",
-        "ref/netstandard1.3/ja/System.Diagnostics.StackTrace.xml",
-        "ref/netstandard1.3/ko/System.Diagnostics.StackTrace.xml",
-        "ref/netstandard1.3/ru/System.Diagnostics.StackTrace.xml",
-        "ref/netstandard1.3/zh-hans/System.Diagnostics.StackTrace.xml",
-        "ref/netstandard1.3/zh-hant/System.Diagnostics.StackTrace.xml",
-        "ref/xamarinios10/_._",
-        "ref/xamarinmac20/_._",
-        "ref/xamarintvos10/_._",
-        "ref/xamarinwatchos10/_._",
-        "runtimes/aot/lib/netcore50/System.Diagnostics.StackTrace.dll",
-        "system.diagnostics.stacktrace.4.3.0.nupkg.sha512",
-        "system.diagnostics.stacktrace.nuspec"
       ]
     },
     "System.Diagnostics.Tools/4.3.0": {
@@ -6972,76 +5741,6 @@
         "ref/xamarinwatchos10/_._",
         "system.io.4.3.0.nupkg.sha512",
         "system.io.nuspec"
-      ]
-    },
-    "System.IO.Compression/4.3.0": {
-      "sha512": "YHndyoiV90iu4iKG115ibkhrG+S3jBm8Ap9OwoUAzO5oPDAWcr0SFwQFm0HjM8WkEZWo0zvLTyLmbvTkW1bXgg==",
-      "type": "package",
-      "path": "system.io.compression/4.3.0",
-      "files": [
-        ".nupkg.metadata",
-        "ThirdPartyNotices.txt",
-        "dotnet_library_license.txt",
-        "lib/MonoAndroid10/_._",
-        "lib/MonoTouch10/_._",
-        "lib/net45/_._",
-        "lib/net46/System.IO.Compression.dll",
-        "lib/portable-net45+win8+wpa81/_._",
-        "lib/win8/_._",
-        "lib/wpa81/_._",
-        "lib/xamarinios10/_._",
-        "lib/xamarinmac20/_._",
-        "lib/xamarintvos10/_._",
-        "lib/xamarinwatchos10/_._",
-        "ref/MonoAndroid10/_._",
-        "ref/MonoTouch10/_._",
-        "ref/net45/_._",
-        "ref/net46/System.IO.Compression.dll",
-        "ref/netcore50/System.IO.Compression.dll",
-        "ref/netcore50/System.IO.Compression.xml",
-        "ref/netcore50/de/System.IO.Compression.xml",
-        "ref/netcore50/es/System.IO.Compression.xml",
-        "ref/netcore50/fr/System.IO.Compression.xml",
-        "ref/netcore50/it/System.IO.Compression.xml",
-        "ref/netcore50/ja/System.IO.Compression.xml",
-        "ref/netcore50/ko/System.IO.Compression.xml",
-        "ref/netcore50/ru/System.IO.Compression.xml",
-        "ref/netcore50/zh-hans/System.IO.Compression.xml",
-        "ref/netcore50/zh-hant/System.IO.Compression.xml",
-        "ref/netstandard1.1/System.IO.Compression.dll",
-        "ref/netstandard1.1/System.IO.Compression.xml",
-        "ref/netstandard1.1/de/System.IO.Compression.xml",
-        "ref/netstandard1.1/es/System.IO.Compression.xml",
-        "ref/netstandard1.1/fr/System.IO.Compression.xml",
-        "ref/netstandard1.1/it/System.IO.Compression.xml",
-        "ref/netstandard1.1/ja/System.IO.Compression.xml",
-        "ref/netstandard1.1/ko/System.IO.Compression.xml",
-        "ref/netstandard1.1/ru/System.IO.Compression.xml",
-        "ref/netstandard1.1/zh-hans/System.IO.Compression.xml",
-        "ref/netstandard1.1/zh-hant/System.IO.Compression.xml",
-        "ref/netstandard1.3/System.IO.Compression.dll",
-        "ref/netstandard1.3/System.IO.Compression.xml",
-        "ref/netstandard1.3/de/System.IO.Compression.xml",
-        "ref/netstandard1.3/es/System.IO.Compression.xml",
-        "ref/netstandard1.3/fr/System.IO.Compression.xml",
-        "ref/netstandard1.3/it/System.IO.Compression.xml",
-        "ref/netstandard1.3/ja/System.IO.Compression.xml",
-        "ref/netstandard1.3/ko/System.IO.Compression.xml",
-        "ref/netstandard1.3/ru/System.IO.Compression.xml",
-        "ref/netstandard1.3/zh-hans/System.IO.Compression.xml",
-        "ref/netstandard1.3/zh-hant/System.IO.Compression.xml",
-        "ref/portable-net45+win8+wpa81/_._",
-        "ref/win8/_._",
-        "ref/wpa81/_._",
-        "ref/xamarinios10/_._",
-        "ref/xamarinmac20/_._",
-        "ref/xamarintvos10/_._",
-        "ref/xamarinwatchos10/_._",
-        "runtimes/unix/lib/netstandard1.3/System.IO.Compression.dll",
-        "runtimes/win/lib/net46/System.IO.Compression.dll",
-        "runtimes/win/lib/netstandard1.3/System.IO.Compression.dll",
-        "system.io.compression.4.3.0.nupkg.sha512",
-        "system.io.compression.nuspec"
       ]
     },
     "System.IO.FileSystem/4.3.0": {
@@ -7887,22 +6586,6 @@
         "ref/xamarinwatchos10/_._",
         "system.reflection.extensions.4.3.0.nupkg.sha512",
         "system.reflection.extensions.nuspec"
-      ]
-    },
-    "System.Reflection.Metadata/1.4.2": {
-      "sha512": "KYPNMDrLB2R+G5JJiJ2fjBpihtktKVIjsirmyyv+VDo5rQkIR9BWeCYM1wDSzbQatWNZ/NQfPsQyTB1Ui3qBfQ==",
-      "type": "package",
-      "path": "system.reflection.metadata/1.4.2",
-      "files": [
-        ".nupkg.metadata",
-        "ThirdPartyNotices.txt",
-        "dotnet_library_license.txt",
-        "lib/netstandard1.1/System.Reflection.Metadata.dll",
-        "lib/netstandard1.1/System.Reflection.Metadata.xml",
-        "lib/portable-net45+win8/System.Reflection.Metadata.dll",
-        "lib/portable-net45+win8/System.Reflection.Metadata.xml",
-        "system.reflection.metadata.1.4.2.nupkg.sha512",
-        "system.reflection.metadata.nuspec"
       ]
     },
     "System.Reflection.Primitives/4.3.0": {
@@ -9226,44 +7909,6 @@
         "system.text.encoding.nuspec"
       ]
     },
-    "System.Text.Encoding.CodePages/4.3.0": {
-      "sha512": "6ENnyNU7cdmUVYblQ9GzLuJlLs9HWyoSInm+JZyCBHFUTaSQZolLIdGSZWGw5VOhjbFop+u/pU0AbKiHQKheqw==",
-      "type": "package",
-      "path": "system.text.encoding.codepages/4.3.0",
-      "files": [
-        ".nupkg.metadata",
-        "ThirdPartyNotices.txt",
-        "dotnet_library_license.txt",
-        "lib/MonoAndroid10/_._",
-        "lib/MonoTouch10/_._",
-        "lib/net46/System.Text.Encoding.CodePages.dll",
-        "lib/xamarinios10/_._",
-        "lib/xamarinmac20/_._",
-        "lib/xamarintvos10/_._",
-        "lib/xamarinwatchos10/_._",
-        "ref/MonoAndroid10/_._",
-        "ref/MonoTouch10/_._",
-        "ref/netstandard1.3/System.Text.Encoding.CodePages.dll",
-        "ref/netstandard1.3/System.Text.Encoding.CodePages.xml",
-        "ref/netstandard1.3/de/System.Text.Encoding.CodePages.xml",
-        "ref/netstandard1.3/es/System.Text.Encoding.CodePages.xml",
-        "ref/netstandard1.3/fr/System.Text.Encoding.CodePages.xml",
-        "ref/netstandard1.3/it/System.Text.Encoding.CodePages.xml",
-        "ref/netstandard1.3/ja/System.Text.Encoding.CodePages.xml",
-        "ref/netstandard1.3/ko/System.Text.Encoding.CodePages.xml",
-        "ref/netstandard1.3/ru/System.Text.Encoding.CodePages.xml",
-        "ref/netstandard1.3/zh-hans/System.Text.Encoding.CodePages.xml",
-        "ref/netstandard1.3/zh-hant/System.Text.Encoding.CodePages.xml",
-        "ref/xamarinios10/_._",
-        "ref/xamarinmac20/_._",
-        "ref/xamarintvos10/_._",
-        "ref/xamarinwatchos10/_._",
-        "runtimes/unix/lib/netstandard1.3/System.Text.Encoding.CodePages.dll",
-        "runtimes/win/lib/netstandard1.3/System.Text.Encoding.CodePages.dll",
-        "system.text.encoding.codepages.4.3.0.nupkg.sha512",
-        "system.text.encoding.codepages.nuspec"
-      ]
-    },
     "System.Text.Encoding.Extensions/4.3.0": {
       "sha512": "YVMK0Bt/A43RmwizJoZ22ei2nmrhobgeiYwFzC4YAN+nue8RF6djXDMog0UCn+brerQoYVyaS+ghy9P/MUVcmw==",
       "type": "package",
@@ -9649,101 +8294,6 @@
         "version.txt"
       ]
     },
-    "System.Threading.Tasks.Parallel/4.3.0": {
-      "sha512": "cbjBNZHf/vQCfcdhzx7knsiygoCKgxL8mZOeocXZn5gWhCdzHIq6bYNKWX0LAJCWYP7bds4yBK8p06YkP0oa0g==",
-      "type": "package",
-      "path": "system.threading.tasks.parallel/4.3.0",
-      "files": [
-        ".nupkg.metadata",
-        "ThirdPartyNotices.txt",
-        "dotnet_library_license.txt",
-        "lib/MonoAndroid10/_._",
-        "lib/MonoTouch10/_._",
-        "lib/net45/_._",
-        "lib/netcore50/System.Threading.Tasks.Parallel.dll",
-        "lib/netstandard1.3/System.Threading.Tasks.Parallel.dll",
-        "lib/portable-net45+win8+wpa81/_._",
-        "lib/win8/_._",
-        "lib/wpa81/_._",
-        "lib/xamarinios10/_._",
-        "lib/xamarinmac20/_._",
-        "lib/xamarintvos10/_._",
-        "lib/xamarinwatchos10/_._",
-        "ref/MonoAndroid10/_._",
-        "ref/MonoTouch10/_._",
-        "ref/net45/_._",
-        "ref/netcore50/System.Threading.Tasks.Parallel.dll",
-        "ref/netcore50/System.Threading.Tasks.Parallel.xml",
-        "ref/netcore50/de/System.Threading.Tasks.Parallel.xml",
-        "ref/netcore50/es/System.Threading.Tasks.Parallel.xml",
-        "ref/netcore50/fr/System.Threading.Tasks.Parallel.xml",
-        "ref/netcore50/it/System.Threading.Tasks.Parallel.xml",
-        "ref/netcore50/ja/System.Threading.Tasks.Parallel.xml",
-        "ref/netcore50/ko/System.Threading.Tasks.Parallel.xml",
-        "ref/netcore50/ru/System.Threading.Tasks.Parallel.xml",
-        "ref/netcore50/zh-hans/System.Threading.Tasks.Parallel.xml",
-        "ref/netcore50/zh-hant/System.Threading.Tasks.Parallel.xml",
-        "ref/netstandard1.1/System.Threading.Tasks.Parallel.dll",
-        "ref/netstandard1.1/System.Threading.Tasks.Parallel.xml",
-        "ref/netstandard1.1/de/System.Threading.Tasks.Parallel.xml",
-        "ref/netstandard1.1/es/System.Threading.Tasks.Parallel.xml",
-        "ref/netstandard1.1/fr/System.Threading.Tasks.Parallel.xml",
-        "ref/netstandard1.1/it/System.Threading.Tasks.Parallel.xml",
-        "ref/netstandard1.1/ja/System.Threading.Tasks.Parallel.xml",
-        "ref/netstandard1.1/ko/System.Threading.Tasks.Parallel.xml",
-        "ref/netstandard1.1/ru/System.Threading.Tasks.Parallel.xml",
-        "ref/netstandard1.1/zh-hans/System.Threading.Tasks.Parallel.xml",
-        "ref/netstandard1.1/zh-hant/System.Threading.Tasks.Parallel.xml",
-        "ref/portable-net45+win8+wpa81/_._",
-        "ref/win8/_._",
-        "ref/wpa81/_._",
-        "ref/xamarinios10/_._",
-        "ref/xamarinmac20/_._",
-        "ref/xamarintvos10/_._",
-        "ref/xamarinwatchos10/_._",
-        "system.threading.tasks.parallel.4.3.0.nupkg.sha512",
-        "system.threading.tasks.parallel.nuspec"
-      ]
-    },
-    "System.Threading.Thread/4.3.0": {
-      "sha512": "OHmbT+Zz065NKII/ZHcH9XO1dEuLGI1L2k7uYss+9C1jLxTC9kTZZuzUOyXHayRk+dft9CiDf3I/QZ0t8JKyBQ==",
-      "type": "package",
-      "path": "system.threading.thread/4.3.0",
-      "files": [
-        ".nupkg.metadata",
-        "ThirdPartyNotices.txt",
-        "dotnet_library_license.txt",
-        "lib/MonoAndroid10/_._",
-        "lib/MonoTouch10/_._",
-        "lib/net46/System.Threading.Thread.dll",
-        "lib/netcore50/_._",
-        "lib/netstandard1.3/System.Threading.Thread.dll",
-        "lib/xamarinios10/_._",
-        "lib/xamarinmac20/_._",
-        "lib/xamarintvos10/_._",
-        "lib/xamarinwatchos10/_._",
-        "ref/MonoAndroid10/_._",
-        "ref/MonoTouch10/_._",
-        "ref/net46/System.Threading.Thread.dll",
-        "ref/netstandard1.3/System.Threading.Thread.dll",
-        "ref/netstandard1.3/System.Threading.Thread.xml",
-        "ref/netstandard1.3/de/System.Threading.Thread.xml",
-        "ref/netstandard1.3/es/System.Threading.Thread.xml",
-        "ref/netstandard1.3/fr/System.Threading.Thread.xml",
-        "ref/netstandard1.3/it/System.Threading.Thread.xml",
-        "ref/netstandard1.3/ja/System.Threading.Thread.xml",
-        "ref/netstandard1.3/ko/System.Threading.Thread.xml",
-        "ref/netstandard1.3/ru/System.Threading.Thread.xml",
-        "ref/netstandard1.3/zh-hans/System.Threading.Thread.xml",
-        "ref/netstandard1.3/zh-hant/System.Threading.Thread.xml",
-        "ref/xamarinios10/_._",
-        "ref/xamarinmac20/_._",
-        "ref/xamarintvos10/_._",
-        "ref/xamarinwatchos10/_._",
-        "system.threading.thread.4.3.0.nupkg.sha512",
-        "system.threading.thread.nuspec"
-      ]
-    },
     "System.Threading.Timer/4.0.1": {
       "sha512": "saGfUV8uqVW6LeURiqxcGhZ24PzuRNaUBtbhVeuUAvky1naH395A/1nY0P2bWvrw/BreRtIB/EzTDkGBpqCwEw==",
       "type": "package",
@@ -9796,22 +8346,6 @@
         "ref/xamarinwatchos10/_._",
         "system.threading.timer.4.0.1.nupkg.sha512",
         "system.threading.timer.nuspec"
-      ]
-    },
-    "System.ValueTuple/4.3.0": {
-      "sha512": "cNLEvBX3d6MMQRZe3SMFNukVbitDAEpVZO17qa0/2FHxZ7Y7PpFRpr6m2615XYM/tYYYf0B+WyHNujqIw8Luwg==",
-      "type": "package",
-      "path": "system.valuetuple/4.3.0",
-      "files": [
-        ".nupkg.metadata",
-        "ThirdPartyNotices.txt",
-        "dotnet_library_license.txt",
-        "lib/netstandard1.0/.xml",
-        "lib/netstandard1.0/System.ValueTuple.dll",
-        "lib/portable-net40+sl4+win8+wp8/.xml",
-        "lib/portable-net40+sl4+win8+wp8/System.ValueTuple.dll",
-        "system.valuetuple.4.3.0.nupkg.sha512",
-        "system.valuetuple.nuspec"
       ]
     },
     "System.Xml.ReaderWriter/4.3.0": {
@@ -10061,177 +8595,6 @@
         "system.xml.xmlserializer.4.3.0.nupkg.sha512",
         "system.xml.xmlserializer.nuspec"
       ]
-    },
-    "System.Xml.XPath/4.3.0": {
-      "sha512": "v1JQ5SETnQusqmS3RwStF7vwQ3L02imIzl++sewmt23VGygix04pEH+FCj1yWb+z4GDzKiljr1W7Wfvrx0YwgA==",
-      "type": "package",
-      "path": "system.xml.xpath/4.3.0",
-      "files": [
-        ".nupkg.metadata",
-        "ThirdPartyNotices.txt",
-        "dotnet_library_license.txt",
-        "lib/MonoAndroid10/_._",
-        "lib/MonoTouch10/_._",
-        "lib/net46/System.Xml.XPath.dll",
-        "lib/netstandard1.3/System.Xml.XPath.dll",
-        "lib/xamarinios10/_._",
-        "lib/xamarinmac20/_._",
-        "lib/xamarintvos10/_._",
-        "lib/xamarinwatchos10/_._",
-        "ref/MonoAndroid10/_._",
-        "ref/MonoTouch10/_._",
-        "ref/net46/System.Xml.XPath.dll",
-        "ref/netstandard1.3/System.Xml.XPath.dll",
-        "ref/netstandard1.3/System.Xml.XPath.xml",
-        "ref/netstandard1.3/de/System.Xml.XPath.xml",
-        "ref/netstandard1.3/es/System.Xml.XPath.xml",
-        "ref/netstandard1.3/fr/System.Xml.XPath.xml",
-        "ref/netstandard1.3/it/System.Xml.XPath.xml",
-        "ref/netstandard1.3/ja/System.Xml.XPath.xml",
-        "ref/netstandard1.3/ko/System.Xml.XPath.xml",
-        "ref/netstandard1.3/ru/System.Xml.XPath.xml",
-        "ref/netstandard1.3/zh-hans/System.Xml.XPath.xml",
-        "ref/netstandard1.3/zh-hant/System.Xml.XPath.xml",
-        "ref/xamarinios10/_._",
-        "ref/xamarinmac20/_._",
-        "ref/xamarintvos10/_._",
-        "ref/xamarinwatchos10/_._",
-        "system.xml.xpath.4.3.0.nupkg.sha512",
-        "system.xml.xpath.nuspec"
-      ]
-    },
-    "System.Xml.XPath.XDocument/4.3.0": {
-      "sha512": "jw9oHHEIVW53mHY9PgrQa98Xo2IZ0ZjrpdOTmtvk+Rvg4tq7dydmxdNqUvJ5YwjDqhn75mBXWttWjiKhWP53LQ==",
-      "type": "package",
-      "path": "system.xml.xpath.xdocument/4.3.0",
-      "files": [
-        ".nupkg.metadata",
-        "ThirdPartyNotices.txt",
-        "dotnet_library_license.txt",
-        "lib/MonoAndroid10/_._",
-        "lib/MonoTouch10/_._",
-        "lib/net46/System.Xml.XPath.XDocument.dll",
-        "lib/netstandard1.3/System.Xml.XPath.XDocument.dll",
-        "lib/xamarinios10/_._",
-        "lib/xamarinmac20/_._",
-        "lib/xamarintvos10/_._",
-        "lib/xamarinwatchos10/_._",
-        "ref/MonoAndroid10/_._",
-        "ref/MonoTouch10/_._",
-        "ref/net46/System.Xml.XPath.XDocument.dll",
-        "ref/netstandard1.3/System.Xml.XPath.XDocument.dll",
-        "ref/netstandard1.3/System.Xml.XPath.XDocument.xml",
-        "ref/netstandard1.3/de/System.Xml.XPath.XDocument.xml",
-        "ref/netstandard1.3/es/System.Xml.XPath.XDocument.xml",
-        "ref/netstandard1.3/fr/System.Xml.XPath.XDocument.xml",
-        "ref/netstandard1.3/it/System.Xml.XPath.XDocument.xml",
-        "ref/netstandard1.3/ja/System.Xml.XPath.XDocument.xml",
-        "ref/netstandard1.3/ko/System.Xml.XPath.XDocument.xml",
-        "ref/netstandard1.3/ru/System.Xml.XPath.XDocument.xml",
-        "ref/netstandard1.3/zh-hans/System.Xml.XPath.XDocument.xml",
-        "ref/netstandard1.3/zh-hant/System.Xml.XPath.XDocument.xml",
-        "ref/xamarinios10/_._",
-        "ref/xamarinmac20/_._",
-        "ref/xamarintvos10/_._",
-        "ref/xamarinwatchos10/_._",
-        "system.xml.xpath.xdocument.4.3.0.nupkg.sha512",
-        "system.xml.xpath.xdocument.nuspec"
-      ]
-    },
-    "HotBag.AspNetCore.AppSettings/1.0.0": {
-      "type": "project",
-      "path": "../HotBag.AspNetCore.AppSettings/HotBag.AspNetCore.AppSettings.csproj",
-      "msbuildProject": "../HotBag.AspNetCore.AppSettings/HotBag.AspNetCore.AppSettings.csproj"
-    },
-    "HotBag.AspNetCore.Authorization/1.0.0": {
-      "type": "project",
-      "path": "../HotBag.AspNetCore.Authorization/HotBag.AspNetCore.Authorization.csproj",
-      "msbuildProject": "../HotBag.AspNetCore.Authorization/HotBag.AspNetCore.Authorization.csproj"
-    },
-    "HotBag.AspNetCore.AutoMapper/1.0.0": {
-      "type": "project",
-      "path": "../HotBag.AspNetCore.Automapper/HotBag.AspNetCore.AutoMapper.csproj",
-      "msbuildProject": "../HotBag.AspNetCore.Automapper/HotBag.AspNetCore.AutoMapper.csproj"
-    },
-    "HotBag.AspNetCore.Data/1.0.0": {
-      "type": "project",
-      "path": "../HotBag.AspNetCore.Data/HotBag.AspNetCore.Data.csproj",
-      "msbuildProject": "../HotBag.AspNetCore.Data/HotBag.AspNetCore.Data.csproj"
-    },
-    "HotBag.AspNetCore.DI/1.0.0": {
-      "type": "project",
-      "path": "../HotBag.AspNetCore.DI/HotBag.AspNetCore.DI.csproj",
-      "msbuildProject": "../HotBag.AspNetCore.DI/HotBag.AspNetCore.DI.csproj"
-    },
-    "HotBag.AspNetCore.EventBus/1.0.0": {
-      "type": "project",
-      "path": "../HotBag.AspNetCore.EventBus/HotBag.AspNetCore.EventBus.csproj",
-      "msbuildProject": "../HotBag.AspNetCore.EventBus/HotBag.AspNetCore.EventBus.csproj"
-    },
-    "HotBag.AspNetCore.Extensions/1.0.0": {
-      "type": "project",
-      "path": "../HotBag.AspNetCore.Extensions/HotBag.AspNetCore.Extensions.csproj",
-      "msbuildProject": "../HotBag.AspNetCore.Extensions/HotBag.AspNetCore.Extensions.csproj"
-    },
-    "HotBag.AspNetCore.FluentValidation/1.0.0": {
-      "type": "project",
-      "path": "../HotBag.AspNetCore.FluentValidation/HotBag.AspNetCore.FluentValidation.csproj",
-      "msbuildProject": "../HotBag.AspNetCore.FluentValidation/HotBag.AspNetCore.FluentValidation.csproj"
-    },
-    "HotBag.AspNetCore.GoogleAnalytics/1.0.0": {
-      "type": "project",
-      "path": "../HotBag.AspNetCore.GoogleAnalytics/HotBag.AspNetCore.GoogleAnalytics.csproj",
-      "msbuildProject": "../HotBag.AspNetCore.GoogleAnalytics/HotBag.AspNetCore.GoogleAnalytics.csproj"
-    },
-    "HotBag.AspNetCore.IO/1.0.0": {
-      "type": "project",
-      "path": "../HotBag.AspNetCore.IO/HotBag.AspNetCore.IO.csproj",
-      "msbuildProject": "../HotBag.AspNetCore.IO/HotBag.AspNetCore.IO.csproj"
-    },
-    "HotBag.AspNetCore.Log/1.0.0": {
-      "type": "project",
-      "path": "../HotBag.AspNetCore.Log/HotBag.AspNetCore.Log.csproj",
-      "msbuildProject": "../HotBag.AspNetCore.Log/HotBag.AspNetCore.Log.csproj"
-    },
-    "HotBag.AspNetCore.PushNotification/1.0.0": {
-      "type": "project",
-      "path": "../HotBag.AspNetCore.PushNotification/HotBag.AspNetCore.PushNotification.csproj",
-      "msbuildProject": "../HotBag.AspNetCore.PushNotification/HotBag.AspNetCore.PushNotification.csproj"
-    },
-    "HotBag.AspNetCore.RabbitMQ/1.0.0": {
-      "type": "project",
-      "path": "../HotBag.AspNetCore.RabbitMQ/HotBag.AspNetCore.RabbitMQ.csproj",
-      "msbuildProject": "../HotBag.AspNetCore.RabbitMQ/HotBag.AspNetCore.RabbitMQ.csproj"
-    },
-    "HotBag.AspNetCore.Reflection/1.0.0": {
-      "type": "project",
-      "path": "../HotBag.AspNetCore.Reflection/HotBag.AspNetCore.Reflection.csproj",
-      "msbuildProject": "../HotBag.AspNetCore.Reflection/HotBag.AspNetCore.Reflection.csproj"
-    },
-    "HotBag.AspNetCore.ResultWrapper/1.0.0": {
-      "type": "project",
-      "path": "../HotBag.AspNetCore.ResultWrapper/HotBag.AspNetCore.ResultWrapper.csproj",
-      "msbuildProject": "../HotBag.AspNetCore.ResultWrapper/HotBag.AspNetCore.ResultWrapper.csproj"
-    },
-    "HotBag.AspNetCore.Security/1.0.0": {
-      "type": "project",
-      "path": "../HotBag.AspNetCore.Security/HotBag.AspNetCore.Security.csproj",
-      "msbuildProject": "../HotBag.AspNetCore.Security/HotBag.AspNetCore.Security.csproj"
-    },
-    "HotBag.AspNetCore.SignalR/1.0.0": {
-      "type": "project",
-      "path": "../HotBag.AspNetCore.SignalR/HotBag.AspNetCore.SignalR.csproj",
-      "msbuildProject": "../HotBag.AspNetCore.SignalR/HotBag.AspNetCore.SignalR.csproj"
-    },
-    "HotBag.AspNetCore.Swagger/1.0.0": {
-      "type": "project",
-      "path": "../HotBag.AspNetCore.Swagger/HotBag.AspNetCore.Swagger.csproj",
-      "msbuildProject": "../HotBag.AspNetCore.Swagger/HotBag.AspNetCore.Swagger.csproj"
-    },
-    "HotBag.AspNetCore.Web/1.0.0": {
-      "type": "project",
-      "path": "../HotBag.AspNetCore.Web/HotBag.AspNetCore.Web.csproj",
-      "msbuildProject": "../HotBag.AspNetCore.Web/HotBag.AspNetCore.Web.csproj"
     }
   },
   "projectFileDependencyGroups": {
@@ -10243,11 +8606,8 @@
       "HotBag.AspNetCore.Data >= 1.0.0",
       "HotBag.AspNetCore.EventBus >= 1.0.0",
       "HotBag.AspNetCore.Extensions >= 1.0.0",
-      "HotBag.AspNetCore.FluentValidation >= 1.0.0",
-      "HotBag.AspNetCore.GoogleAnalytics >= 1.0.0",
       "HotBag.AspNetCore.IO >= 1.0.0",
       "HotBag.AspNetCore.Log >= 1.0.0",
-      "HotBag.AspNetCore.PushNotification >= 1.0.0",
       "HotBag.AspNetCore.RabbitMQ >= 1.0.0",
       "HotBag.AspNetCore.Reflection >= 1.0.0",
       "HotBag.AspNetCore.ResultWrapper >= 1.0.0",
@@ -10267,7 +8627,7 @@
     "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
   },
   "project": {
-    "version": "1.0.0",
+    "version": "1.0.1",
     "restore": {
       "projectUniqueName": "C:\\Users\\prade\\source\\repos\\HotBagCore\\HotBag.AspNetCore\\HotBag.AspNetCore.csproj",
       "projectName": "HotBag.AspNetCore",
@@ -10291,65 +8651,7 @@
       },
       "frameworks": {
         "netstandard2.0": {
-          "projectReferences": {
-            "C:\\Users\\prade\\source\\repos\\HotBagCore\\HotBag.AspNetCore.AppSettings\\HotBag.AspNetCore.AppSettings.csproj": {
-              "projectPath": "C:\\Users\\prade\\source\\repos\\HotBagCore\\HotBag.AspNetCore.AppSettings\\HotBag.AspNetCore.AppSettings.csproj"
-            },
-            "C:\\Users\\prade\\source\\repos\\HotBagCore\\HotBag.AspNetCore.Authorization\\HotBag.AspNetCore.Authorization.csproj": {
-              "projectPath": "C:\\Users\\prade\\source\\repos\\HotBagCore\\HotBag.AspNetCore.Authorization\\HotBag.AspNetCore.Authorization.csproj"
-            },
-            "C:\\Users\\prade\\source\\repos\\HotBagCore\\HotBag.AspNetCore.Automapper\\HotBag.AspNetCore.AutoMapper.csproj": {
-              "projectPath": "C:\\Users\\prade\\source\\repos\\HotBagCore\\HotBag.AspNetCore.Automapper\\HotBag.AspNetCore.AutoMapper.csproj"
-            },
-            "C:\\Users\\prade\\source\\repos\\HotBagCore\\HotBag.AspNetCore.Data\\HotBag.AspNetCore.Data.csproj": {
-              "projectPath": "C:\\Users\\prade\\source\\repos\\HotBagCore\\HotBag.AspNetCore.Data\\HotBag.AspNetCore.Data.csproj"
-            },
-            "C:\\Users\\prade\\source\\repos\\HotBagCore\\HotBag.AspNetCore.DI\\HotBag.AspNetCore.DI.csproj": {
-              "projectPath": "C:\\Users\\prade\\source\\repos\\HotBagCore\\HotBag.AspNetCore.DI\\HotBag.AspNetCore.DI.csproj"
-            },
-            "C:\\Users\\prade\\source\\repos\\HotBagCore\\HotBag.AspNetCore.EventBus\\HotBag.AspNetCore.EventBus.csproj": {
-              "projectPath": "C:\\Users\\prade\\source\\repos\\HotBagCore\\HotBag.AspNetCore.EventBus\\HotBag.AspNetCore.EventBus.csproj"
-            },
-            "C:\\Users\\prade\\source\\repos\\HotBagCore\\HotBag.AspNetCore.Extensions\\HotBag.AspNetCore.Extensions.csproj": {
-              "projectPath": "C:\\Users\\prade\\source\\repos\\HotBagCore\\HotBag.AspNetCore.Extensions\\HotBag.AspNetCore.Extensions.csproj"
-            },
-            "C:\\Users\\prade\\source\\repos\\HotBagCore\\HotBag.AspNetCore.FluentValidation\\HotBag.AspNetCore.FluentValidation.csproj": {
-              "projectPath": "C:\\Users\\prade\\source\\repos\\HotBagCore\\HotBag.AspNetCore.FluentValidation\\HotBag.AspNetCore.FluentValidation.csproj"
-            },
-            "C:\\Users\\prade\\source\\repos\\HotBagCore\\HotBag.AspNetCore.GoogleAnalytics\\HotBag.AspNetCore.GoogleAnalytics.csproj": {
-              "projectPath": "C:\\Users\\prade\\source\\repos\\HotBagCore\\HotBag.AspNetCore.GoogleAnalytics\\HotBag.AspNetCore.GoogleAnalytics.csproj"
-            },
-            "C:\\Users\\prade\\source\\repos\\HotBagCore\\HotBag.AspNetCore.IO\\HotBag.AspNetCore.IO.csproj": {
-              "projectPath": "C:\\Users\\prade\\source\\repos\\HotBagCore\\HotBag.AspNetCore.IO\\HotBag.AspNetCore.IO.csproj"
-            },
-            "C:\\Users\\prade\\source\\repos\\HotBagCore\\HotBag.AspNetCore.Log\\HotBag.AspNetCore.Log.csproj": {
-              "projectPath": "C:\\Users\\prade\\source\\repos\\HotBagCore\\HotBag.AspNetCore.Log\\HotBag.AspNetCore.Log.csproj"
-            },
-            "C:\\Users\\prade\\source\\repos\\HotBagCore\\HotBag.AspNetCore.PushNotification\\HotBag.AspNetCore.PushNotification.csproj": {
-              "projectPath": "C:\\Users\\prade\\source\\repos\\HotBagCore\\HotBag.AspNetCore.PushNotification\\HotBag.AspNetCore.PushNotification.csproj"
-            },
-            "C:\\Users\\prade\\source\\repos\\HotBagCore\\HotBag.AspNetCore.RabbitMQ\\HotBag.AspNetCore.RabbitMQ.csproj": {
-              "projectPath": "C:\\Users\\prade\\source\\repos\\HotBagCore\\HotBag.AspNetCore.RabbitMQ\\HotBag.AspNetCore.RabbitMQ.csproj"
-            },
-            "C:\\Users\\prade\\source\\repos\\HotBagCore\\HotBag.AspNetCore.Reflection\\HotBag.AspNetCore.Reflection.csproj": {
-              "projectPath": "C:\\Users\\prade\\source\\repos\\HotBagCore\\HotBag.AspNetCore.Reflection\\HotBag.AspNetCore.Reflection.csproj"
-            },
-            "C:\\Users\\prade\\source\\repos\\HotBagCore\\HotBag.AspNetCore.ResultWrapper\\HotBag.AspNetCore.ResultWrapper.csproj": {
-              "projectPath": "C:\\Users\\prade\\source\\repos\\HotBagCore\\HotBag.AspNetCore.ResultWrapper\\HotBag.AspNetCore.ResultWrapper.csproj"
-            },
-            "C:\\Users\\prade\\source\\repos\\HotBagCore\\HotBag.AspNetCore.Security\\HotBag.AspNetCore.Security.csproj": {
-              "projectPath": "C:\\Users\\prade\\source\\repos\\HotBagCore\\HotBag.AspNetCore.Security\\HotBag.AspNetCore.Security.csproj"
-            },
-            "C:\\Users\\prade\\source\\repos\\HotBagCore\\HotBag.AspNetCore.SignalR\\HotBag.AspNetCore.SignalR.csproj": {
-              "projectPath": "C:\\Users\\prade\\source\\repos\\HotBagCore\\HotBag.AspNetCore.SignalR\\HotBag.AspNetCore.SignalR.csproj"
-            },
-            "C:\\Users\\prade\\source\\repos\\HotBagCore\\HotBag.AspNetCore.Swagger\\HotBag.AspNetCore.Swagger.csproj": {
-              "projectPath": "C:\\Users\\prade\\source\\repos\\HotBagCore\\HotBag.AspNetCore.Swagger\\HotBag.AspNetCore.Swagger.csproj"
-            },
-            "C:\\Users\\prade\\source\\repos\\HotBagCore\\HotBag.AspNetCore.Web\\HotBag.AspNetCore.Web.csproj": {
-              "projectPath": "C:\\Users\\prade\\source\\repos\\HotBagCore\\HotBag.AspNetCore.Web\\HotBag.AspNetCore.Web.csproj"
-            }
-          }
+          "projectReferences": {}
         }
       },
       "warningProperties": {
@@ -10361,6 +8663,70 @@
     "frameworks": {
       "netstandard2.0": {
         "dependencies": {
+          "HotBag.AspNetCore.AppSettings": {
+            "target": "Package",
+            "version": "[1.0.0, )"
+          },
+          "HotBag.AspNetCore.Authorization": {
+            "target": "Package",
+            "version": "[1.0.0, )"
+          },
+          "HotBag.AspNetCore.AutoMapper": {
+            "target": "Package",
+            "version": "[1.0.0, )"
+          },
+          "HotBag.AspNetCore.DI": {
+            "target": "Package",
+            "version": "[1.0.0, )"
+          },
+          "HotBag.AspNetCore.Data": {
+            "target": "Package",
+            "version": "[1.0.0, )"
+          },
+          "HotBag.AspNetCore.EventBus": {
+            "target": "Package",
+            "version": "[1.0.0, )"
+          },
+          "HotBag.AspNetCore.Extensions": {
+            "target": "Package",
+            "version": "[1.0.0, )"
+          },
+          "HotBag.AspNetCore.IO": {
+            "target": "Package",
+            "version": "[1.0.0, )"
+          },
+          "HotBag.AspNetCore.Log": {
+            "target": "Package",
+            "version": "[1.0.0, )"
+          },
+          "HotBag.AspNetCore.RabbitMQ": {
+            "target": "Package",
+            "version": "[1.0.0, )"
+          },
+          "HotBag.AspNetCore.Reflection": {
+            "target": "Package",
+            "version": "[1.0.0, )"
+          },
+          "HotBag.AspNetCore.ResultWrapper": {
+            "target": "Package",
+            "version": "[1.0.0, )"
+          },
+          "HotBag.AspNetCore.Security": {
+            "target": "Package",
+            "version": "[1.0.0, )"
+          },
+          "HotBag.AspNetCore.SignalR": {
+            "target": "Package",
+            "version": "[1.0.0, )"
+          },
+          "HotBag.AspNetCore.Swagger": {
+            "target": "Package",
+            "version": "[1.0.0, )"
+          },
+          "HotBag.AspNetCore.Web": {
+            "target": "Package",
+            "version": "[1.0.0, )"
+          },
           "Microsoft.AspNetCore.Cors": {
             "target": "Package",
             "version": "[2.2.0, )"
