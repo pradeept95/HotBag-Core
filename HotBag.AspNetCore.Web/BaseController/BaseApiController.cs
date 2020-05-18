@@ -4,13 +4,25 @@ using Microsoft.AspNetCore.Mvc;
 
 namespace HotBag.AspNetCore.Web.BaseController
 {
-    [Route("api/app/v1/[controller]")]
+    [Route("api/app/[controller]")]
     [ApiController]
     //[Authorize]
     public class BaseApiController : ControllerBase
     {
         protected readonly IAppSession AppSession;
         public BaseApiController()
+        {
+            AppSession = NullAppSession.Instance;
+        }
+    }
+
+    [Route("api/app/[Area]/[controller]")]
+    [ApiController]
+    //[Authorize]
+    public class BaseApiAreaController : ControllerBase
+    {
+        protected readonly IAppSession AppSession;
+        public BaseApiAreaController()
         {
             AppSession = NullAppSession.Instance;
         }
