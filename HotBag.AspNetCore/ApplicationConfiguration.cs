@@ -7,6 +7,7 @@ using HotBag.AspNetCore.ResultWrapper.Extensions;
 using HotBag.AspNetCore.SignalR;
 using HotBag.AspNetCore.Swagger;
 using Microsoft.AspNetCore.Builder;
+using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using System.Threading.Tasks;
@@ -55,6 +56,13 @@ namespace HotBag.AspNetCore
                 services.AddHotBagSignalR();
 
             //services.AddHotBagPOLocalization();
+
+            //Disable Automatic Model State Validation if ResultWrapper is enabled
+            if (HotBagConfiguration.Configurations.ApplicationSettings.Features.IsEnableResultWrapper)
+                services.Configure<ApiBehaviorOptions>(options =>
+                {
+                    options.SuppressModelStateInvalidFilter = true;
+                });
 
             return services;
         }
